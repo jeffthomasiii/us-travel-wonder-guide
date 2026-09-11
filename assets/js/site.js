@@ -53,14 +53,48 @@ if(featuredItems.length){
   featuredItems.forEach((item,index)=>setVisible(item,index<6));
 }
 
-const expandStates=document.querySelector('#expandStates');
-const extraStates=[...document.querySelectorAll('.state-card-extra')];
-expandStates?.addEventListener('click',()=>{
-  const expanding=expandStates.getAttribute('aria-expanded')!=='true';
-  extraStates.forEach(card=>setVisible(card,expanding));
-  expandStates.setAttribute('aria-expanded',String(expanding));
-  expandStates.textContent=expanding?'Show fewer states':'Explore all 50 states';
+const hero=document.querySelector('#homeHero');
+const heroCredit=document.querySelector('#heroCredit');
+const heroCandidates=[...document.querySelectorAll('.hero-candidate')].filter(item=>item.dataset.image);
+if(hero && heroCandidates.length){
+  const candidate=heroCandidates[Math.floor(Math.random()*heroCandidates.length)];
+  hero.style.backgroundImage=`linear-gradient(90deg,rgba(20,35,28,.82),rgba(20,35,28,.48)),url('${candidate.dataset.image}')`;
+  if(heroCredit){
+    heroCredit.textContent=candidate.dataset.credit||'Image credit';
+    if(candidate.dataset.source) heroCredit.href=candidate.dataset.source;
+  }
+}
+
+const menuToggle=document.querySelector('#menuToggle');
+const primaryNav=document.querySelector('#primaryNav');
+function closeMenu(){
+  if(!menuToggle||!primaryNav) return;
+  menuToggle.setAttribute('aria-expanded','false');
+  menuToggle.setAttribute('aria-label','Open menu');
+  primaryNav.classList.remove('open');
+  document.body.classList.remove('menu-open');
+}
+menuToggle?.addEventListener('click',()=>{
+  const opening=menuToggle.getAttribute('aria-expanded')!=='true';
+  menuToggle.setAttribute('aria-expanded',String(opening));
+  menuToggle.setAttribute('aria-label',opening?'Close menu':'Open menu');
+  primaryNav?.classList.toggle('open',opening);
+  document.body.classList.toggle('menu-open',opening);
 });
+primaryNav?.querySelectorAll('a').forEach(link=>link.addEventListener('click',closeMenu));
+
+const mobileFiltersToggle=document.querySelector('#mobileFiltersToggle');
+const filters=document.querySelector('#filters');
+function setMobileFilters(open){
+  if(!mobileFiltersToggle||!filters) return;
+  mobileFiltersToggle.setAttribute('aria-expanded',String(open));
+  filters.classList.toggle('filters-open',open);
+}
+mobileFiltersToggle?.addEventListener('click',()=>{
+  setMobileFilters(mobileFiltersToggle.getAttribute('aria-expanded')!=='true');
+});
+if(location.hash==='#filters') setMobileFilters(true);
+if(location.hash==='#search') setTimeout(()=>search?.focus(),100);
 
 const sheet=document.querySelector('#navSheet');
 function closeSheet(){ if(sheet){sheet.hidden=true; document.body.classList.remove('sheet-open');}}
@@ -80,6 +114,11 @@ document.addEventListener('click',event=>{
 });
 document.querySelector('.nav-close')?.addEventListener('click',closeSheet);
 document.querySelector('.nav-backdrop')?.addEventListener('click',closeSheet);
-document.addEventListener('keydown',e=>{if(e.key==='Escape')closeSheet();});
+document.addEventListener('keydown',e=>{
+  if(e.key==='Escape'){
+    closeSheet();
+    closeMenu();
+  }
+});
 
 filterCards();
