@@ -1,14 +1,19 @@
-<article class="wonder-card" data-search="{{ include.wonder.title | downcase }} {{ include.wonder.state | downcase }} {{ include.wonder.region | downcase }} {{ include.wonder.experiences | join: ' ' | downcase }}" data-state="{{ include.wonder.state }}">
+{% assign tier = include.wonder.tier | default: 'signature' %}
+{% if tier == 'travel' %}{% assign tier_label = '◆ Worth Traveling For' %}{% elsif tier == 'detour' %}{% assign tier_label = '○ Worth the Detour' %}{% else %}{% assign tier_label = '★ Signature Wonder' %}{% endif %}
+<article class="wonder-card tier-{{ tier }}" data-search="{{ include.wonder.title | downcase }} {{ include.wonder.state | downcase }} {{ include.wonder.region | downcase }} {{ include.wonder.experiences | join: ' ' | downcase }}" data-state="{{ include.wonder.state }}" data-tier="{{ tier }}" data-experiences="{{ include.wonder.experiences | join: '|' | downcase }}">
   <a class="card-media {% unless include.wonder.image_url %}fallback{% endunless %}" href="{{ include.wonder.url | relative_url }}" {% if include.wonder.image_url %}style="background-image:url('{{ include.wonder.image_url }}')"{% endif %}>
-    <span class="tier-badge">★ Signature Wonder</span>
+    <span class="tier-badge">{{ tier_label }}</span>
+    <span class="card-state-code">{{ include.wonder.state | slice: 0, 2 | upcase }}</span>
     {% if include.wonder.image_credit %}<span class="mini-credit">{{ include.wonder.image_credit }}</span>{% endif %}
   </a>
   <div class="card-body">
-    <p class="state-name">{{ include.wonder.state }}</p>
+    <p class="state-name">{{ include.wonder.state }}{% if include.wonder.region %}<span> · {{ include.wonder.region }}</span>{% endif %}</p>
     <h2><a href="{{ include.wonder.url | relative_url }}">{{ include.wonder.title }}</a></h2>
     <p>{{ include.wonder.summary }}</p>
+    {% if include.wonder.experiences %}<div class="mini-tags">{% for exp in include.wonder.experiences limit:4 %}<span>{{ exp }}</span>{% endfor %}</div>{% endif %}
     <div class="card-actions">
-      <a href="{{ include.wonder.url | relative_url }}">Explore</a>
+      <a href="{{ include.wonder.url | relative_url }}">View guide notes →</a>
+      {% if include.wonder.official_url %}<a href="{{ include.wonder.official_url }}" target="_blank" rel="noopener">Official site ↗</a>{% endif %}
       <button class="nav-open" data-query="{{ include.wonder.navigation_query | escape }}">Navigate</button>
     </div>
   </div>
