@@ -6,6 +6,10 @@ const clearFilters = document.querySelector('#clearFilters');
 const cards = [...document.querySelectorAll('#wonderGrid .wonder-card')];
 const empty = document.querySelector('#emptyState');
 const resultCount = document.querySelector('#resultCount');
+const wonderGrid = document.querySelector('#wonderGrid');
+const sortSelect = document.querySelector('#sortSelect');
+const gridViewBtn = document.querySelector('#gridViewBtn');
+const listViewBtn = document.querySelector('#listViewBtn');
 
 function setVisible(el, visible){
   if(!el) return;
@@ -31,6 +35,33 @@ function filterCards(){
   if(resultCount) resultCount.textContent=shown;
 }
 
+function sortCards(mode='featured'){
+  if(!wonderGrid || !cards.length) return;
+  const tierRank={signature:0,travel:1,detour:2};
+  const sorted=[...cards].sort((a,b)=>{
+    const aTitle=(a.querySelector('h2')?.textContent||'').trim();
+    const bTitle=(b.querySelector('h2')?.textContent||'').trim();
+    if(mode==='az') return aTitle.localeCompare(bTitle);
+    if(mode==='area'){
+      const byArea=(a.dataset.state||'').localeCompare(b.dataset.state||'');
+      return byArea || aTitle.localeCompare(bTitle);
+    }
+    const byTier=(tierRank[a.dataset.tier]??9)-(tierRank[b.dataset.tier]??9);
+    return byTier || aTitle.localeCompare(bTitle);
+  });
+  sorted.forEach(card=>wonderGrid.appendChild(card));
+}
+
+function setExploreView(view){
+  if(!wonderGrid) return;
+  const list=view==='list';
+  wonderGrid.classList.toggle('view-list',list);
+  gridViewBtn?.classList.toggle('active',!list);
+  listViewBtn?.classList.toggle('active',list);
+  gridViewBtn?.setAttribute('aria-pressed',String(!list));
+  listViewBtn?.setAttribute('aria-pressed',String(list));
+}
+
 if(search){
   const params=new URLSearchParams(location.search);
   const q=params.get('q');
@@ -49,6 +80,10 @@ clearFilters?.addEventListener('click',()=>{
   filterCards();
   search?.focus();
 });
+
+sortSelect?.addEventListener('change',()=>sortCards(sortSelect.value));
+gridViewBtn?.addEventListener('click',()=>setExploreView('grid'));
+listViewBtn?.addEventListener('click',()=>setExploreView('list'));
 
 const hero=document.querySelector('#homeHero');
 const heroCredit=document.querySelector('#heroCredit');
@@ -94,9 +129,15 @@ if(location.hash==='#search') setTimeout(()=>search?.focus(),100);
 
 const areaButtons=[...document.querySelectorAll('[data-area-filter]')];
 const areaCards=[...document.querySelectorAll('[data-area-type]')];
-areaButtons.forEach(button=>button.addEventListener('click',()=>{
+areaButtons.forEach(button=>button.addEventListener('click',event=>{
+  event.preventDefault();
+  event.stopPropagation();
   const filter=button.dataset.areaFilter;
-  areaButtons.forEach(item=>item.classList.toggle('active',item===button));
+  areaButtons.forEach(item=>{
+    const active=item===button;
+    item.classList.toggle('active',active);
+    item.setAttribute('aria-pressed',String(active));
+  });
   areaCards.forEach(card=>setVisible(card,filter==='all'||card.dataset.areaType===filter));
 }));
 
@@ -125,4 +166,5 @@ document.addEventListener('keydown',e=>{
   }
 });
 
+sortCards('featured');
 filterCards();
