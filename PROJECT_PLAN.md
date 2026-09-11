@@ -8,35 +8,46 @@ The guide is a **U.S. travel discovery reference**, not a quota-driven state lis
 
 See [`EDITORIAL_SCOPE.md`](EDITORIAL_SCOPE.md) for geographic and editorial boundaries.
 
-## Phase 1A — Original 50-state Signature imagery
+## Phase 1A — Signature imagery
 
-**Status: COMPLETE — 50 / 50 original state Signature Wonders.**
+**Status: COMPLETE.**
 
-The canonical rights audit remains [`_data/signature_images.yml`](_data/signature_images.yml).
+The original 50 state Signature Wonders and the six later district/territory Signature Wonders have asset-level rights-verified imagery. Canonical manifests:
+
+- `_data/signature_images.yml`
+- `_data/expanded_signature_images.yml`
 
 ## Phase 1B — Mixed-tier pilot
 
-**Status: COMPLETE — 6 pilot states / 12 added destinations.**
+**Status: COMPLETE.**
 
-Pilot states: California, Utah, Maine, Michigan, Oklahoma, and Delaware.
+The six-state pilot validated mixed ★ / ◆ / ○ state pages, Explore filtering, tier-aware cards and detail pages, image attribution, and editorial hierarchy.
 
-The pilot validated all three reasons to go, mixed-tier state pages, Explore filtering, and the basic content hierarchy.
+## Phase 1C — Travel-planning model
 
-## Phase 1C — Travel-planning content model
+**Status: COMPLETE.**
 
-**Status: COMPLETE — model validated on all 18 Wonders in the six pilot states.**
+The validated content model includes:
 
-The schema is documented in [`CONTENT_MODEL.md`](CONTENT_MODEL.md). The validated planning guidance includes typical calendar visit windows, visit length, RV access and road/rig considerations, pet access, accessibility, photography, wildlife, official conditions, reservations/permits where useful, planning source, and review date.
+- calendar-style typical visit windows;
+- visit length;
+- RV access and road/rig considerations where researched;
+- pet guidance where researched;
+- accessibility;
+- photography;
+- wildlife;
+- current-conditions / alerts links;
+- reservation / permit links where useful;
+- authoritative planning source;
+- planning review date.
 
-Phase 1C established the normal planning-data pattern for future intake. Not every existing Wonder must be backfilled before Phase 2 begins; planning metadata can expand alongside content production.
+See [`CONTENT_MODEL.md`](CONTENT_MODEL.md).
 
-Design and branding work remains intentionally deferred except for functional usability changes.
+## Geography expansion
 
-## Geography expansion — states, D.C. and inhabited territories
+**Status: COMPLETE — 56 primary browse areas.**
 
-**Status: IMPLEMENTED — 56 primary browse areas.**
-
-The guide includes:
+The guide covers:
 
 - 50 states
 - Washington, D.C.
@@ -46,192 +57,112 @@ The guide includes:
 - Northern Mariana Islands
 - American Samoa
 
-First-pass Signature Wonders added:
+The U.S. Minor Outlying Islands remain outside the ordinary browse model unless a real travel/editorial case emerges.
 
-| Area | ★ Signature Wonder |
-| --- | --- |
-| Washington, D.C. | National Mall and Memorial Parks |
-| Puerto Rico | El Yunque National Forest |
-| U.S. Virgin Islands | Virgin Islands National Park |
-| Guam | Ritidian Point |
-| Northern Mariana Islands | The Grotto |
-| American Samoa | National Park of American Samoa |
-
-The U.S. Minor Outlying Islands are excluded from the ordinary browse model unless a later editorial case justifies a specific destination.
-
-### Geography-expansion follow-up
-
-- [x] complete asset-level image-rights research for the six new Signature Wonders;
-- [x] connect the six verified image records to cards, Wonder pages, and homepage hero rotation;
-- [ ] complete comparative Signature review for all six district/territory areas during Phase 2A/2B;
-- [ ] add planning metadata for the six new Signature Wonders during normal Phase 2 intake/backfill;
-- [x] establish an explicit non-NPS diversity guardrail for Phase 2 research.
-
-Verified imagery for the six expanded areas is stored in [`_data/expanded_signature_images.yml`](_data/expanded_signature_images.yml), using the same asset-level verification standard as the original 50-state manifest.
+The six added Signature Wonders also now have verified imagery, planning metadata, and calendar-style visit windows.
 
 ## Mobile functional baseline
 
-**Status: IMPLEMENTED.**
+**Status: COMPLETE.**
 
-Mobile uses persistent bottom navigation for **Home, Explore, Search, and Areas**, while the hamburger menu holds secondary/reference pages. This is the functional baseline for the current POC; a deeper installed-app/PWA navigation redesign can happen during the dedicated design phase.
+Mobile uses persistent bottom navigation for **Home, Explore, Search, and Areas**, while the hamburger menu holds secondary/reference pages. This remains a functional baseline rather than the final installed-app/PWA design.
 
-## Phase 2A — Build the national candidate inventory
+## Phase 2A — National candidate research
 
-**Status: IN PROGRESS — seed inventory complete; three comparative research waves complete covering 20 areas.**
+**Status: COMPLETE FOR THE NATIONAL BASELINE PASS.**
 
-Goal: build the research pool before publishing large amounts of new content. Candidate counts are not quotas and candidate status does not imply inclusion.
+The Phase 2 seed inventory established a broad cross-country candidate pool, and deeper comparative research waves tested the method across 20 areas before national production accelerated.
 
-The seed backlog is [`_data/phase2_candidates.yml`](_data/phase2_candidates.yml). The research and review rules are documented in [`PHASE2_RESEARCH_METHOD.md`](PHASE2_RESEARCH_METHOD.md). Wave reviews are kept separately from the seed backlog so source verification and editorial judgments remain auditable before candidates are promoted into production.
+Research files remain useful as an ongoing editorial backlog:
 
-### Wave 1 — complete
+- `_data/phase2_candidates.yml`
+- `_data/phase2_wave1_reviews.yml`
+- `_data/phase2_wave2_reviews.yml`
+- `_data/phase2_wave3_reviews.yml`
+- `PHASE2_RESEARCH_METHOD.md`
 
-Areas reviewed:
-
-- Alabama
-- Alaska
-- Arizona
-- California
-- Colorado
-- Florida
-- Puerto Rico
-- Guam
-
-Review file: [`_data/phase2_wave1_reviews.yml`](_data/phase2_wave1_reviews.yml)
-
-Wave 1 contains **38 reviewed candidates**: **32 strong**, **4 uncertain**, **1 overlap**, and **1 deferred** because of current access/closure conditions.
-
-### Wave 2 — complete
-
-Areas reviewed:
-
-- Arkansas
-- Connecticut
-- Georgia
-- Illinois
-- Kentucky
-- Louisiana
-- Michigan
-- Pennsylvania
-
-Review file: [`_data/phase2_wave2_reviews.yml`](_data/phase2_wave2_reviews.yml)
-
-Wave 2 adds **37 reviewed candidates** and deliberately broadens the research beyond scenic federal lands into historic urban districts, architecture, industrial history, gardens, islands, state parks, wildlife areas, archaeology, and privately/nonprofit-stewarded destinations.
-
-### Wave 3 — complete
-
-Areas reviewed:
-
-- Minnesota
-- Missouri
-- South Dakota
-- Texas
-
-Review file: [`_data/phase2_wave3_reviews.yml`](_data/phase2_wave3_reviews.yml)
-
-Wave 3 adds source-backed comparisons across scenic roads, state parks, Indigenous cultural landscapes, monumental architecture, caves, wildlife, national seashores, and major regional landscapes. It also explicitly flags Needles Highway as likely better represented inside a broader Custer State Park entry rather than as a separate Wonder.
-
-Across Waves 1–3, **20 of 56 areas have completed a source-backed comparative candidate review**.
-
-### Signature comparison flags so far
-
-Comparative research has flagged these live Signature selections for Phase 2B review rather than automatic replacement:
-
-- Puerto Rico
-- Guam
-- Connecticut
-- Illinois
-- Louisiana
-- Pennsylvania
-
-A Signature flag means the candidate pool is strong enough to require a deliberate comparison. It does **not** mean the live Signature should change.
-
-### Remaining Phase 2A work
-
-- [x] define research method and review statuses;
-- [x] complete Wave 1 source/editorial review for 8 areas;
-- [x] complete Wave 2 source/editorial review for 8 additional areas;
-- [x] complete Wave 3 source/editorial review for 4 additional areas;
-- [ ] continue research waves across the remaining 36 areas;
-- [ ] broaden thin candidate pools where comparative review exposes obvious omissions;
-- [ ] complete comparative review of all six district/territory Signature selections;
-- [ ] continue Phase 2B classification in parallel on mature research pools.
-
-All U.S. national parks are guaranteed eventual coverage, but their tier is not predetermined. [`NATIONAL_PARKS_COVERAGE.md`](NATIONAL_PARKS_COVERAGE.md) tracks that obligation separately so national parks do not dominate the general candidate workflow.
+Phase 2A completion does **not** mean no additional candidate research will ever happen. It means national research is no longer a prerequisite for proving the content system. Future candidate discovery becomes continuous editorial maintenance.
 
 ## Phase 2B — Editorial classification
 
-**Status: PILOT IN PROGRESS — Waves 1 and 2 classified editorially; Phase 2C production has begun from approved pilot entries.**
+**Status: COMPLETE FOR THE NATIONAL BASELINE PASS.**
 
-The working pilot classification is [`_data/phase2b_pilot_classification.yml`](_data/phase2b_pilot_classification.yml).
+The pilot classification established the approval / hold / do-not-publish process and demonstrated that Signature selections can be challenged without automatic replacement.
 
-The pilot assigns proposed ◆ / ○ roles only after source-backed Phase 2A review. It also records `hold` and `do-not-publish` decisions where a candidate is too broad, operationally unresolved, or insufficiently sourced.
+The working classification record remains `_data/phase2b_pilot_classification.yml`.
 
-Signature challenges remain comparison flags until a specific replacement decision is supported. Approved ◆ / ○ entries can move into Phase 2C in measured batches once full production intake is complete.
+Future additions should continue to follow the same standard: classify by actual trip value, not by quotas, designation type, agency, or a desire to visually balance states.
 
 ## Phase 2C — Production content expansion
 
-**Status: IN PROGRESS — Batch 1 published / 6 new Wonders.**
+**Status: COMPLETE — national baseline published.**
 
-The first production batch is documented in [`PHASE2C_BATCH1.md`](PHASE2C_BATCH1.md).
+Completion is documented in [`PHASE2C_COMPLETION.md`](PHASE2C_COMPLETION.md).
 
-Batch 1 publishes:
+The live content model now contains:
 
-| Area | Destination | Reason to go |
-| --- | --- | --- |
-| California | Big Sur Coast | ◆ Worth Traveling For |
-| Florida | Myakka River State Park | ○ Worth the Detour |
-| Georgia | Savannah Historic Landmark District | ◆ Worth Traveling For |
-| Michigan | Mackinac Island | ◆ Worth Traveling For |
-| Kentucky | Shaker Village of Pleasant Hill | ○ Worth the Detour |
-| Alabama | Bon Secour National Wildlife Refuge | ○ Worth the Detour |
+- **120 Wonders total**
+- **56 ★ Signature Wonders**
+- **51 ◆ Worth Traveling For**
+- **13 ○ Worth the Detour**
+- at least **one non-Signature Wonder in every one of the 56 primary areas**
 
-The public guide now contains **74 Wonders total — 56 ★, 9 ◆, and 9 ○**.
+This is intentionally a **baseline**, not a final destination count. Counts should continue to become uneven as stronger research reveals more qualifying places in destination-dense areas.
 
-Batch 1 intentionally mixes a scenic coastal region, state park, historic urban district, island cultural landscape, nonprofit/private historic landscape, and federal wildlife refuge. This tests the guide's broader identity instead of simply adding more parks.
+### Phase 2C image rule
 
-Every Batch 1 Wonder includes:
+The rights standard was not relaxed to complete the phase.
 
-- approved editorial classification;
-- public summary and rationale;
-- official or authoritative source;
-- navigation target;
-- verified reusable imagery and attribution;
-- experience tags;
-- Phase 1C-style planning metadata;
-- calendar-style visit windows;
-- RV road/rig guidance;
-- pet guidance;
-- accessibility, photography, and wildlife context where meaningful.
+- all 56 Signature Wonders have verified imagery;
+- the original mixed-tier pilot and Phase 2C Batch 1 have verified imagery;
+- later national expansion entries use the neutral media fallback until an individual reusable asset is verified.
 
-Phase 2 planning data is stored in [`_data/travel_planning_phase2.yml`](_data/travel_planning_phase2.yml) and [`_data/planning_refinements_phase2.yml`](_data/planning_refinements_phase2.yml). The Wonder layout checks these files first and falls back to the original Phase 1C planning data for earlier destinations.
+### Phase 2C planning rule
 
-### Batch 1 validation before Batch 2
+All three production generations can render the validated planning model. Later national expansion records include authoritative planning sources, visit length, and calendar-style visit windows, with current-condition links where stable endpoints are available. Richer RV, pet, accessibility, photography, and wildlife backfill can continue editorially without blocking the completed milestone.
 
-- [ ] confirm all six new cards appear in Explore and on their area pages;
-- [ ] confirm search, Area, Reason to Go, and Experience filtering include the new records correctly;
-- [ ] confirm mixed natural/cultural entries feel coherent together;
-- [ ] confirm image crops and credits render correctly;
-- [ ] confirm Phase 2 planning sections load correctly;
-- [ ] confirm Big Sur current-conditions messaging is prominent enough given fire/road volatility;
-- [ ] confirm RV and pet guidance reads as planning help rather than guaranteed access.
+## National parks coverage
 
-Do not turn Phase 2C into a large national dump. Continue with measured production batches while Phase 2A and Phase 2B advance in parallel.
+All U.S. national parks remain guaranteed eventual coverage, but they are only one subset of the guide and do not define the organizing structure.
+
+See [`NATIONAL_PARKS_COVERAGE.md`](NATIONAL_PARKS_COVERAGE.md).
 
 ## Dedicated branding / design / layout phase
 
-A focused redesign remains deferred until the content model and broader inventory are proven. That phase can address brand identity, About-page storytelling, typography, color system, cards, header, How Places Qualify page, deeper mobile/PWA behavior, and other visual refinements.
+**Status: NEXT.**
 
-## Later phases
+The content structure is now deep enough to redesign against real inventory instead of placeholders.
 
-Potential later development:
+This phase should address:
+
+- brand identity and visual system;
+- homepage composition and hierarchy;
+- primary header / navigation;
+- true mobile-app-style interaction patterns;
+- States & Territories browse experience;
+- Explore / search / filter presentation;
+- Wonder card system at higher content density;
+- destination-detail hierarchy;
+- How Places Qualify page;
+- About-page storytelling and project purpose;
+- typography, color, spacing, iconography, image treatment, and fallback treatment;
+- PWA/installable experience decisions if still desired.
+
+The redesign should preserve the proven data and editorial model rather than forcing content changes for visual symmetry.
+
+## Later functional phases
+
+After the redesign, potential development includes:
 
 - map view;
 - Near Me discovery;
 - route-aware detours;
 - PWA/offline support;
-- visited / want-to-visit state;
-- increased use of first-party photography.
+- visited / want-to-visit state stored locally;
+- deeper rights-verified image backfill;
+- increased use of first-party photography;
+- continuous candidate research and editorial additions.
 
 ## Current task
 
-**Validate Phase 2C Batch 1 on the deployed site while continuing Phase 2A research on the remaining areas. If the batch reads cleanly, classify Wave 3 and prepare Batch 2 without changing any flagged Signature Wonder until its comparison is complete.**
+**Phase 2C is complete. The next major project phase is the dedicated branding / design / layout redesign using the 120-Wonder national baseline as the real design dataset.**
