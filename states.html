@@ -8,10 +8,10 @@ permalink: /states/
   <h1>States & Territories</h1>
   <p>Explore all 56 areas of the United States, from iconic to lesser-known, each with somewhere worth seeing.</p>
   <div class="wg-area-tabs" role="group" aria-label="Filter areas">
-    <button class="active" type="button" data-area-filter="all">All</button>
-    <button type="button" data-area-filter="state">States</button>
-    <button type="button" data-area-filter="territory">Territories</button>
-    <button type="button" data-area-filter="district">D.C.</button>
+    <button class="active" type="button" data-area-filter="all" aria-pressed="true">All</button>
+    <button type="button" data-area-filter="state" aria-pressed="false">States</button>
+    <button type="button" data-area-filter="territory" aria-pressed="false">Territories</button>
+    <button type="button" data-area-filter="district" aria-pressed="false">D.C.</button>
   </div>
 </section>
 <section class="page-shell">
@@ -24,10 +24,10 @@ permalink: /states/
       {% assign default_flag = state.title | replace: ' ', '_' %}
       {% assign flag_name = state.flag_file | default: 'Flag_of_' | append: default_flag | append: '.svg' %}
       {% if state.flag_file %}{% assign flag_name = state.flag_file %}{% endif %}
-      <a class="state-card wg-area-card" data-area-type="{{ area_type }}" href="{{ state.url | relative_url }}">
-        <span class="state-flag-wrap"><span class="state-flag-fallback">{{ site.data.state_codes[state.title] }}</span><img class="state-flag" src="https://commons.wikimedia.org/wiki/Special:FilePath/{{ flag_name | uri_escape }}" alt="Flag of {{ state.title }}" loading="lazy" onerror="this.style.display='none'"></span>
+      {% capture state_path %}/states/{{ state.slug }}/{% endcapture %}
+      <a class="state-card wg-area-card" data-area-type="{{ area_type }}" href="{{ state_path | relative_url }}">
+        <span class="state-flag-wrap"><img class="state-flag" src="https://commons.wikimedia.org/wiki/Special:FilePath/{{ flag_name | uri_escape }}" alt="Flag of {{ state.title }}" loading="lazy"></span>
         <strong>{{ state.title }}</strong>
-        <small>{{ site.data.state_codes[state.title] }}</small>
       </a>
     {% endfor %}
   </div>
