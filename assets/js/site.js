@@ -7,6 +7,12 @@ const cards = [...document.querySelectorAll('#wonderGrid .wonder-card')];
 const empty = document.querySelector('#emptyState');
 const resultCount = document.querySelector('#resultCount');
 
+function setVisible(el, visible){
+  if(!el) return;
+  el.hidden = !visible;
+  el.style.display = visible ? '' : 'none';
+}
+
 function filterCards(){
   if(!cards.length) return;
   const q=(search?.value||'').trim().toLowerCase();
@@ -18,10 +24,10 @@ function filterCards(){
     const searchText=card.dataset.search||'';
     const experiences=(card.dataset.experiences||'').split('|');
     const ok=(!q||searchText.includes(q))&&(!s||card.dataset.state===s)&&(!t||card.dataset.tier===t)&&(!e||experiences.includes(e));
-    card.hidden=!ok;
+    setVisible(card, ok);
     if(ok) shown++;
   });
-  if(empty) empty.hidden=shown!==0;
+  setVisible(empty, shown===0);
   if(resultCount) resultCount.textContent=shown;
 }
 
@@ -44,14 +50,14 @@ if(featuredItems.length){
     const j=Math.floor(Math.random()*(i+1));
     [featuredItems[i],featuredItems[j]]=[featuredItems[j],featuredItems[i]];
   }
-  featuredItems.forEach((item,index)=>{ item.hidden=index>=6; });
+  featuredItems.forEach((item,index)=>setVisible(item,index<6));
 }
 
 const expandStates=document.querySelector('#expandStates');
 const extraStates=[...document.querySelectorAll('.state-card-extra')];
 expandStates?.addEventListener('click',()=>{
   const expanding=expandStates.getAttribute('aria-expanded')!=='true';
-  extraStates.forEach(card=>card.hidden=!expanding);
+  extraStates.forEach(card=>setVisible(card,expanding));
   expandStates.setAttribute('aria-expanded',String(expanding));
   expandStates.textContent=expanding?'Show fewer states':'Explore all 50 states';
 });
@@ -75,3 +81,5 @@ document.addEventListener('click',event=>{
 document.querySelector('.nav-close')?.addEventListener('click',closeSheet);
 document.querySelector('.nav-backdrop')?.addEventListener('click',closeSheet);
 document.addEventListener('keydown',e=>{if(e.key==='Escape')closeSheet();});
+
+filterCards();
