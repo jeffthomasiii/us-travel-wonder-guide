@@ -7,7 +7,8 @@ layout: default
 {% assign image_credit = page.image_credit %}
 {% assign image_source_url = page.image_source_url %}
 {% if tier == 'signature' %}
-  {% assign signature_image = site.data.signature_images[page.state_slug] %}
+  {% assign signature_image = site.data.expanded_signature_images[page.state_slug] %}
+  {% unless signature_image %}{% assign signature_image = site.data.signature_images[page.state_slug] %}{% endunless %}
   {% if signature_image %}
     {% assign image_url = signature_image.image_url %}
     {% assign image_credit = signature_image.image_credit %}
@@ -74,9 +75,9 @@ layout: default
       {% endif %}
       {% if image_source_url %}<a class="image-rights-link" href="{{ image_source_url }}" target="_blank" rel="noopener">Image source / rights</a>{% endif %}
       <dl>
-        <div><dt>State</dt><dd>{{ page.state }}</dd></div>
+        <div><dt>Area</dt><dd>{{ page.state }}</dd></div>
         <div><dt>Region</dt><dd>{{ page.region }}</dd></div>
-        <div><dt>Tier</dt><dd>{{ tier_label }}</dd></div>
+        <div><dt>Reason to go</dt><dd>{{ tier_label }}</dd></div>
         {% if planning and planning.planning_last_reviewed %}<div><dt>Planning reviewed</dt><dd>{{ planning.planning_last_reviewed }}</dd></div>{% endif %}
       </dl>
     </aside>
