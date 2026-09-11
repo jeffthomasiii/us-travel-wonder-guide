@@ -4,7 +4,7 @@ This file is the working roadmap for building the guide without letting content 
 
 ## Guiding principle
 
-The guide is a **U.S. travel discovery reference**, not a quota-driven state list and not a national-park directory. The primary geography now includes the **50 states, Washington, D.C., and the five inhabited U.S. territories**. Each area begins with one **★ Signature Wonder**, then grows only where destinations genuinely justify **◆ Worth Traveling For** and **○ Worth the Detour** status.
+The guide is a **U.S. travel discovery reference**, not a quota-driven state list and not a national-park directory. The primary geography includes the **50 states, Washington, D.C., and the five inhabited U.S. territories**. Each area begins with one **★ Signature Wonder**, then grows only where destinations genuinely justify **◆ Worth Traveling For** and **○ Worth the Detour** status.
 
 See [`EDITORIAL_SCOPE.md`](EDITORIAL_SCOPE.md) for geographic and editorial boundaries.
 
@@ -12,7 +12,7 @@ See [`EDITORIAL_SCOPE.md`](EDITORIAL_SCOPE.md) for geographic and editorial boun
 
 **Status: COMPLETE — 50 / 50 original state Signature Wonders.**
 
-The canonical rights audit remains [`_data/signature_images.yml`](_data/signature_images.yml). The six district/territory Signature Wonders added later are a separate geography-expansion image pass and intentionally keep the neutral fallback until their images are individually rights-verified.
+The canonical rights audit remains [`_data/signature_images.yml`](_data/signature_images.yml).
 
 ## Phase 1B — Mixed-tier pilot
 
@@ -24,9 +24,11 @@ The pilot validated all three reasons to go, mixed-tier state pages, Explore fil
 
 ## Phase 1C — Travel-planning content model
 
-**Status: IN PROGRESS — implemented for all 18 Wonders in the six pilot states.**
+**Status: COMPLETE — model validated on all 18 Wonders in the six pilot states.**
 
-The working schema is documented in [`CONTENT_MODEL.md`](CONTENT_MODEL.md). Current planning guidance includes typical calendar visit windows, visit length, RV access and road/rig considerations, pet access, accessibility, photography, wildlife, official conditions, reservations/permits where useful, planning source, and review date.
+The schema is documented in [`CONTENT_MODEL.md`](CONTENT_MODEL.md). The validated planning guidance includes typical calendar visit windows, visit length, RV access and road/rig considerations, pet access, accessibility, photography, wildlife, official conditions, reservations/permits where useful, planning source, and review date.
+
+Phase 1C established the normal planning-data pattern for future intake. Not every existing Wonder must be backfilled before Phase 2 begins; planning metadata can expand alongside content production.
 
 Design and branding work remains intentionally deferred except for functional usability changes.
 
@@ -34,7 +36,7 @@ Design and branding work remains intentionally deferred except for functional us
 
 **Status: IMPLEMENTED — 56 primary browse areas / 68 Wonders total.**
 
-The guide now includes:
+The guide includes:
 
 - 50 states
 - Washington, D.C.
@@ -59,24 +61,50 @@ The U.S. Minor Outlying Islands are excluded from the ordinary browse model unle
 
 ### Geography-expansion follow-up
 
-- [ ] complete asset-level image-rights research for the six new Signature Wonders;
-- [ ] review the six first-pass Signature selections with the same rigor as the original 50;
-- [ ] add Phase 1C planning metadata for the six new Signature Wonders when the model is finalized;
-- [ ] ensure future Phase 2 expansion covers non-NPS destinations deliberately rather than defaulting to federal park inventory.
+- [x] complete asset-level image-rights research for the six new Signature Wonders;
+- [x] connect the six verified image records to cards, Wonder pages, and homepage hero rotation;
+- [ ] review the six first-pass Signature selections during Phase 2A comparative research;
+- [ ] add planning metadata for the six new Signature Wonders during normal Phase 2 intake/backfill;
+- [x] establish an explicit non-NPS diversity guardrail for Phase 2 research.
+
+Verified imagery for the six expanded areas is stored in [`_data/expanded_signature_images.yml`](_data/expanded_signature_images.yml), using the same asset-level verification standard as the original 50-state manifest.
 
 ## Mobile functional baseline
 
 **Status: IMPLEMENTED.**
 
-Mobile now uses persistent bottom navigation for **Home, Explore, Search, and Areas**, while the hamburger menu holds secondary/reference pages. This is the functional baseline for the current POC; a deeper installed-app/PWA navigation redesign can happen during the dedicated design phase.
+Mobile uses persistent bottom navigation for **Home, Explore, Search, and Areas**, while the hamburger menu holds secondary/reference pages. This is the functional baseline for the current POC; a deeper installed-app/PWA navigation redesign can happen during the dedicated design phase.
 
-## Phase 2 — Expand nationally
+## Phase 2A — Build the national candidate inventory
+
+**Status: IN PROGRESS — 56-area seed inventory created.**
+
+Goal: build the research pool before publishing large amounts of new content. Candidate counts are not quotas and candidate status does not imply inclusion.
+
+The working backlog is [`_data/phase2_candidates.yml`](_data/phase2_candidates.yml). The initial seed pass gives every one of the 56 browse areas non-Signature candidates and deliberately mixes national parks with state/local lands, scenic roads, wildlife areas, cultural places, architecture, islands, regional landscapes, and other destination types.
+
+Phase 2A research should:
+
+1. broaden each area's candidate pool beyond the seed pass;
+2. verify managing/official sources and basic travel viability;
+3. identify obvious omissions, especially important non-NPS destinations;
+4. compare candidates against the area's existing ★ Signature Wonder;
+5. flag candidates as strong, uncertain, duplicate/overlapping, or not a fit;
+6. avoid assigning ◆ / ○ merely to create numerical balance.
+
+All U.S. national parks are guaranteed eventual coverage, but their tier is not predetermined. [`NATIONAL_PARKS_COVERAGE.md`](NATIONAL_PARKS_COVERAGE.md) tracks that obligation separately so national parks do not dominate the general candidate workflow.
+
+## Phase 2B — Editorial classification
 
 **Status: NOT STARTED.**
 
-Grow ◆ and ○ destinations across all 56 browse areas based on merit rather than quotas. Larger or more destination-dense areas may legitimately contain many more entries than others.
+After candidate pools are sufficiently broad, classify destinations as ★, ◆, ○, or do-not-publish. Revisit a Signature selection when comparative research shows that another place makes a stronger case for that area.
 
-Each new Wonder should enter with:
+## Phase 2C — Production content expansion
+
+**Status: NOT STARTED.**
+
+Publish approved destinations with:
 
 - deliberate reason-to-go assignment;
 - concise editorial rationale;
@@ -103,4 +131,4 @@ Potential later development:
 
 ## Current task
 
-**Finish Phase 1C validation, complete the six-area geography-expansion image/planning follow-up, then begin Phase 2 content expansion across the full 56-area scope.**
+**Continue Phase 2A candidate research across all 56 areas, broadening the seed inventory before assigning new ◆ / ○ tiers at scale.**
