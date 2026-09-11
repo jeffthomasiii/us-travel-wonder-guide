@@ -50,11 +50,20 @@ title: Home
 
 <section class="wg-start-panel">
   <div class="page-shell">
-    <p class="wg-kicker">Start exploring</p>
+    <h2 class="wg-start-title">Start Exploring</h2>
     <div class="wg-start-grid">
-      <a href="{{ '/explore/' | relative_url }}"><span>△</span><strong>Explore</strong><small>All destinations</small></a>
-      <a href="{{ '/states/' | relative_url }}"><span>▱</span><strong>Browse</strong><small>States & Territories</small></a>
-      <a href="{{ '/tiers/' | relative_url }}"><span>◎</span><strong>See how</strong><small>Places qualify</small></a>
+      <a href="{{ '/explore/' | relative_url }}">
+        <span class="wg-start-icon" aria-hidden="true"><svg viewBox="0 0 64 48" role="img"><path d="M7 39 23 20l8 9 9-13 17 23H7Z"/><path d="m22 20 4 9 5-1 5 5"/></svg></span>
+        <strong>Explore</strong><small>All Destinations</small>
+      </a>
+      <a href="{{ '/states/' | relative_url }}">
+        <span class="wg-start-icon" aria-hidden="true"><svg viewBox="0 0 64 48" role="img"><path d="M8 10c8 0 14 2 24 8v24c-10-6-16-8-24-8V10Z"/><path d="M56 10c-8 0-14 2-24 8v24c10-6 16-8 24-8V10Z"/><path d="M32 18v24"/></svg></span>
+        <strong>Browse</strong><small>States &amp; Territories</small>
+      </a>
+      <a href="{{ '/tiers/' | relative_url }}">
+        <span class="wg-start-icon" aria-hidden="true"><svg viewBox="0 0 64 48" role="img"><circle cx="32" cy="24" r="17"/><path d="m32 11 5 10-5 16-5-10 5-16Z"/><path d="M32 4v5M32 39v5M12 24h5M47 24h5"/></svg></span>
+        <strong>See How</strong><small>Places Qualify</small>
+      </a>
     </div>
     <p class="wg-start-note">Natural. Cultural. Surprising. All part of the story.</p>
   </div>
