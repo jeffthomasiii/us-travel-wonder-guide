@@ -1,0 +1,294 @@
+# Phase 2C national expansion planning metadata.
+# Stable planning guidance only; travelers should use the linked source for current operations, closures, reservations, and restrictions.
+
+kenai-fjords-national-park:
+  best_seasons: [summer]
+  visit_length: "1–3 days"
+  planning_source_url: https://www.nps.gov/kefj/planyourvisit/index.htm
+  conditions_url: https://www.nps.gov/kefj/planyourvisit/conditions.htm
+  planning_last_reviewed: 2026-09-11
+
+antelope-canyon:
+  best_seasons: [spring, fall]
+  visit_length: "2–4 hours"
+  planning_source_url: https://navajonationparks.org/tribal-parks/antelope-canyon/
+  planning_last_reviewed: 2026-09-11
+
+hot-springs-national-park:
+  best_seasons: [spring, fall]
+  visit_length: "1–2 days"
+  planning_source_url: https://www.nps.gov/hosp/planyourvisit/index.htm
+  conditions_url: https://www.nps.gov/hosp/planyourvisit/conditions.htm
+  planning_last_reviewed: 2026-09-11
+
+garden-of-the-gods:
+  best_seasons: [spring, fall]
+  visit_length: "half day to full day"
+  planning_source_url: https://coloradosprings.gov/garden-of-the-gods
+  planning_last_reviewed: 2026-09-11
+
+mystic-seaport-museum:
+  best_seasons: [spring, summer, fall]
+  visit_length: "half day to full day"
+  planning_source_url: https://mysticseaport.org/
+  planning_last_reviewed: 2026-09-11
+
+haleakala-national-park:
+  best_seasons: [spring, fall]
+  visit_length: "full day to 2 days"
+  planning_source_url: https://www.nps.gov/hale/planyourvisit/index.htm
+  conditions_url: https://www.nps.gov/hale/planyourvisit/conditions.htm
+  planning_last_reviewed: 2026-09-11
+
+craters-of-the-moon-national-monument-and-preserve:
+  best_seasons: [late spring, summer, fall]
+  visit_length: "half day to full day"
+  planning_source_url: https://www.nps.gov/crmo/planyourvisit/index.htm
+  conditions_url: https://www.nps.gov/crmo/planyourvisit/conditions.htm
+  planning_last_reviewed: 2026-09-11
+
+cahokia-mounds-state-historic-site:
+  best_seasons: [spring, fall]
+  visit_length: "2–4 hours"
+  planning_source_url: https://cahokiamounds.org/
+  planning_last_reviewed: 2026-09-11
+
+turkey-run-state-park:
+  best_seasons: [spring, fall]
+  visit_length: "full day to 2 days"
+  planning_source_url: https://www.in.gov/dnr/state-parks/parks-lakes/turkey-run-state-park/
+  planning_last_reviewed: 2026-09-11
+
+effigy-mounds-national-monument:
+  best_seasons: [late spring, summer, fall]
+  visit_length: "2–5 hours"
+  planning_source_url: https://www.nps.gov/efmo/planyourvisit/index.htm
+  conditions_url: https://www.nps.gov/efmo/planyourvisit/conditions.htm
+  planning_last_reviewed: 2026-09-11
+
+tallgrass-prairie-national-preserve:
+  best_seasons: [spring, fall]
+  visit_length: "half day to full day"
+  planning_source_url: https://www.nps.gov/tapr/planyourvisit/index.htm
+  conditions_url: https://www.nps.gov/tapr/planyourvisit/conditions.htm
+  planning_last_reviewed: 2026-09-11
+
+barataria-preserve:
+  best_seasons: [fall, winter, spring]
+  visit_length: "2–5 hours"
+  planning_source_url: https://www.nps.gov/jela/planyourvisit/barataria-preserve.htm
+  planning_last_reviewed: 2026-09-11
+
+blackwater-national-wildlife-refuge:
+  best_seasons: [spring, fall]
+  visit_length: "2–5 hours"
+  planning_source_url: https://www.fws.gov/refuge/blackwater/visit-us
+  conditions_url: https://www.fws.gov/refuge/blackwater
+  planning_last_reviewed: 2026-09-11
+
+mount-greylock-state-reservation:
+  best_seasons: [late spring, summer, fall]
+  visit_length: "half day to full day"
+  planning_source_url: https://www.mass.gov/locations/mount-greylock-state-reservation
+  planning_last_reviewed: 2026-09-11
+
+voyageurs-national-park:
+  best_seasons: [summer, early fall]
+  visit_length: "2–4 days"
+  planning_source_url: https://www.nps.gov/voya/planyourvisit/index.htm
+  conditions_url: https://www.nps.gov/voya/planyourvisit/conditions.htm
+  planning_last_reviewed: 2026-09-11
+
+natchez-trace-parkway:
+  best_seasons: [fall, winter, spring]
+  visit_length: "1–3 days"
+  planning_source_url: https://www.nps.gov/natr/planyourvisit/index.htm
+  conditions_url: https://www.nps.gov/natr/planyourvisit/conditions.htm
+  planning_last_reviewed: 2026-09-11
+
+ha-ha-tonka-state-park:
+  best_seasons: [spring, fall]
+  visit_length: "half day to full day"
+  planning_source_url: https://mostateparks.com/park/ha-ha-tonka-state-park
+  planning_last_reviewed: 2026-09-11
+
+beartooth-highway:
+  best_seasons: [summer]
+  visit_length: "half day to full day"
+  planning_source_url: https://www.mdt.mt.gov/travinfo/beartooth/
+  planning_last_reviewed: 2026-09-11
+
+toadstool-geologic-park:
+  best_seasons: [spring, fall]
+  visit_length: "2–4 hours"
+  planning_source_url: https://www.fs.usda.gov/recarea/nebraska/recarea/?recid=10616
+  planning_last_reviewed: 2026-09-11
+
+red-rock-canyon-national-conservation-area:
+  best_seasons: [fall, winter, spring]
+  visit_length: "half day to full day"
+  planning_source_url: https://www.blm.gov/programs/national-conservation-lands/nevada/red-rock-canyon
+  planning_last_reviewed: 2026-09-11
+
+kancamagus-highway:
+  best_seasons: [summer, fall]
+  visit_length: "half day to full day"
+  planning_source_url: https://www.fs.usda.gov/recarea/whitemountain/recarea/?recid=74405
+  planning_last_reviewed: 2026-09-11
+
+cape-may:
+  best_seasons: [late spring, summer, fall]
+  visit_length: "1–3 days"
+  planning_source_url: https://www.capemaycity.com/
+  planning_last_reviewed: 2026-09-11
+
+carlsbad-caverns-national-park:
+  best_seasons: [spring, fall]
+  visit_length: "full day to 2 days"
+  planning_source_url: https://www.nps.gov/cave/planyourvisit/index.htm
+  conditions_url: https://www.nps.gov/cave/planyourvisit/conditions.htm
+  planning_last_reviewed: 2026-09-11
+
+niagara-falls-state-park:
+  best_seasons: [late spring, summer, fall]
+  visit_length: "full day to 2 days"
+  planning_source_url: https://www.niagarafallsstatepark.com/
+  planning_last_reviewed: 2026-09-11
+
+cape-hatteras-national-seashore:
+  best_seasons: [spring, early summer, fall]
+  visit_length: "2–4 days"
+  planning_source_url: https://www.nps.gov/caha/planyourvisit/index.htm
+  conditions_url: https://www.nps.gov/caha/planyourvisit/conditions.htm
+  planning_last_reviewed: 2026-09-11
+
+international-peace-garden:
+  best_seasons: [late spring, summer, early fall]
+  visit_length: "half day to full day"
+  planning_source_url: https://peacegarden.com/
+  planning_last_reviewed: 2026-09-11
+
+serpent-mound:
+  best_seasons: [spring, fall]
+  visit_length: "1–3 hours"
+  planning_source_url: https://www.ohiohistory.org/visit/browse-historical-sites/serpent-mound/
+  planning_last_reviewed: 2026-09-11
+
+columbia-river-gorge-national-scenic-area:
+  best_seasons: [spring, summer, fall]
+  visit_length: "1–3 days"
+  planning_source_url: https://www.fs.usda.gov/crgnsa
+  planning_last_reviewed: 2026-09-11
+
+fallingwater:
+  best_seasons: [spring, summer, fall]
+  visit_length: "half day to full day"
+  planning_source_url: https://fallingwater.org/visit/
+  planning_last_reviewed: 2026-09-11
+
+newport-cliff-walk:
+  best_seasons: [late spring, summer, early fall]
+  visit_length: "2–5 hours"
+  planning_source_url: https://www.cityofnewport.com/en-us/city-hall/departments/public-services/cliff-walk
+  planning_last_reviewed: 2026-09-11
+
+charleston-historic-district:
+  best_seasons: [spring, fall]
+  visit_length: "1–3 days"
+  planning_source_url: https://www.nps.gov/places/charleston-historic-district.htm
+  planning_last_reviewed: 2026-09-11
+
+custer-state-park:
+  best_seasons: [late spring, summer, fall]
+  visit_length: "2–4 days"
+  planning_source_url: https://gfp.sd.gov/parks/detail/custer-state-park/
+  planning_last_reviewed: 2026-09-11
+
+fall-creek-falls-state-park:
+  best_seasons: [spring, fall]
+  visit_length: "full day to 2 days"
+  planning_source_url: https://tnstateparks.com/parks/fall-creek-falls
+  planning_last_reviewed: 2026-09-11
+
+palo-duro-canyon-state-park:
+  best_seasons: [spring, fall]
+  visit_length: "full day to 2 days"
+  planning_source_url: https://tpwd.texas.gov/state-parks/palo-duro-canyon
+  planning_last_reviewed: 2026-09-11
+
+quechee-gorge:
+  best_seasons: [late spring, summer, fall]
+  visit_length: "1–3 hours"
+  planning_source_url: https://vtstateparks.com/quechee.html
+  planning_last_reviewed: 2026-09-11
+
+natural-bridge-state-park:
+  best_seasons: [spring, fall]
+  visit_length: "half day to full day"
+  planning_source_url: https://www.dcr.virginia.gov/state-parks/natural-bridge
+  planning_last_reviewed: 2026-09-11
+
+mount-rainier-national-park:
+  best_seasons: [summer, early fall]
+  visit_length: "2–4 days"
+  planning_source_url: https://www.nps.gov/mora/planyourvisit/index.htm
+  conditions_url: https://www.nps.gov/mora/planyourvisit/conditions.htm
+  planning_last_reviewed: 2026-09-11
+
+seneca-rocks:
+  best_seasons: [spring, summer, fall]
+  visit_length: "half day to full day"
+  planning_source_url: https://www.fs.usda.gov/recarea/mnf/recarea/?recid=7051
+  planning_last_reviewed: 2026-09-11
+
+devils-lake-state-park:
+  best_seasons: [late spring, summer, fall]
+  visit_length: "full day to 2 days"
+  planning_source_url: https://dnr.wisconsin.gov/topic/parks/devilslake
+  planning_last_reviewed: 2026-09-11
+
+grand-teton-national-park:
+  best_seasons: [summer, early fall]
+  visit_length: "2–4 days"
+  planning_source_url: https://www.nps.gov/grte/planyourvisit/index.htm
+  conditions_url: https://www.nps.gov/grte/planyourvisit/conditions.htm
+  planning_last_reviewed: 2026-09-11
+
+rock-creek-park:
+  best_seasons: [spring, fall]
+  visit_length: "2–5 hours"
+  planning_source_url: https://www.nps.gov/rocr/planyourvisit/index.htm
+  conditions_url: https://www.nps.gov/rocr/planyourvisit/conditions.htm
+  planning_last_reviewed: 2026-09-11
+
+old-san-juan:
+  best_seasons: [winter, spring]
+  visit_length: "1–3 days"
+  planning_source_url: https://www.nps.gov/saju/planyourvisit/index.htm
+  planning_last_reviewed: 2026-09-11
+
+buck-island-reef-national-monument:
+  best_seasons: [winter, spring]
+  visit_length: "half day to full day"
+  planning_source_url: https://www.nps.gov/buis/planyourvisit/index.htm
+  conditions_url: https://www.nps.gov/buis/planyourvisit/conditions.htm
+  planning_last_reviewed: 2026-09-11
+
+war-in-the-pacific-national-historical-park:
+  best_seasons: [winter, spring]
+  visit_length: "half day to full day"
+  planning_source_url: https://www.nps.gov/wapa/planyourvisit/index.htm
+  conditions_url: https://www.nps.gov/wapa/planyourvisit/conditions.htm
+  planning_last_reviewed: 2026-09-11
+
+managaha-island:
+  best_seasons: [winter, spring]
+  visit_length: "half day to full day"
+  planning_source_url: https://www.mymarianas.com/
+  planning_last_reviewed: 2026-09-11
+
+ofu-beach:
+  best_seasons: [winter, spring, summer]
+  visit_length: "1–3 days"
+  planning_source_url: https://www.nps.gov/npsa/planyourvisit/ofu.htm
+  planning_last_reviewed: 2026-09-11
