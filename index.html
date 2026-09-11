@@ -22,7 +22,8 @@ title: Home
     {% assign hero_credit = wonder.image_credit %}
     {% assign hero_source = wonder.image_source_url %}
     {% if wonder.tier == 'signature' %}
-      {% assign signature_image = site.data.signature_images[wonder.state_slug] %}
+      {% assign signature_image = site.data.expanded_signature_images[wonder.state_slug] %}
+      {% unless signature_image %}{% assign signature_image = site.data.signature_images[wonder.state_slug] %}{% endunless %}
       {% if signature_image %}
         {% assign hero_image = signature_image.image_url %}
         {% assign hero_credit = signature_image.image_credit %}
