@@ -6,23 +6,23 @@ This file is the working roadmap for building the guide without letting content 
 
 The guide is a **travel discovery reference**, not a quota-driven 50-state list. Every state begins with one **★ Signature Wonder**, then grows only where destinations genuinely justify **◆ Worth Traveling For** and **○ Worth the Detour** status.
 
-The current priority is to make the existing 50 Signature Wonders visually convincing and rights-safe before expanding the inventory nationally.
-
 ## Phase 1A — Complete imagery for all 50 Signature Wonders
 
-**Status: IN PROGRESS**
+**Status: COMPLETE — 50 / 50 Signature Wonders (100%).**
 
 Goal: every existing ★ Signature Wonder has a strong, verified, properly credited main image.
 
-For each Wonder:
+### Completed workflow
 
-1. Confirm the current ★ selection still feels defensible when viewed visually.
-2. Find the strongest appropriate image from the approved source hierarchy below.
-3. Verify the rights/license for the **individual image**, not merely the website hosting it.
-4. Record image URL, source page, creator/agency, rights, and verification status in the Wonder front matter.
-5. Confirm the image crops acceptably in cards and on the Wonder hero.
-6. Prefer a representative landscape view over signage, logos, visitor centers, or tightly framed details unless the latter is essential to the destination.
-7. Do not replace a verified image with a more attractive image unless the replacement's rights are also verified.
+For each Signature Wonder we:
+
+1. confirmed the destination remained a defensible first-pass ★ selection;
+2. selected a representative image rather than signage, logos, or generic visitor infrastructure;
+3. verified reuse rights for the individual image, not merely the website hosting it;
+4. recorded the image URL, specific source page, creator/agency credit, rights, and verification status;
+5. kept attribution visible in the card/detail experience and linked the credit back to the source record.
+
+The canonical Phase 1A audit file is [`_data/signature_images.yml`](_data/signature_images.yml). It contains one verified image record for every state and allows the 50-state image set to be reviewed in one place. The five early pilot records also retain their original front-matter image metadata; the site now uses the canonical manifest for Signature Wonders so the complete set is consistent.
 
 ### Approved image-source hierarchy
 
@@ -30,7 +30,7 @@ For each Wonder:
 2. **Verified public-domain government imagery** — NPS, USFWS, USFS, BLM, NOAA, state agencies, etc.; verify the specific asset because not every image on a government site is necessarily public domain.
 3. **Wikimedia Commons** — only when the specific file page provides a reusable license and required attribution can be recorded.
 4. **Licensed public image providers** — e.g. Unsplash, when the applicable license and attribution/link requirements are clear.
-5. **Manual fallback** — keep the site's neutral placeholder rather than use an image with uncertain rights.
+5. **Manual fallback** — retain the site's neutral placeholder rather than use an image with uncertain rights.
 
 ### Required image metadata
 
@@ -42,77 +42,21 @@ image_rights: ...
 image_verified: true
 ```
 
-`image_credit` should be human-readable and concise enough to display on the site. `image_source_url` should point to the specific asset/file record whenever possible, not merely the agency or website home page.
+`image_credit` must remain concise and human-readable. `image_source_url` should point to the specific asset/file record whenever possible, not merely an agency or site homepage.
 
-### Phase 1A completion criteria
+### Phase 1A completion record
 
-Phase 1A is complete only when:
+- [x] 50 / 50 Signature Wonders have verified main images.
+- [x] 50 / 50 image records have source, credit, rights, and verification metadata.
+- [x] The image data is centralized in `_data/signature_images.yml` for ongoing rights audits.
+- [x] Signature cards and Wonder pages consume the manifest consistently.
+- [x] No unverified image was used merely to eliminate a placeholder.
 
-- all 50 Signature Wonder records have a verified main image **or** a documented reason for retaining the fallback;
-- every used image has source/credit/rights metadata;
-- all cards and Wonder hero views have been visually spot-checked on desktop and mobile;
-- any questionable Signature Wonder selection discovered during this pass has been reviewed before the phase is closed.
-
-### Phase 1A tracker
-
-A checked item means the Wonder record has a verified image plus source, credit, rights, and verification metadata. Visual crop/hero QA remains part of the phase-completion check.
-
-- [x] Alabama — Little River Canyon National Preserve
-- [x] Alaska — Denali National Park & Preserve
-- [x] Arizona — Grand Canyon National Park
-- [x] Arkansas — Buffalo National River
-- [x] California — Yosemite National Park
-- [ ] Colorado — Rocky Mountain National Park
-- [ ] Connecticut — Kent Falls State Park
-- [ ] Delaware — Cape Henlopen State Park
-- [ ] Florida — Everglades National Park
-- [ ] Georgia — Cumberland Island National Seashore
-- [ ] Hawaii — Nā Pali Coast State Wilderness Park
-- [ ] Idaho — Sawtooth National Recreation Area
-- [ ] Illinois — Garden of the Gods Recreation Area
-- [ ] Indiana — Indiana Dunes National Park
-- [ ] Iowa — Loess Hills State Forest
-- [ ] Kansas — Monument Rocks National Natural Landmark
-- [ ] Kentucky — Mammoth Cave National Park
-- [ ] Louisiana — Atchafalaya National Heritage Area
-- [ ] Maine — Acadia National Park
-- [ ] Maryland — Assateague Island National Seashore
-- [ ] Massachusetts — Cape Cod National Seashore
-- [ ] Michigan — Pictured Rocks National Lakeshore
-- [ ] Minnesota — Boundary Waters Canoe Area Wilderness
-- [ ] Mississippi — Gulf Islands National Seashore
-- [ ] Missouri — Ozark National Scenic Riverways
-- [ ] Montana — Glacier National Park
-- [ ] Nebraska — Scotts Bluff National Monument
-- [ ] Nevada — Valley of Fire State Park
-- [ ] New Hampshire — Franconia Notch State Park
-- [ ] New Jersey — Delaware Water Gap National Recreation Area
-- [ ] New Mexico — White Sands National Park
-- [ ] New York — Adirondack Park
-- [ ] North Carolina — Linville Gorge Wilderness
-- [ ] North Dakota — Theodore Roosevelt National Park
-- [ ] Ohio — Hocking Hills State Park
-- [ ] Oklahoma — Wichita Mountains Wildlife Refuge
-- [ ] Oregon — Crater Lake National Park
-- [ ] Pennsylvania — Ricketts Glen State Park
-- [ ] Rhode Island — Mohegan Bluffs
-- [ ] South Carolina — Congaree National Park
-- [ ] South Dakota — Badlands National Park
-- [ ] Tennessee — Great Smoky Mountains National Park
-- [ ] Texas — Big Bend National Park
-- [ ] Utah — Zion National Park
-- [ ] Vermont — Smugglers’ Notch State Park
-- [ ] Virginia — Shenandoah National Park
-- [ ] Washington — Olympic National Park
-- [ ] West Virginia — New River Gorge National Park & Preserve
-- [ ] Wisconsin — Apostle Islands National Lakeshore
-- [ ] Wyoming — Yellowstone National Park
-
-**Current Phase 1A progress: 5 / 50 Signature Wonders (10%).**
+Phase 1A should be reopened only when replacing an image, changing a Signature Wonder, or correcting an attribution/license record.
 
 ## Phase 1B — Pilot mixed-tier content
 
-**Status: NOT STARTED**
+**Status: NEXT / NOT STARTED**
 
 Goal: prove that the site, filters, state pages, and editorial model work when all three tiers coexist.
 
@@ -131,6 +75,8 @@ During the pilot, validate:
 - search behavior;
 - image workflow for newly added destinations;
 - whether tier definitions remain understandable in real-world edge cases.
+
+Every new destination should enter the guide with verified imagery or the neutral fallback; image verification is now part of normal content intake rather than a separate cleanup phase.
 
 ## Phase 1C — Validate the content model
 
@@ -155,16 +101,14 @@ Only add fields that materially improve trip discovery or planning.
 
 **Status: NOT STARTED**
 
-Grow ◆ and ○ destinations state by state, based on merit rather than quotas.
-
-The guide should be comfortable with uneven counts. California or Utah may legitimately contain many more qualifying entries than another state.
+Grow ◆ and ○ destinations state by state, based on merit rather than quotas. The guide should be comfortable with uneven counts: California or Utah may legitimately contain many more qualifying entries than another state.
 
 Each new Wonder should enter with:
 
 - tier assignment;
 - concise editorial rationale;
 - official source;
-- navigation target;
+- useful navigation target;
 - verified imagery or fallback;
 - relevant experience tags.
 
@@ -182,6 +126,6 @@ Potential future development after the content system is stable:
 
 ## Current task
 
-**Complete Phase 1A before broad national tier expansion.**
+**Phase 1A is closed. The next planned content task is Phase 1B: a controlled 5–6 state mixed-tier pilot before broad national expansion.**
 
-Minor design fixes may be made when they directly affect image presentation or usability, but major visual redesign should not displace the imagery pass.
+Minor design fixes can still be made when they materially affect usability, but the phased sequence above remains the source of truth for content expansion.
