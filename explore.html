@@ -20,14 +20,24 @@ permalink: /explore/
   <div id="filters" class="filter-panel wg-filter-panel" aria-label="Wonder filters">
     <button id="mobileFiltersToggle" class="mobile-filter-toggle" type="button" aria-expanded="false" aria-controls="advancedFilters">More filters</button>
     <div id="advancedFilters" class="advanced-filter-controls">
-      <label class="filter-control"><span>Area</span><select id="stateFilter" aria-label="Filter by state or territory"><option value="">All areas</option>{% assign states = site.wonders | map: 'state' | uniq | sort %}{% for state in states %}<option>{{ state }}</option>{% endfor %}</select></label>
+      <label class="filter-control"><span>State or territory</span><select id="stateFilter" aria-label="Filter by state or territory"><option value="">All areas</option>{% assign states = site.wonders | map: 'state' | uniq | sort %}{% for state in states %}<option>{{ state }}</option>{% endfor %}</select></label>
       <label class="filter-control"><span>Reason to go</span><select id="tierFilter" aria-label="Filter by reason to go"><option value="">All reasons</option><option value="signature">★ Signature Wonder</option><option value="travel">◆ Worth Traveling For</option><option value="detour">○ Worth the Detour</option></select></label>
       <label class="filter-control"><span>Experience</span><select id="experienceFilter" aria-label="Filter by experience"><option value="">All experiences</option><option value="coast">Coast</option><option value="desert">Desert</option><option value="forest">Forest</option><option value="hiking">Hiking</option><option value="landscape">Landscape</option><option value="mountains">Mountains</option><option value="photography">Photography</option><option value="scenic drive">Scenic Drive</option><option value="waterfalls">Waterfalls</option><option value="wildlife">Wildlife</option></select></label>
-      <button id="clearFilters" class="clear-filter filter-control" type="button">Clear</button>
+      <button id="clearFilters" class="clear-filter filter-control" type="button">Clear filters</button>
     </div>
   </div>
 
-  <div class="wg-results-head"><div><strong id="resultCount">{{ site.wonders | size }}</strong> Wonders</div><span>Real places, from every part of the U.S.</span></div>
+  <div class="wg-results-toolbar">
+    <div class="wg-results-count"><strong id="resultCount">{{ site.wonders | size }}</strong> Wonders</div>
+    <div class="wg-sort-tools">
+      <label for="sortSelect">Sort by:</label>
+      <select id="sortSelect" aria-label="Sort results"><option value="featured">Featured</option><option value="az">A–Z</option><option value="area">Area</option></select>
+      <div class="wg-view-toggle" role="group" aria-label="Result view">
+        <button id="gridViewBtn" class="active" type="button" aria-pressed="true" aria-label="Grid view">▦</button>
+        <button id="listViewBtn" type="button" aria-pressed="false" aria-label="List view">☷</button>
+      </div>
+    </div>
+  </div>
   <div class="cards wg-explore-grid" id="wonderGrid">{% assign wonders = site.wonders | sort: "state" %}{% for wonder in wonders %}{% include wonder_card.html wonder=wonder %}{% endfor %}</div>
   <p id="emptyState" class="empty" hidden>No wonders match those filters yet.</p>
 </section>
