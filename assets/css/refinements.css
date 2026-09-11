@@ -12,6 +12,19 @@
 .hero-credit{display:inline-block;margin-top:24px;color:rgba(255,255,255,.82);font-size:.68rem;text-decoration:none}
 .hero-credit:hover{text-decoration:underline}
 
+.home-discovery-band{background:#fff;border-top:1px solid var(--line);border-bottom:1px solid var(--line)}
+.home-discovery-grid{display:grid;grid-template-columns:1.18fr .82fr;gap:18px;padding-top:54px;padding-bottom:54px}
+.qualify-summary,.guide-summary{border:1px solid var(--line);border-radius:18px;padding:28px;background:#fafbf8}
+.qualify-summary h2,.guide-summary h2{font:700 clamp(2rem,4vw,3.2rem)/.98 Georgia,"Times New Roman",serif;letter-spacing:-.04em;margin:.15em 0 .55em}
+.qualify-rows{display:grid;gap:9px;margin:18px 0 22px}
+.qualify-rows>div{display:grid;grid-template-columns:38px 1fr;gap:12px;align-items:start}
+.qualify-rows .tier-icon{margin:0;width:36px;height:36px;border-radius:9px}
+.qualify-rows p{margin:0;color:var(--muted);font-size:.85rem;line-height:1.4}
+.qualify-rows strong{color:var(--ink)}
+.guide-summary{background:var(--accent-dark);color:#fff}
+.guide-summary .eyebrow{color:#f0c9ae}.guide-summary p:not(.eyebrow){color:#d8e1dc}
+.guide-summary-actions{display:flex;gap:10px;flex-wrap:wrap;margin-top:22px}.guide-summary .secondary-button{background:transparent;border-color:rgba(255,255,255,.35);color:#fff}
+
 .action-primary-row{display:grid;grid-template-columns:1fr 1fr;gap:10px;margin-bottom:12px}
 .action-primary-row .primary,.official-button{width:100%;min-height:46px;display:inline-flex;align-items:center;justify-content:center;border-radius:10px;padding:12px 14px;font-weight:800;text-decoration:none;border:1px solid var(--accent);cursor:pointer}
 .official-button{background:#fff;color:var(--accent)}
@@ -24,33 +37,38 @@
 .planning-note{font-size:.78rem;color:var(--muted);margin-top:-2px}
 .travel-facts dd{text-align:right;max-width:58%}
 
-.compact-state-grid{grid-template-columns:repeat(5,minmax(0,1fr));gap:10px}
-.compact-state-card{padding:13px 14px;grid-template-columns:26px 38px minmax(0,1fr) auto;gap:9px;border-radius:12px;min-height:82px}
-.state-card-mark{width:34px;height:34px;border-radius:9px;background:var(--soft);display:grid;place-items:center;font-size:.7rem;font-weight:900;letter-spacing:.05em;color:var(--accent)}
-.compact-state-card h2{font-size:1.05rem;line-height:1.05}
-.compact-state-card p{font-size:.68rem;line-height:1.25;margin-top:4px}
+.compact-state-grid{grid-template-columns:repeat(4,minmax(0,1fr));gap:12px}
+.compact-state-card{padding:15px 16px;grid-template-columns:26px 54px minmax(0,1fr) auto;gap:11px;border-radius:12px;min-height:92px}
+.state-card-mark{width:50px;height:38px;border-radius:7px;background:var(--soft);display:grid;place-items:center;font-size:.7rem;font-weight:900;letter-spacing:.05em;color:var(--accent);overflow:hidden;position:relative}
+.state-flag{width:100%;height:100%;object-fit:cover;display:block;position:relative;z-index:1}
+.state-flag-fallback{position:absolute;inset:0;display:grid;place-items:center;z-index:0}
+.compact-state-card h2{font-size:1.12rem;line-height:1.05}
+.compact-state-card p{font-size:.72rem;line-height:1.25;margin-top:5px}
 .compact-state-card .state-card-number{align-self:start;padding-top:3px}
 .compact-state-card .state-card-arrow{font-size:1rem}
 
-@media(max-width:1100px){
-  .compact-state-grid{grid-template-columns:repeat(4,minmax(0,1fr))}
+.advanced-filter-controls{display:contents}.mobile-filter-toggle{display:none}
+
+@media(max-width:1050px){
+  .compact-state-grid{grid-template-columns:repeat(3,minmax(0,1fr))}
   .site-header nav{gap:18px}
 }
 
 @media(max-width:850px){
-  .compact-state-grid{grid-template-columns:repeat(3,minmax(0,1fr))}
+  .compact-state-grid{grid-template-columns:repeat(2,minmax(0,1fr))}
   .site-header nav a{font-size:.76rem}
+  .home-discovery-grid{grid-template-columns:1fr}
 }
 
 @media(max-width:700px){
   .landing-hero-photo{background-position:62% center}
   .action-primary-row{grid-template-columns:1fr}
-  .compact-state-grid{grid-template-columns:repeat(2,minmax(0,1fr))}
-  .compact-state-card{grid-template-columns:24px 36px minmax(0,1fr) auto}
+  .compact-state-grid{grid-template-columns:1fr}
+  .compact-state-card{grid-template-columns:24px 50px minmax(0,1fr) auto}
   .site-header nav a:nth-child(3){display:none}
+  .home-discovery-grid{padding-top:40px;padding-bottom:40px}.qualify-summary,.guide-summary{padding:22px}
 }
 
 @media(max-width:460px){
-  .compact-state-grid{grid-template-columns:1fr}
-  .compact-state-card{min-height:70px}
+  .compact-state-card{min-height:76px}
 }
