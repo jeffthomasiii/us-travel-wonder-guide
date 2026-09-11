@@ -7,21 +7,22 @@ permalink: /states/
   <div class="page-shell">
     <p class="eyebrow">Browse by state</p>
     <h1>Fifty states. Fifty starting points.</h1>
-    <p class="lede">Each state begins with one Signature Wonder. Open a state to see what belongs there now and what can be added next.</p>
+    <p class="lede">Every state begins with a Signature Wonder and grows from there. Open any state to explore the places currently in the guide.</p>
   </div>
 </section>
 <section class="page-shell">
-  <div class="states-card-grid" id="statesGrid">
+  <div class="states-card-grid compact-state-grid" id="statesGrid">
     {% assign states = site.states | sort: "title" %}
     {% for state in states %}
-      {% assign state_wonders = site.wonders | where: "state", state.title %}
-      {% assign signature = state_wonders | first %}
-      <a class="state-card{% if forloop.index > 9 %} state-card-extra{% endif %}" href="{{ state.url | relative_url }}" {% if forloop.index > 9 %}hidden{% endif %}>
+      <a class="state-card compact-state-card" href="{{ state.url | relative_url }}">
         <span class="state-card-number">{{ forloop.index | prepend: '0' | slice: -2, 2 }}</span>
-        <div><h2>{{ state.title }}</h2>{% if signature %}<p>{{ signature.title }}</p>{% endif %}</div>
+        <span class="state-card-mark">{{ site.data.state_codes[state.title] }}</span>
+        <div class="state-card-copy">
+          <h2>{{ state.title }}</h2>
+          <p>Explore locations in {{ state.title }}</p>
+        </div>
         <span class="state-card-arrow">→</span>
       </a>
     {% endfor %}
   </div>
-  <div class="expand-wrap"><button id="expandStates" class="secondary-button" type="button" aria-expanded="false">Explore all 50 states</button></div>
 </section>
