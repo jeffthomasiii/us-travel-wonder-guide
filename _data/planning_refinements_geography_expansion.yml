@@ -1,0 +1,19 @@
+# Typical editorial visit windows for the six geography-expansion Signature Wonders.
+
+national-mall-and-memorial-parks:
+  best_visit_windows: ["March 15 – June 15", "September 15 – November 15"]
+
+el-yunque-national-forest:
+  best_visit_windows: ["December 1 – April 30"]
+
+virgin-islands-national-park:
+  best_visit_windows: ["December 1 – April 30"]
+
+ritidian-point:
+  best_visit_windows: ["January 1 – May 31"]
+
+the-grotto:
+  best_visit_windows: ["January 1 – May 31"]
+
+national-park-of-american-samoa:
+  best_visit_windows: ["May 1 – October 15"]
