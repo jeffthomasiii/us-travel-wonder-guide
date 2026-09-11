@@ -1,0 +1,86 @@
+# Phase 2 travel-planning metadata.
+# Uses the validated Phase 1C model; rapidly changing operational details should be checked at linked sources.
+
+big-sur-coast:
+  best_seasons: [spring, fall]
+  visit_length: "1–3 days"
+  rv_access: limited
+  rv_notes: "Highway 1 is paved but narrow, winding, cliffside, and vulnerable to closures from fire, slides, storms, and road work. Larger RVs and trailers should verify the full route and intended turnarounds before entering the corridor."
+  dog_access: limited
+  dog_notes: "Pet rules vary across Big Sur's different state parks, beaches, trails, campgrounds, and public lands; travelers with pets should check the specific stops they plan to use."
+  accessibility: "Accessibility varies widely by stop. Some roadside overlooks, developed park areas, restrooms, and viewpoints are relatively easy to reach, while many trails, beaches, and bluff routes use steep or natural surfaces."
+  photography: "Sea cliffs, Bixby Bridge, fog, redwoods, beaches, coves, and changing Pacific light make sunrise, sunset, and clearing-storm conditions especially strong."
+  wildlife: [California condor, sea otter, gray whale, seabirds]
+  conditions_url: https://www.parks.ca.gov/?page_id=29170
+  planning_source_url: https://www.visitcalifornia.com/places-to-visit/big-sur/
+  planning_last_reviewed: 2026-09-11
+
+myakka-river-state-park:
+  best_seasons: [fall, winter, spring]
+  visit_length: "half day to 2 days"
+  rv_access: good
+  rv_notes: "Three developed campgrounds provide RV sites with electrical service, and Palmetto Ridge includes sewer hookups. Main park access is straightforward, though backroads and natural-surface routes can be wet or rough."
+  dog_access: good
+  dog_notes: "Domestic pets are welcome on trails and in developed campgrounds when leashed or confined, but they are not allowed in buildings, cabins, primitive campsites, or on the Canopy Walkway."
+  accessibility: "Accessible amenities include parking, restrooms, picnic facilities, interpretive exhibits, selected campsites, and other developed facilities; trail conditions vary with terrain and flooding."
+  photography: "Prairie, palm hammocks, tea-colored river water, wetlands, birds, alligators, and broad skies make wildlife and landscape photography strongest in cooler morning and evening light."
+  wildlife: [American alligator, osprey, limpkins, turtles, wading birds]
+  conditions_url: https://www.floridastateparks.org/parks-and-trails/myakka-river-state-park
+  reservation_url: https://reserve.floridastateparks.org/Web/
+  planning_source_url: https://www.floridastateparks.org/parks-and-trails/myakka-river-state-park/experiences-amenities
+  planning_last_reviewed: 2026-09-11
+
+savannah-historic-landmark-district:
+  best_seasons: [spring, fall]
+  visit_length: "1–3 days"
+  rv_access: limited
+  rv_notes: "The historic core is best explored without a large RV. Streets, curb space, garages, trees, traffic, and pedestrian activity make a smaller vehicle or an outside parking/camping base more practical."
+  dog_access: limited
+  dog_notes: "Leashed pets can share many sidewalks, squares, and outdoor portions of the district, but museums, historic interiors, restaurants, tours, and private businesses set their own rules."
+  accessibility: "The city provides disability parking and a free downtown shuttle, but historic paving, cobblestones, curbs, older buildings, and uneven sidewalks can create route-specific challenges."
+  photography: "Public squares, live oaks, historic homes, ironwork, church spires, River Street, and soft morning or evening light define the strongest visual subjects."
+  wildlife: [songbirds, herons, brown pelicans]
+  planning_source_url: https://visitsavannah.com/historic-landmark-district
+  planning_last_reviewed: 2026-09-11
+
+mackinac-island:
+  best_seasons: [late spring, summer, early fall]
+  visit_length: "1–3 days"
+  rv_access: poor
+  rv_notes: "Private motor vehicles do not operate on Mackinac Island. RV travelers should leave the rig on the mainland near the ferry departure point and visit the island by ferry, bicycle, foot, or horse-drawn transportation."
+  dog_access: good
+  dog_notes: "Leashed pets can ride passenger ferries and share many outdoor island experiences, but lodging, restaurants, attractions, historic buildings, and transportation providers may have separate rules."
+  accessibility: "Cars are absent, but horse-drawn taxis, wheelchairs, and permitted electric mobility devices provide options. Historic buildings, hills, docks, and older surfaces vary in accessibility."
+  photography: "Historic streets, bicycles and carriages, the Straits of Mackinac, shoreline roads, Arch Rock, forts, and Victorian architecture give the island a distinctive visual identity."
+  wildlife: [waterfowl, gulls, songbirds, white-tailed deer]
+  conditions_url: https://www.mackinacisland.org/plan-your-trip/getting-here/
+  planning_source_url: https://www.mackinacisland.org/plan-your-trip/
+  planning_last_reviewed: 2026-09-11
+
+shaker-village-of-pleasant-hill:
+  best_seasons: [spring, fall]
+  visit_length: "half day to full day"
+  rv_access: limited
+  rv_notes: "This is a historic visitor destination rather than an RV campground. Larger rigs should verify current visitor parking and maneuvering options before arrival rather than assuming campground-style access."
+  dog_access: limited
+  dog_notes: "Pets are welcome in select lodging rooms and in designated outdoor areas when leashed or confined, but they are not allowed in dining facilities, exhibition buildings, or certain trails."
+  accessibility: "Historic buildings, uneven limestone walks, gravel paths, steps, distance between buildings, and the lack of elevators in restored structures can make mobility challenging; the site offers alternative experiences and recommends advance planning."
+  photography: "Shaker architecture, dry-stone walls, farmland, interiors where permitted, seasonal gardens, livestock, and broad Bluegrass landscapes provide both architectural and cultural-landscape subjects."
+  wildlife: [white-tailed deer, wild turkey, songbirds]
+  planning_source_url: https://shakervillageky.org/
+  reservation_url: https://shakervillageky.org/the-inn/
+  planning_last_reviewed: 2026-09-11
+
+bon-secour-national-wildlife-refuge:
+  best_seasons: [spring, fall]
+  visit_length: "2–4 hours"
+  rv_access: limited
+  rv_notes: "The refuge is a day-use hiking and wildlife destination rather than an RV campground. Larger rigs should verify trailhead parking and turning room and avoid assuming beach-resort-style vehicle access."
+  dog_access: none
+  dog_notes: "Pets are not permitted anywhere on the refuge; trained service dogs are the exception. Travelers with pets should plan another nearby stop rather than leaving animals unattended in a vehicle or RV."
+  accessibility: "The refuge experience is primarily trail-based. Visitor facilities and trail conditions vary, so travelers with mobility needs should confirm the specific route and current facility status before arrival."
+  photography: "Barrier dunes, maritime forest, wetlands, quiet Gulf shoreline, migratory birds, and low coastal light make this a strong birding and habitat-photography stop."
+  wildlife: [migratory songbirds, shorebirds, sea turtles, alligators]
+  conditions_url: https://www.fws.gov/refuge/bon-secour
+  planning_source_url: https://www.fws.gov/refuge/bon-secour/visit-us/rules-policies
+  planning_last_reviewed: 2026-09-11
