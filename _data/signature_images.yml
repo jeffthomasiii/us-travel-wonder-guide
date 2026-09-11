@@ -1,0 +1,303 @@
+# Canonical Phase 1A image manifest for the 50 Signature Wonders.
+# Each asset was individually reviewed for reuse rights before image_verified was set true.
+
+alabama:
+  image_credit: NPS Staff · Public domain
+  image_rights: public-domain
+  image_source_url: https://commons.wikimedia.org/wiki/File:LIRI-LittleRiverFalls-20031025_1_(64159147-d3ac-4f43-be75-e7fd8d926ca8).jpg
+  image_url: https://thumb.wikimedia.org/wikipedia/commons/thumb/8/88/LIRI-LittleRiverFalls-20031025_1_%2864159147-d3ac-4f43-be75-e7fd8d926ca8%29.jpg/1280px-LIRI-LittleRiverFalls-20031025_1_%2864159147-d3ac-4f43-be75-e7fd8d926ca8%29.jpg
+  image_verified: true
+alaska:
+  image_credit: NPS Photo · Mary Lewandowski · Public domain
+  image_rights: public-domain
+  image_source_url: https://npgallery.nps.gov/AssetDetail/d23b20ab-79d8-4ec7-8e15-5364c3242bb7
+  image_url: https://npgallery.nps.gov/GetAsset/d23b20ab-79d8-4ec7-8e15-5364c3242bb7/proxymdres.jpg
+  image_verified: true
+arizona:
+  image_credit: NPS · Public domain
+  image_rights: public-domain
+  image_source_url: https://npgallery.nps.gov/AssetDetail/98c05728-b346-4c15-ab2a-439db8e3c8f9
+  image_url: https://npgallery.nps.gov/GetAsset/98c05728-b346-4c15-ab2a-439db8e3c8f9/proxymdres.jpg
+  image_verified: true
+arkansas:
+  image_credit: NPS · Public domain
+  image_rights: public-domain
+  image_source_url: https://npgallery.nps.gov/AssetDetail/53922189-8abb-46f6-8988-d646bcbeabdf
+  image_url: https://npgallery.nps.gov/GetAsset/53922189-8abb-46f6-8988-d646bcbeabdf/proxymdres.jpg
+  image_verified: true
+california:
+  image_credit: NPS · Ralph H. Anderson · Public domain
+  image_rights: public-domain
+  image_source_url: https://npgallery.nps.gov/YOSE/AssetDetail/9a69db8eb6d2420f88876c830387d3e8
+  image_url: https://npgallery.nps.gov/YOSE/GetAsset/9a69db8eb6d2420f88876c830387d3e8/proxyhires.jpg
+  image_verified: true
+colorado:
+  image_credit: LBM1948 · Wikimedia Commons · CC BY-SA 4.0
+  image_rights: cc-by-sa-4.0
+  image_source_url: https://commons.wikimedia.org/wiki/File:Rocky_Mountain_N.P.%2C_panor%C3%A1micas_%281997%29_03.jpg
+  image_url: https://commons.wikimedia.org/wiki/Special:Redirect/file/Rocky%20Mountain%20N.P.%2C%20panor%C3%A1micas%20%281997%29%2003.jpg
+  image_verified: true
+connecticut:
+  image_credit: Dougtone · Wikimedia Commons · CC BY-SA 2.0
+  image_rights: cc-by-sa-2.0
+  image_source_url: https://commons.wikimedia.org/wiki/File:Kent_Falls_State_Park_-_Kent%2C_Connecticut_-_5112156135.jpg
+  image_url: https://commons.wikimedia.org/wiki/Special:Redirect/file/Kent%20Falls%20State%20Park%20-%20Kent%2C%20Connecticut%20-%205112156135.jpg
+  image_verified: true
+delaware:
+  image_credit: Nolabob · Wikimedia Commons · CC BY-SA 4.0
+  image_rights: cc-by-sa-4.0
+  image_source_url: https://commons.wikimedia.org/wiki/File:Beach_at_Cape_Henlopen_State_Park_in_Delaware_USA.jpg
+  image_url: https://commons.wikimedia.org/wiki/Special:Redirect/file/Beach%20at%20Cape%20Henlopen%20State%20Park%20in%20Delaware%20USA.jpg
+  image_verified: true
+florida:
+  image_credit: NPS · Daniel Miguel · Public domain
+  image_rights: public-domain
+  image_source_url: https://commons.wikimedia.org/wiki/File:Everglades_Landscape_%2849833757502%29.jpg
+  image_url: https://commons.wikimedia.org/wiki/Special:Redirect/file/Everglades%20Landscape%20%2849833757502%29.jpg
+  image_verified: true
+georgia:
+  image_credit: NPS Natural Resources · Public domain
+  image_rights: public-domain
+  image_source_url: https://commons.wikimedia.org/wiki/File:Cumberland_Island_National_Seashore_%2829398133723%29.jpg
+  image_url: https://commons.wikimedia.org/wiki/Special:Redirect/file/Cumberland%20Island%20National%20Seashore%20%2829398133723%29.jpg
+  image_verified: true
+hawaii:
+  image_credit: Michael Oswald · Public domain
+  image_rights: public-domain
+  image_source_url: https://commons.wikimedia.org/wiki/File:NaPaliCoast.jpg
+  image_url: https://commons.wikimedia.org/wiki/Special:Redirect/file/NaPaliCoast.jpg
+  image_verified: true
+idaho:
+  image_credit: Fredlyfish4 · Wikimedia Commons · CC BY-SA 4.0
+  image_rights: cc-by-sa-4.0
+  image_source_url: https://commons.wikimedia.org/wiki/File:Sawtooth_mtns.JPG
+  image_url: https://commons.wikimedia.org/wiki/Special:Redirect/file/Sawtooth%20mtns.JPG
+  image_verified: true
+illinois:
+  image_credit: TheCatalyst31 · Wikimedia Commons · CC BY-SA 4.0
+  image_rights: cc-by-sa-4.0
+  image_source_url: https://commons.wikimedia.org/wiki/File:Garden_of_the_Gods%2C_Shawnee_National_Forest%2C_June_2021.jpg
+  image_url: https://commons.wikimedia.org/wiki/Special:Redirect/file/Garden%20of%20the%20Gods%2C%20Shawnee%20National%20Forest%2C%20June%202021.jpg
+  image_verified: true
+indiana:
+  image_credit: National Park Service · Public domain
+  image_rights: public-domain
+  image_source_url: https://commons.wikimedia.org/wiki/File:Image_of_the_beachfront_at_Indiana_Dunes._%281b5626f5-b40f-4e0c-9ff8-3e4f25984fbe%29.jpg
+  image_url: https://commons.wikimedia.org/wiki/Special:Redirect/file/Image%20of%20the%20beachfront%20at%20Indiana%20Dunes.%20%281b5626f5-b40f-4e0c-9ff8-3e4f25984fbe%29.jpg
+  image_verified: true
+iowa:
+  image_credit: Bill Whittaker · Wikimedia Commons · CC BY-SA 3.0
+  image_rights: cc-by-sa-3.0
+  image_source_url: https://commons.wikimedia.org/wiki/File:Loess_hills.jpg
+  image_url: https://commons.wikimedia.org/wiki/Special:Redirect/file/Loess%20hills.jpg
+  image_verified: true
+kansas:
+  image_credit: Russ Decker · Wikimedia Commons · CC BY-SA 4.0
+  image_rights: cc-by-sa-4.0
+  image_source_url: https://commons.wikimedia.org/wiki/File:Monument_Rocks%2C_Gove%2C_Kansas.jpg
+  image_url: https://commons.wikimedia.org/wiki/Special:Redirect/file/Monument%20Rocks%2C%20Gove%2C%20Kansas.jpg
+  image_verified: true
+kentucky:
+  image_credit: National Park Service · Public domain
+  image_rights: public-domain
+  image_source_url: https://commons.wikimedia.org/wiki/File:Mammoth_Cave_National_Park_FOGATCAV.jpg
+  image_url: https://commons.wikimedia.org/wiki/Special:Redirect/file/Mammoth%20Cave%20National%20Park%20FOGATCAV.jpg
+  image_verified: true
+louisiana:
+  image_credit: U.S. Army Corps of Engineers · Public domain
+  image_rights: public-domain
+  image_source_url: https://commons.wikimedia.org/wiki/File:Bald_cypress_Atchafalaya_Basin.jpg
+  image_url: https://commons.wikimedia.org/wiki/Special:Redirect/file/Bald%20cypress%20Atchafalaya%20Basin.jpg
+  image_verified: true
+maine:
+  image_credit: NPS · Victoria Stauffenberg · Public domain
+  image_rights: public-domain
+  image_source_url: https://commons.wikimedia.org/wiki/File:Acadia_National_Park_%283641b445-0782-4af0-bb6b-cbc62ad69f3d%29.jpg
+  image_url: https://commons.wikimedia.org/wiki/Special:Redirect/file/Acadia%20National%20Park%20%283641b445-0782-4af0-bb6b-cbc62ad69f3d%29.jpg
+  image_verified: true
+maryland:
+  image_credit: judithsweet · Wikimedia Commons · CC BY 2.0
+  image_rights: cc-by-2.0
+  image_source_url: https://commons.wikimedia.org/wiki/File:Horses_on_the_beach_at_Assateague.jpg
+  image_url: https://commons.wikimedia.org/wiki/Special:Redirect/file/Horses%20on%20the%20beach%20at%20Assateague.jpg
+  image_verified: true
+massachusetts:
+  image_credit: National Park Service · Public domain
+  image_rights: public-domain
+  image_source_url: https://commons.wikimedia.org/wiki/File:Cape_Cod_National_Seashore_CACO3215.jpg
+  image_url: https://commons.wikimedia.org/wiki/Special:Redirect/file/Cape%20Cod%20National%20Seashore%20CACO3215.jpg
+  image_verified: true
+michigan:
+  image_credit: Yinan Chen · Public domain
+  image_rights: public-domain
+  image_source_url: https://commons.wikimedia.org/wiki/File:Gfp-michigan-pictured-rocks-national-lakeshore-miners-castle-and-lake.jpg
+  image_url: https://commons.wikimedia.org/wiki/Special:Redirect/file/Gfp-michigan-pictured-rocks-national-lakeshore-miners-castle-and-lake.jpg
+  image_verified: true
+minnesota:
+  image_credit: U.S. Forest Service · Public domain
+  image_rights: public-domain
+  image_source_url: https://commons.wikimedia.org/wiki/File:Boundary_Waters_Canoe_Area.jpg
+  image_url: https://commons.wikimedia.org/wiki/Special:Redirect/file/Boundary%20Waters%20Canoe%20Area.jpg
+  image_verified: true
+mississippi:
+  image_credit: National Park Service · Public domain
+  image_rights: public-domain
+  image_source_url: https://commons.wikimedia.org/wiki/File:Gulf_Islands_National_Seashore_%280055a6cb-541e-48f8-af3e-660531e891c5%29.jpg
+  image_url: https://commons.wikimedia.org/wiki/Special:Redirect/file/Gulf%20Islands%20National%20Seashore%20%280055a6cb-541e-48f8-af3e-660531e891c5%29.jpg
+  image_verified: true
+missouri:
+  image_credit: National Park Service · Public domain
+  image_rights: public-domain
+  image_source_url: https://commons.wikimedia.org/wiki/File:Ozark_National_Scenic_Riverways_OZAR2094.jpg
+  image_url: https://commons.wikimedia.org/wiki/Special:Redirect/file/Ozark%20National%20Scenic%20Riverways%20OZAR2094.jpg
+  image_verified: true
+montana:
+  image_credit: PotatoCow25 · Wikimedia Commons · CC0 1.0
+  image_rights: cc0-1.0
+  image_source_url: https://commons.wikimedia.org/wiki/File:Landscape_in_Glacier_National_Park.jpg
+  image_url: https://commons.wikimedia.org/wiki/Special:Redirect/file/Landscape%20in%20Glacier%20National%20Park.jpg
+  image_verified: true
+nebraska:
+  image_credit: National Park Service · Public domain
+  image_rights: public-domain
+  image_source_url: https://commons.wikimedia.org/wiki/File:Scotts_Bluff_National_Monument%2C_Nebraska_%28ee7dee80-4cc9-4e33-8b37-373eee426116%29.jpg
+  image_url: https://commons.wikimedia.org/wiki/Special:Redirect/file/Scotts%20Bluff%20National%20Monument%2C%20Nebraska%20%28ee7dee80-4cc9-4e33-8b37-373eee426116%29.jpg
+  image_verified: true
+nevada:
+  image_credit: Clément Bardot · Wikimedia Commons · CC BY-SA 3.0
+  image_rights: cc-by-sa-3.0
+  image_source_url: https://commons.wikimedia.org/wiki/File:Valley_of_fire_State_Park.jpg
+  image_url: https://commons.wikimedia.org/wiki/Special:Redirect/file/Valley%20of%20fire%20State%20Park.jpg
+  image_verified: true
+new-hampshire:
+  image_credit: EgorovaSvetlana · Wikimedia Commons · CC BY-SA 4.0
+  image_rights: cc-by-sa-4.0
+  image_source_url: https://commons.wikimedia.org/wiki/File:Franconia_Notch_Parkway_Freeway_Scenic_Byway_in_Franconia_Notch_State_Park_view_to_Franconia_Range_White_Mountains_New_Hampshire.jpg
+  image_url: https://commons.wikimedia.org/wiki/Special:Redirect/file/Franconia%20Notch%20Parkway%20Freeway%20Scenic%20Byway%20in%20Franconia%20Notch%20State%20Park%20view%20to%20Franconia%20Range%20White%20Mountains%20New%20Hampshire.jpg
+  image_verified: true
+new-jersey:
+  image_credit: Ken Lund · Wikimedia Commons · CC BY-SA 2.0
+  image_rights: cc-by-sa-2.0
+  image_source_url: https://commons.wikimedia.org/wiki/File:Delaware_Water_Gap_National_Recreation_Area_at_New_Jersey-Pennsylvania_Border_%287238123188%29.jpg
+  image_url: https://commons.wikimedia.org/wiki/Special:Redirect/file/Delaware%20Water%20Gap%20National%20Recreation%20Area%20at%20New%20Jersey-Pennsylvania%20Border%20%287238123188%29.jpg
+  image_verified: true
+new-mexico:
+  image_credit: NPS Natural Resources · Public domain
+  image_rights: public-domain
+  image_source_url: https://commons.wikimedia.org/wiki/File:White_Sands_National_Monument_%2829941071221%29.jpg
+  image_url: https://commons.wikimedia.org/wiki/Special:Redirect/file/White%20Sands%20National%20Monument%20%2829941071221%29.jpg
+  image_verified: true
+new-york:
+  image_credit: G. Edward Johnson · Wikimedia Commons · CC BY 4.0
+  image_rights: cc-by-4.0
+  image_source_url: https://commons.wikimedia.org/wiki/File:Avalanche_Lake_Adirondack_Park_NY_2024-07-13_11-45-11_1_MP.jpg
+  image_url: https://commons.wikimedia.org/wiki/Special:Redirect/file/Avalanche%20Lake%20Adirondack%20Park%20NY%202024-07-13%2011-45-11%201%20MP.jpg
+  image_verified: true
+north-carolina:
+  image_credit: Amcbride · Wikimedia Commons · Public domain
+  image_rights: public-domain
+  image_source_url: https://commons.wikimedia.org/wiki/File:LinvilleGorge.jpg
+  image_url: https://commons.wikimedia.org/wiki/Special:Redirect/file/LinvilleGorge.jpg
+  image_verified: true
+north-dakota:
+  image_credit: NPS · Mark Hoffman · Public domain
+  image_rights: public-domain
+  image_source_url: https://commons.wikimedia.org/wiki/File:View_of_Theodore_Roosevelt_National_Park.jpg
+  image_url: https://commons.wikimedia.org/wiki/Special:Redirect/file/View%20of%20Theodore%20Roosevelt%20National%20Park.jpg
+  image_verified: true
+ohio:
+  image_credit: XChen0219 · Wikimedia Commons · CC BY-SA 4.0
+  image_rights: cc-by-sa-4.0
+  image_source_url: https://commons.wikimedia.org/wiki/File:Hocking_Hills_State_Park.jpg
+  image_url: https://commons.wikimedia.org/wiki/Special:Redirect/file/Hocking%20Hills%20State%20Park.jpg
+  image_verified: true
+oklahoma:
+  image_credit: U.S. Fish & Wildlife Service · Robert A. Karges · Public domain
+  image_rights: public-domain
+  image_source_url: https://commons.wikimedia.org/wiki/File:Wichita_mountains_national_wildlife_refuge.jpg
+  image_url: https://commons.wikimedia.org/wiki/Special:Redirect/file/Wichita%20mountains%20national%20wildlife%20refuge.jpg
+  image_verified: true
+oregon:
+  image_credit: National Park Service · Public domain
+  image_rights: public-domain
+  image_source_url: https://commons.wikimedia.org/wiki/File:Landscape_Views_at_Crater_Lake_National_Park%2C_Oregon_%280771cc31-b155-423c-89de-29effe8006ef%29.jpg
+  image_url: https://commons.wikimedia.org/wiki/Special:Redirect/file/Landscape%20Views%20at%20Crater%20Lake%20National%20Park%2C%20Oregon%20%280771cc31-b155-423c-89de-29effe8006ef%29.jpg
+  image_verified: true
+pennsylvania:
+  image_credit: Ruhrfisch · Wikimedia Commons · CC BY-SA 3.0
+  image_rights: cc-by-sa-3.0
+  image_source_url: https://commons.wikimedia.org/wiki/File:Ricketts_Glen_State_Park_Waterfalls_Trail.jpg
+  image_url: https://commons.wikimedia.org/wiki/Special:Redirect/file/Ricketts%20Glen%20State%20Park%20Waterfalls%20Trail.jpg
+  image_verified: true
+rhode-island:
+  image_credit: PA Uploader · Wikimedia Commons · CC BY-SA 4.0
+  image_rights: cc-by-sa-4.0
+  image_source_url: https://commons.wikimedia.org/wiki/File:Mohegan_Bluffs.jpg
+  image_url: https://commons.wikimedia.org/wiki/Special:Redirect/file/Mohegan%20Bluffs.jpg
+  image_verified: true
+south-carolina:
+  image_credit: Runner1928 · Wikimedia Commons · CC BY-SA 3.0
+  image_rights: cc-by-sa-3.0
+  image_source_url: https://commons.wikimedia.org/wiki/File:Congaree_National_Park_South_Carolina_forest_from_elevated_boardwalk.JPG
+  image_url: https://commons.wikimedia.org/wiki/Special:Redirect/file/Congaree%20National%20Park%20South%20Carolina%20forest%20from%20elevated%20boardwalk.JPG
+  image_verified: true
+south-dakota:
+  image_credit: NPS Natural Resources · Public domain
+  image_rights: public-domain
+  image_source_url: https://commons.wikimedia.org/wiki/File:Badlands_National_Park_%2829910585492%29.jpg
+  image_url: https://commons.wikimedia.org/wiki/Special:Redirect/file/Badlands%20National%20Park%20%2829910585492%29.jpg
+  image_verified: true
+tennessee:
+  image_credit: National Park Service · Public domain
+  image_rights: public-domain
+  image_source_url: https://commons.wikimedia.org/wiki/File:Great_Smoky_Mountains_National_Park_GRSM8833.jpg
+  image_url: https://commons.wikimedia.org/wiki/Special:Redirect/file/Great%20Smoky%20Mountains%20National%20Park%20GRSM8833.jpg
+  image_verified: true
+texas:
+  image_credit: Yinan Chen · Public domain
+  image_rights: public-domain
+  image_source_url: https://commons.wikimedia.org/wiki/File:Gfp-texas-big-bend-national-park-the-chisos-mountain-landscape.jpg
+  image_url: https://commons.wikimedia.org/wiki/Special:Redirect/file/Gfp-texas-big-bend-national-park-the-chisos-mountain-landscape.jpg
+  image_verified: true
+utah:
+  image_credit: National Park Service · Public domain
+  image_rights: public-domain
+  image_source_url: https://commons.wikimedia.org/wiki/File:The_Watchman_overlooks_the_mouth_of_Zion_Canyon._%2898b15eba-155d-451f-6776-104114f96789%29.jpg
+  image_url: https://commons.wikimedia.org/wiki/Special:Redirect/file/The%20Watchman%20overlooks%20the%20mouth%20of%20Zion%20Canyon.%20%2898b15eba-155d-451f-6776-104114f96789%29.jpg
+  image_verified: true
+vermont:
+  image_credit: Eunice · Wikimedia Commons · CC BY-SA 2.0
+  image_rights: cc-by-sa-2.0
+  image_source_url: https://commons.wikimedia.org/wiki/File:Smugglers%27_Notch_State_Park.jpg
+  image_url: https://commons.wikimedia.org/wiki/Special:Redirect/file/Smugglers%27%20Notch%20State%20Park.jpg
+  image_verified: true
+virginia:
+  image_credit: National Park Service Digital Image Archives · Public domain
+  image_rights: public-domain
+  image_source_url: https://commons.wikimedia.org/wiki/File:Shenandoah_National_Park_SHEN9177.jpg
+  image_url: https://commons.wikimedia.org/wiki/Special:Redirect/file/Shenandoah%20National%20Park%20SHEN9177.jpg
+  image_verified: true
+washington:
+  image_credit: National Park Service · Public domain
+  image_rights: public-domain
+  image_source_url: https://commons.wikimedia.org/wiki/File:OlympicNP.jpg
+  image_url: https://commons.wikimedia.org/wiki/Special:Redirect/file/OlympicNP.jpg
+  image_verified: true
+west-virginia:
+  image_credit: National Park Service · Public domain
+  image_rights: public-domain
+  image_source_url: https://commons.wikimedia.org/wiki/File:New_River_Gorge_National_Park_and_Preserve%2C_West_Virginia_%283b078670-06fd-4464-a170-ed2621c93fb9%29.jpg
+  image_url: https://commons.wikimedia.org/wiki/Special:Redirect/file/New%20River%20Gorge%20National%20Park%20and%20Preserve%2C%20West%20Virginia%20%283b078670-06fd-4464-a170-ed2621c93fb9%29.jpg
+  image_verified: true
+wisconsin:
+  image_credit: National Park Service · Public domain
+  image_rights: public-domain
+  image_source_url: https://commons.wikimedia.org/wiki/File:Apostle_Islands_National_Lakeshore%2C_Wisconsin_%28e2e49e20-5f0a-4920-9107-005675658764%29.jpg
+  image_url: https://commons.wikimedia.org/wiki/Special:Redirect/file/Apostle%20Islands%20National%20Lakeshore%2C%20Wisconsin%20%28e2e49e20-5f0a-4920-9107-005675658764%29.jpg
+  image_verified: true
+wyoming:
+  image_credit: Srishti Sethi · Wikimedia Commons · CC BY-SA 4.0
+  image_rights: cc-by-sa-4.0
+  image_source_url: https://commons.wikimedia.org/wiki/File:Geothermal_hot_spring_with_thermophiles_in_Yellowstone_National_Park%2C_Wyoming%2C_USA.jpg
+  image_url: https://commons.wikimedia.org/wiki/Special:Redirect/file/Geothermal%20hot%20spring%20with%20thermophiles%20in%20Yellowstone%20National%20Park%2C%20Wyoming%2C%20USA.jpg
+  image_verified: true
