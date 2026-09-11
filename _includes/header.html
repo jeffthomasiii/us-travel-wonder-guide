@@ -1,6 +1,7 @@
 <header class="site-header">
   <a class="brand" href="{{ '/' | relative_url }}"><span class="brand-mark">US</span><span class="brand-copy"><strong>Travel & Wonder Guide</strong><small>America, state by state</small></span></a>
-  <nav aria-label="Primary navigation">
+  <button id="menuToggle" class="menu-toggle" type="button" aria-expanded="false" aria-controls="primaryNav" aria-label="Open menu"><span></span><span></span><span></span></button>
+  <nav id="primaryNav" class="primary-nav" aria-label="Primary navigation">
     <a href="{{ '/explore/' | relative_url }}">Explore</a>
     <a href="{{ '/states/' | relative_url }}">States</a>
     <a href="{{ '/tiers/' | relative_url }}">How Places Qualify</a>
