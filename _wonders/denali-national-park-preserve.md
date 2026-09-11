@@ -13,4 +13,9 @@ experiences:
 - photography
 summary: Six million acres of wild land rising toward North America’s highest peak, with tundra, taiga and large wildlife moving through an immense landscape.
 why: Few places communicate the scale of Alaska more clearly. Denali combines mountain grandeur, wildlife and wilderness in a way that feels unmistakably Alaskan.
+image_url: https://npgallery.nps.gov/GetAsset/d23b20ab-79d8-4ec7-8e15-5364c3242bb7/proxymdres.jpg
+image_credit: NPS Photo · Mary Lewandowski · Public domain
+image_source_url: https://npgallery.nps.gov/AssetDetail/d23b20ab-79d8-4ec7-8e15-5364c3242bb7
+image_rights: public-domain
+image_verified: true
 ---
