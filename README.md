@@ -1,4 +1,6 @@
-# United States Travel & Wonder Guide
+# Wonder Guide
+
+**Real Places. Bigger Stories.**
 
 A GitHub Pages/Jekyll travel discovery guide built around a simple premise: **there is somewhere worth seeing across every part of the United States travel sphere.**
 
@@ -29,7 +31,7 @@ The 120-Wonder count is a national baseline, not a final quota. Areas should con
 - **Phase 2A — national candidate research baseline:** complete
 - **Phase 2B — editorial classification baseline:** complete
 - **Phase 2C — national production baseline:** complete
-- **Dedicated branding / design / layout phase:** next
+- **Dedicated branding / design / layout phase:** in progress
 
 Phase 2C completion is documented in [`PHASE2C_COMPLETION.md`](PHASE2C_COMPLETION.md).
 
@@ -102,11 +104,11 @@ Project sequencing is maintained in [`PROJECT_PLAN.md`](PROJECT_PLAN.md).
 
 All U.S. national parks remain guaranteed eventual coverage, but they are only one subset of the guide and do not define its structure. Coverage tracking lives in [`NATIONAL_PARKS_COVERAGE.md`](NATIONAL_PARKS_COVERAGE.md).
 
-## Next phase
+## Branding / design / layout phase
 
-The project now has enough real content density to enter the dedicated **branding / design / layout phase** that was intentionally deferred during content development.
+The project has enough real content density to support a dedicated redesign using the existing 120-Wonder dataset as the design test bed rather than changing content to create artificial visual balance.
 
-That redesign should use the existing 120-Wonder dataset as the design test bed rather than changing content to create artificial visual balance.
+The official site name is **Wonder Guide** with the tagline **Real Places. Bigger Stories.**
 
 ## GitHub Pages
 
