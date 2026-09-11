@@ -1,0 +1,140 @@
+# Typical editorial visit windows for Phase 2C national expansion destinations.
+# These are planning guidance, not guarantees of weather, access, foliage, road status, or opening dates.
+
+kenai-fjords-national-park:
+  best_visit_windows: ["June 1 – September 15"]
+
+antelope-canyon:
+  best_visit_windows: ["March 1 – May 15", "September 15 – November 15"]
+
+hot-springs-national-park:
+  best_visit_windows: ["March 15 – May 31", "October 1 – November 15"]
+
+garden-of-the-gods:
+  best_visit_windows: ["April 15 – June 15", "September 1 – October 15"]
+
+mystic-seaport-museum:
+  best_visit_windows: ["May 1 – October 31"]
+
+haleakala-national-park:
+  best_visit_windows: ["April 1 – June 30", "September 1 – November 30"]
+
+craters-of-the-moon-national-monument-and-preserve:
+  best_visit_windows: ["May 15 – October 15"]
+
+cahokia-mounds-state-historic-site:
+  best_visit_windows: ["April 15 – June 15", "September 15 – November 1"]
+
+turkey-run-state-park:
+  best_visit_windows: ["March 15 – May 31", "September 15 – November 15"]
+
+effigy-mounds-national-monument:
+  best_visit_windows: ["May 1 – October 15"]
+
+tallgrass-prairie-national-preserve:
+  best_visit_windows: ["April 1 – May 31", "September 15 – November 1"]
+
+barataria-preserve:
+  best_visit_windows: ["October 1 – April 30"]
+
+blackwater-national-wildlife-refuge:
+  best_visit_windows: ["March 15 – May 31", "September 15 – November 30"]
+
+mount-greylock-state-reservation:
+  best_visit_windows: ["May 15 – October 20"]
+
+voyageurs-national-park:
+  best_visit_windows: ["June 1 – September 30"]
+
+natchez-trace-parkway:
+  best_visit_windows: ["October 1 – April 30"]
+
+ha-ha-tonka-state-park:
+  best_visit_windows: ["March 15 – May 31", "September 15 – November 15"]
+
+beartooth-highway:
+  best_visit_windows: ["June 15 – September 30"]
+
+toadstool-geologic-park:
+  best_visit_windows: ["April 15 – June 15", "September 1 – October 15"]
+
+red-rock-canyon-national-conservation-area:
+  best_visit_windows: ["October 1 – April 30"]
+
+kancamagus-highway:
+  best_visit_windows: ["June 1 – October 20"]
+
+cape-may:
+  best_visit_windows: ["May 1 – October 31"]
+
+carlsbad-caverns-national-park:
+  best_visit_windows: ["March 15 – May 31", "September 15 – November 15"]
+
+niagara-falls-state-park:
+  best_visit_windows: ["May 1 – October 31"]
+
+cape-hatteras-national-seashore:
+  best_visit_windows: ["April 15 – June 15", "September 1 – October 31"]
+
+international-peace-garden:
+  best_visit_windows: ["May 15 – September 30"]
+
+serpent-mound:
+  best_visit_windows: ["April 15 – June 15", "September 15 – October 31"]
+
+columbia-river-gorge-national-scenic-area:
+  best_visit_windows: ["April 15 – October 15"]
+
+fallingwater:
+  best_visit_windows: ["April 1 – November 15"]
+
+newport-cliff-walk:
+  best_visit_windows: ["May 15 – October 15"]
+
+charleston-historic-district:
+  best_visit_windows: ["March 1 – May 31", "September 15 – November 30"]
+
+custer-state-park:
+  best_visit_windows: ["May 15 – October 15"]
+
+fall-creek-falls-state-park:
+  best_visit_windows: ["March 15 – May 31", "September 15 – November 15"]
+
+palo-duro-canyon-state-park:
+  best_visit_windows: ["March 1 – May 15", "September 15 – November 30"]
+
+quechee-gorge:
+  best_visit_windows: ["May 15 – October 20"]
+
+natural-bridge-state-park:
+  best_visit_windows: ["March 15 – June 15", "September 15 – November 10"]
+
+mount-rainier-national-park:
+  best_visit_windows: ["July 1 – September 30"]
+
+seneca-rocks:
+  best_visit_windows: ["April 15 – October 31"]
+
+devils-lake-state-park:
+  best_visit_windows: ["May 15 – October 15"]
+
+grand-teton-national-park:
+  best_visit_windows: ["June 1 – September 30"]
+
+rock-creek-park:
+  best_visit_windows: ["March 15 – June 15", "September 15 – November 15"]
+
+old-san-juan:
+  best_visit_windows: ["December 1 – April 30"]
+
+buck-island-reef-national-monument:
+  best_visit_windows: ["December 1 – April 30"]
+
+war-in-the-pacific-national-historical-park:
+  best_visit_windows: ["January 1 – May 31"]
+
+managaha-island:
+  best_visit_windows: ["January 1 – May 31"]
+
+ofu-beach:
+  best_visit_windows: ["May 1 – October 15"]
