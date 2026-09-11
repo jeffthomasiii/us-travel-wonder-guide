@@ -1,22 +1,45 @@
 # United States Travel & Wonder Guide
 
-A GitHub Pages/Jekyll proof of concept built around a simple premise: **there is somewhere worth seeing across every part of the United States travel sphere.**
+A GitHub Pages/Jekyll travel discovery guide built around a simple premise: **there is somewhere worth seeing across every part of the United States travel sphere.**
 
 The primary browse model includes the **50 states, Washington, D.C., and the five inhabited U.S. territories**: Puerto Rico, U.S. Virgin Islands, Guam, Northern Mariana Islands, and American Samoa.
 
-The guide is intentionally broader than a national-park directory. National parks belong here, but so do state parks, wildlife refuges, forests, islands, scenic roads, coastlines, caves, cultural places, architecture, historic districts, and lesser-known discoveries that genuinely give someone a reason to go.
+The guide is intentionally broader than a national-park directory. National parks belong here, but so do state parks, wildlife refuges, forests, islands, scenic roads, coastlines, caves, cultural places, architecture, historic districts, gardens, geology, and lesser-known discoveries that genuinely give someone a reason to go.
 
 See [`EDITORIAL_SCOPE.md`](EDITORIAL_SCOPE.md) for the full geographic and editorial guardrails.
 
 ## Current inventory
 
 - **56 primary geographic areas** — 50 states + Washington, D.C. + 5 inhabited U.S. territories
-- **74 Wonders total — 56 ★ Signature Wonders, 9 ◆ Worth Traveling For, 9 ○ Worth the Detour**
-- verified credited imagery for all 56 Signature Wonders
-- 12 mixed-tier Phase 1B pilot destinations across California, Utah, Maine, Michigan, Oklahoma, and Delaware
-- 6 Phase 2C Batch 1 destinations promoted through source review, editorial classification, image verification, and planning intake
-- Phase 1C planning metadata for all 18 Wonders in the original six pilot states
-- Phase 2 planning metadata for the first production batch
+- **120 Wonders total**
+- **56 ★ Signature Wonders**
+- **51 ◆ Worth Traveling For**
+- **13 ○ Worth the Detour**
+- at least one non-Signature Wonder in every primary area
+
+The 120-Wonder count is a national baseline, not a final quota. Areas should continue to grow unevenly according to actual travel value.
+
+## Phase status
+
+- **Phase 1A — Signature imagery:** complete
+- **Phase 1B — mixed-tier pilot:** complete
+- **Phase 1C — travel-planning model:** complete
+- **Geography expansion to 56 areas:** complete
+- **Mobile functional baseline:** complete
+- **Phase 2A — national candidate research baseline:** complete
+- **Phase 2B — editorial classification baseline:** complete
+- **Phase 2C — national production baseline:** complete
+- **Dedicated branding / design / layout phase:** next
+
+Phase 2C completion is documented in [`PHASE2C_COMPLETION.md`](PHASE2C_COMPLETION.md).
+
+## How places qualify
+
+- **★ Signature Wonder** — the one place that best makes the case for its state, district, or territory.
+- **◆ Worth Traveling For** — significant enough to build part of a trip around.
+- **○ Worth the Detour** — worth making time for when already nearby.
+
+There are no per-area quotas.
 
 ## Geographic expansion Signature Wonders
 
@@ -29,36 +52,7 @@ See [`EDITORIAL_SCOPE.md`](EDITORIAL_SCOPE.md) for the full geographic and edito
 | Northern Mariana Islands | The Grotto |
 | American Samoa | National Park of American Samoa |
 
-These are first-pass Signature selections and remain subject to the same editorial comparison process as the original 50-state set.
-
-## How places qualify
-
-- **★ Signature Wonder** — the one place that best makes the case for its state, district, or territory.
-- **◆ Worth Traveling For** — significant enough to build part of a trip around.
-- **○ Worth the Detour** — worth making time for when already nearby.
-
-There are no per-area quotas.
-
-## Phase 2 status
-
-Phase 2 separates research, classification, and publication so the live guide does not become a bulk list of convenient destinations.
-
-- **Phase 2A candidate research:** three source-backed waves complete, covering 20 of 56 areas
-- **Phase 2B editorial classification:** pilot classification underway on mature research pools
-- **Phase 2C production:** Batch 1 published with 6 new Wonders
-
-The Phase 2C Batch 1 destinations are:
-
-| Area | Destination | Reason to go |
-| --- | --- | --- |
-| California | Big Sur Coast | ◆ Worth Traveling For |
-| Florida | Myakka River State Park | ○ Worth the Detour |
-| Georgia | Savannah Historic Landmark District | ◆ Worth Traveling For |
-| Michigan | Mackinac Island | ◆ Worth Traveling For |
-| Kentucky | Shaker Village of Pleasant Hill | ○ Worth the Detour |
-| Alabama | Bon Secour National Wildlife Refuge | ○ Worth the Detour |
-
-See [`PHASE2C_BATCH1.md`](PHASE2C_BATCH1.md) for the production rationale and validation checklist.
+All six have rights-verified imagery and planning metadata.
 
 ## Current functionality
 
@@ -66,7 +60,7 @@ See [`PHASE2C_BATCH1.md`](PHASE2C_BATCH1.md) for the production rationale and va
 - randomized homepage hero using rights-verified Wonder imagery already in the guide
 - text search plus Area, Reason to Go, and Experience filtering
 - individual area pages and Wonder pages
-- planning notes including calendar-style visit windows, RV considerations, pets, accessibility, photography, wildlife, conditions, and planning sources where available
+- planning notes including calendar-style visit windows and authoritative planning links, with RV, pet, accessibility, photography, wildlife, conditions, and reservation guidance where researched
 - Navigate action with Google Maps, Apple Maps, and Waze
 - persistent app-style mobile bottom navigation for Home, Explore, Search, and Areas
 - hamburger menu on mobile for secondary/reference navigation
@@ -76,15 +70,43 @@ See [`PHASE2C_BATCH1.md`](PHASE2C_BATCH1.md) for the production rationale and va
 
 Do **not** treat an image found on an official website as automatically reusable. Verify the rights of each individual asset and store the source, creator/agency, rights statement, and verification status.
 
-The original 50-state Signature image audit is maintained in `_data/signature_images.yml`. The six district/territory Signature image records are maintained in `_data/expanded_signature_images.yml`. Non-Signature Wonder files carry their verified image metadata directly in front matter.
+Current image coverage:
+
+- all 56 Signature Wonders use rights-verified imagery;
+- the 12 Phase 1B mixed-tier pilot Wonders use rights-verified imagery;
+- the 6 Phase 2C Batch 1 Wonders use rights-verified imagery;
+- later Phase 2C national-expansion Wonders intentionally use the neutral media fallback until an individual reusable image passes the same verification workflow.
+
+The fallback is a policy feature, not a missing-content error.
 
 ## Content and planning model
 
 Core Wonder content lives in `_wonders/`. Area records live in `_states/` for historical compatibility with the original Jekyll collection name; the collection now represents states, D.C., and inhabited territories.
 
-Planning schema and field definitions are documented in [`CONTENT_MODEL.md`](CONTENT_MODEL.md). Original Phase 1C planning records live in `_data/travel_planning.yml` and `_data/planning_refinements.yml`; Phase 2 production records live in `_data/travel_planning_phase2.yml` and `_data/planning_refinements_phase2.yml`.
+Planning schema and field definitions are documented in [`CONTENT_MODEL.md`](CONTENT_MODEL.md).
+
+Planning data is split by production generation so updates remain auditable:
+
+- `_data/travel_planning.yml`
+- `_data/planning_refinements.yml`
+- `_data/travel_planning_phase2.yml`
+- `_data/planning_refinements_phase2.yml`
+- `_data/travel_planning_phase2_expansion.yml`
+- `_data/planning_refinements_phase2_expansion.yml`
+- `_data/travel_planning_geography_expansion.yml`
+- `_data/planning_refinements_geography_expansion.yml`
 
 Project sequencing is maintained in [`PROJECT_PLAN.md`](PROJECT_PLAN.md).
+
+## National parks
+
+All U.S. national parks remain guaranteed eventual coverage, but they are only one subset of the guide and do not define its structure. Coverage tracking lives in [`NATIONAL_PARKS_COVERAGE.md`](NATIONAL_PARKS_COVERAGE.md).
+
+## Next phase
+
+The project now has enough real content density to enter the dedicated **branding / design / layout phase** that was intentionally deferred during content development.
+
+That redesign should use the existing 120-Wonder dataset as the design test bed rather than changing content to create artificial visual balance.
 
 ## GitHub Pages
 
