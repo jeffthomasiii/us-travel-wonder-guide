@@ -1,0 +1,241 @@
+# Phase 2A Wave 1 research review.
+# Preliminary review status only; no ◆ / ○ classification is assigned here.
+# Authoritative sources were checked during the 2026-09-11 research pass.
+
+alabama:
+  signature: Little River Canyon National Preserve
+  signature_challenge: false
+  review_note: "The current Signature remains defensible. The broader pool should represent Alabama's mountains, Gulf Coast, caves, and wetland biodiversity rather than leaning only on NPS designations."
+  candidates:
+    - name: Cheaha State Park
+      type: state-park
+      review_status: strong
+      official_source: https://www.alapark.com/parks/cheaha-state-park
+      reason: "Highest-point mountain landscape and a materially different Alabama experience from Little River Canyon."
+    - name: Bon Secour National Wildlife Refuge
+      type: wildlife-refuge
+      review_status: strong
+      official_source: https://www.fws.gov/refuge/bon-secour
+      reason: "Undeveloped barrier habitat, dunes, migratory birds, and Gulf Coast ecology add a strong coastal-wildlife experience."
+    - name: Cathedral Caverns State Park
+      type: state-park-cave
+      review_status: strong
+      official_source: https://www.alapark.com/parks/cathedral-caverns-state-park
+      reason: "Large cave chambers and formations add a subterranean experience missing from the current inventory."
+    - name: Mobile-Tensaw River Delta
+      type: regional-wetland
+      review_status: uncertain
+      official_source: https://www.mobile.org/things-to-do/outdoors/tensaw-river-delta/
+      reason: "Ecologically exceptional and travel-worthy, but the Delta is a broad multi-manager region and needs a more precise guide destination or access anchor before classification."
+    - name: Gulf State Park
+      type: state-park-coast
+      review_status: strong
+      official_source: https://www.alapark.com/parks/gulf-state-park
+      reason: "Accessible Gulf Coast beach, dune, wetland, trail, and camping experience with broad trip-planning value."
+
+alaska:
+  signature: Denali National Park & Preserve
+  signature_challenge: false
+  review_note: "Denali remains a strong first-pass Signature, but Alaska's eventual inventory must reflect glaciers, marine fjords, enormous wilderness parks, coastal wildlife, and unusually accessible wilderness near Anchorage."
+  candidates:
+    - name: Kenai Fjords National Park
+      type: national-park
+      review_status: strong
+      official_source: https://www.nps.gov/kefj/index.htm
+      reason: "Tidewater glaciers, fjords, marine wildlife, and boat-based access create a distinct coastal Alaska experience."
+    - name: Wrangell-St. Elias National Park & Preserve
+      type: national-park
+      review_status: strong
+      official_source: https://www.nps.gov/wrst/index.htm
+      reason: "Enormous mountain-and-glacier wilderness is significant enough for eventual classification regardless of its remoteness."
+    - name: Chugach State Park
+      type: state-park
+      review_status: strong
+      official_source: https://dnr.alaska.gov/parks/aspunits/chugach/chugachindex.htm
+      reason: "Nearly half a million acres of mountains, lakes, glaciers, and trails immediately adjacent to Anchorage give it exceptional accessibility-to-wilderness value."
+    - name: Alaska Maritime National Wildlife Refuge
+      type: wildlife-refuge
+      review_status: uncertain
+      official_source: https://www.fws.gov/refuge/alaska-maritime
+      reason: "Extraordinary marine and seabird significance, but the refuge is geographically dispersed and may need specific visitor-access destinations rather than one broad guide entry."
+
+arizona:
+  signature: Grand Canyon National Park
+  signature_challenge: false
+  review_note: "Grand Canyon remains the clear Signature benchmark. Arizona's pool is already deep enough that classification must distinguish major trip anchors from shorter desert/geology experiences."
+  candidates:
+    - name: Sedona Red Rock Country
+      type: scenic-landscape
+      review_status: strong
+      official_source: https://www.fs.usda.gov/r03/coconino/recreation/sedona
+      reason: "Red-rock formations, trail density, scenic drives, and destination-scale trip support make Sedona an obvious classification candidate."
+    - name: Antelope Canyon
+      type: tribal-land
+      review_status: strong
+      official_source: https://navajonationparks.org/tribal-parks/antelope-canyon/
+      reason: "A distinctive slot-canyon experience with Navajo Nation access requirements that should be represented carefully and accurately."
+    - name: Saguaro National Park
+      type: national-park
+      review_status: strong
+      official_source: https://www.nps.gov/sagu/index.htm
+      reason: "The iconic saguaro forests around Tucson represent a different Sonoran Desert identity than the Grand Canyon."
+    - name: Chiricahua National Monument
+      type: national-monument
+      review_status: strong
+      official_source: https://www.nps.gov/chir/index.htm
+      reason: "Rhyolite pinnacles, balanced rocks, dark skies, and scenic driving create a highly distinctive southeastern Arizona landscape."
+    - name: Organ Pipe Cactus National Monument
+      type: national-monument
+      review_status: strong
+      official_source: https://www.nps.gov/orpi/index.htm
+      reason: "Remote Sonoran Desert wilderness, scenic drives, dark skies, and rare organ pipe cactus habitat justify classification review."
+
+california:
+  signature: Yosemite National Park
+  signature_challenge: false
+  review_note: "Yosemite remains defensible as the Signature, but California requires a much larger candidate pool because coast, islands, deserts, redwoods, mountains, and urban/cultural destinations can all independently justify travel."
+  candidates:
+    - name: Big Sur Coast
+      type: scenic-coast
+      review_status: strong
+      official_source: https://parks.ca.gov/?page_id=29838
+      reason: "One of the country's defining road-and-coast landscapes and a major trip anchor independent of Yosemite."
+    - name: Santa Catalina Island
+      type: island
+      review_status: strong
+      official_source: https://catalinaconservancy.org/
+      reason: "Island travel, conserved wildlands, endemic species, coastal scenery, and ferry access make Catalina a distinct destination-scale experience."
+    - name: Point Reyes National Seashore
+      type: national-seashore
+      review_status: strong
+      official_source: https://www.nps.gov/pore/index.htm
+      reason: "Rugged coast, wildlife, beaches, grasslands, forests, and lighthouse landscapes create a strong Northern California coastal candidate."
+    - name: Anza-Borrego Desert State Park
+      type: state-park-desert
+      review_status: strong
+      official_source: https://www.parks.ca.gov/?page_id=638
+      reason: "California's largest state park adds expansive desert, bighorn sheep, wildflowers, palm groves, dirt-road exploration, and dark-sky potential."
+    - name: Channel Islands National Park
+      type: national-park-islands
+      review_status: strong
+      official_source: https://www.nps.gov/chis/index.htm
+      reason: "Boat-access islands, marine ecosystems, wildlife, sea caves, and isolation create a major experience not represented by mainland destinations."
+
+colorado:
+  signature: Rocky Mountain National Park
+  signature_challenge: false
+  review_note: "Rocky Mountain remains defensible, but Colorado's classification pool should not collapse into mountain parks alone; scenic roads, desert-like geology, dunes, and accessible urban landscapes matter."
+  candidates:
+    - name: Garden of the Gods
+      type: city-park
+      review_status: strong
+      official_source: https://coloradosprings.gov/gog
+      reason: "Towering sandstone formations beside Pikes Peak offer an unusually accessible, free, city-managed landscape experience."
+    - name: San Juan Skyway
+      type: scenic-road
+      review_status: strong
+      official_source: https://www.codot.gov/travel/coloradobyways/southwest/san-juan-skyway
+      reason: "A long scenic loop through alpine passes, historic mountain towns, forests, and the Million Dollar Highway can anchor a road-trip segment on its own."
+    - name: Great Sand Dunes National Park & Preserve
+      type: national-park
+      review_status: strong
+      official_source: https://www.nps.gov/grsa/index.htm
+      reason: "North America's tallest dunes against alpine mountains create one of Colorado's most visually distinct landscapes."
+    - name: Black Canyon of the Gunnison National Park
+      type: national-park
+      review_status: strong
+      official_source: https://www.nps.gov/blca/index.htm
+      reason: "Extremely steep, narrow canyon scenery is materially different from Rocky Mountain's alpine identity."
+    - name: Maroon Bells-Snowmass Wilderness
+      type: wilderness
+      review_status: strong
+      official_source: https://www.fs.usda.gov/r02/whiteriver/recreation/maroon-bells-snowmass-wilderness
+      reason: "Iconic alpine lake-and-peak scenery has strong independent travel pull, though reservation and access logistics must be captured later."
+
+florida:
+  signature: Everglades National Park
+  signature_challenge: false
+  review_note: "Everglades remains the Signature, while Florida's broader pool should emphasize reefs, islands, springs, prairie, wildlife, historic/coastal places, and experiences beyond beaches alone."
+  candidates:
+    - name: Dry Tortugas National Park
+      type: national-park-islands
+      review_status: strong
+      official_source: https://www.nps.gov/drto/index.htm
+      reason: "Remote island access, Fort Jefferson, clear water, snorkeling, and marine scenery are strong enough to justify a trip segment."
+    - name: John Pennekamp Coral Reef State Park
+      type: state-park-marine
+      review_status: strong
+      official_source: https://www.floridastateparks.org/parks-and-trails/john-pennekamp-coral-reef-state-park
+      reason: "Coral reef access, snorkeling, diving, glass-bottom boats, paddling, and mangroves give it a distinctive marine role."
+    - name: Myakka River State Park
+      type: state-park
+      review_status: strong
+      official_source: https://www.floridastateparks.org/parks-and-trails/myakka-river-state-park
+      reason: "Large protected river, wetland, prairie, wildlife, canopy walkway, camping, and paddling create a rich inland Florida experience."
+    - name: Paynes Prairie Preserve State Park
+      type: state-preserve
+      review_status: strong
+      official_source: https://www.floridastateparks.org/parks-and-trails/paynes-prairie-preserve-state-park
+      reason: "Wild-roaming bison and horses, broad prairie views, birding, and observation access create an unexpected Florida landscape."
+    - name: Florida Keys National Marine Sanctuary
+      type: marine-sanctuary-region
+      review_status: overlap
+      official_source: https://floridakeys.noaa.gov/
+      reason: "The sanctuary is unquestionably significant, but as a very broad marine region it overlaps multiple more specific visitor destinations and may work better as contextual geography than a single Wonder."
+
+puerto-rico:
+  signature: El Yunque National Forest
+  signature_challenge: true
+  review_note: "El Yunque is highly defensible, but Puerto Rico has multiple destination-scale experiences strong enough to warrant a real Signature comparison rather than treating the original choice as settled."
+  candidates:
+    - name: Mosquito Bay Bioluminescent Bay, Vieques
+      type: bioluminescent-bay
+      review_status: strong
+      official_source: https://www.discoverpuertorico.com/bio-bays
+      reason: "One of the world's brightest bioluminescent bays is a rare nighttime natural experience and a major travel reason in its own right."
+    - name: Old San Juan
+      type: cultural-historic
+      review_status: strong
+      official_source: https://www.discoverpuertorico.com/regions/san-juan
+      reason: "A dense historic urban landscape of fortifications, cobblestone streets, architecture, culture, food, and waterfront scenery broadens the guide beyond natural sites."
+    - name: Cabo Rojo National Wildlife Refuge and Salt Flats
+      type: wildlife-refuge-coast
+      review_status: strong
+      official_source: https://www.fws.gov/refuge/cabo-rojo
+      reason: "Pink salt flats, dry forest, mangroves, migratory birds, and coastal scenery create a markedly different Puerto Rico landscape."
+    - name: Rio Camuy Cave Park
+      type: cave-park
+      review_status: defer
+      official_source: https://www.discoverpuertorico.com/article/explore-rio-camuy-cave-park
+      reason: "Major cave-system value is clear, but the visitor destination is currently closed until further notice and should not move to production while access is unresolved."
+    - name: Flamenco Beach, Culebra
+      type: beach-island
+      review_status: strong
+      official_source: https://www.discoverpuertorico.com/profile/flamenco-beach/8935
+      reason: "Culebra island travel and a highly distinctive beach experience offer strong independent trip value beyond El Yunque and San Juan."
+
+guam:
+  signature: Ritidian Point
+  signature_challenge: true
+  review_note: "Ritidian is a strong conservation-and-coast choice, but Guam's Signature should be compared against places that more fully combine CHamoru culture, dramatic viewpoints, and World War II history."
+  candidates:
+    - name: Two Lovers Point
+      type: scenic-cultural
+      review_status: strong
+      official_source: https://www.visitguam.com/blog/post/puntan-dos-amantes-the-tale-of-the-two-lovers/
+      reason: "High coastal cliffs, major views over Tumon Bay, and a well-known CHamoru cultural legend give the site both scenic and cultural weight."
+    - name: War in the Pacific National Historical Park
+      type: cultural-historic-landscape
+      review_status: strong
+      official_source: https://www.nps.gov/wapa/index.htm
+      reason: "Multiple park units combine Guam's World War II history with beaches, overlooks, fortifications, coral reefs, and jungle landscapes."
+    - name: Pagat Cave and Coastal Trail
+      type: cave-cultural-trail
+      review_status: uncertain
+      official_source: https://www.visitguam.com/things-to-do/outdoors/hiking/
+      reason: "Potentially compelling cave, trail, coastline, and cultural experience, but access, trail conditions, and a precise authoritative planning source need deeper review."
+    - name: Cetti Bay Overlook
+      type: scenic-overlook
+      review_status: uncertain
+      official_source: https://www.visitguam.com/
+      reason: "Strong panoramic value, but likely better suited to ○ consideration and needs a more specific authoritative planning source before classification."
