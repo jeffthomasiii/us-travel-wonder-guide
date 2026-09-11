@@ -2,15 +2,16 @@
 layout: default
 title: Home
 ---
-<section id="homeHero" class="landing-hero landing-hero-photo" style="background-image:linear-gradient(90deg,rgba(20,35,28,.82),rgba(20,35,28,.48)),url('https://commons.wikimedia.org/wiki/Special:FilePath/Alabama_Hills_National_Scenic_Area_%2848114568221%29.jpg')">
-  <div class="landing-hero-inner">
-    <p class="eyebrow">Across the U.S. No throwaway destinations.</p>
-    <h1>There is wonder <em>everywhere</em> in America.</h1>
-    <p class="hero-lede">A travel guide built around one simple idea: every part of the United States has somewhere worth seeing. National parks are part of that story, but so are state parks, territories, islands, wildlife refuges, forests, scenic roads, coastlines, cultural places, and lesser-known discoveries worth changing your route for.</p>
-    <div class="hero-actions desktop-hero-actions">
-      <a class="primary" href="{{ '/explore/' | relative_url }}">Explore the guide</a>
-      <a class="secondary-button" href="{{ '/tiers/' | relative_url }}">How places qualify</a>
-    </div>
+<section id="homeHero" class="wg-home-hero" style="background-image:linear-gradient(90deg,rgba(13,25,32,.68),rgba(13,25,32,.3)),url('https://commons.wikimedia.org/wiki/Special:FilePath/Alabama_Hills_National_Scenic_Area_%2848114568221%29.jpg')">
+  <div class="wg-hero-copy">
+    <p class="wg-kicker">Across America</p>
+    <h1>There is somewhere<br>worth seeing.</h1>
+    <p>Real places. Not a bucket-list dump.</p>
+    <form class="wg-hero-search" action="{{ '/explore/' | relative_url }}" method="get">
+      <label class="sr-only" for="homeSearch">Search destinations</label>
+      <input id="homeSearch" name="q" type="search" placeholder="Search destinations, states, or experiences…">
+      <button type="submit" aria-label="Search">⌕</button>
+    </form>
     <a id="heroCredit" class="hero-credit" href="https://commons.wikimedia.org/wiki/File:Alabama_Hills_National_Scenic_Area_%2848114568221%29.jpg" target="_blank" rel="noopener">Alabama Hills · Matthew Dillon · CC BY 2.0</a>
   </div>
 </section>
@@ -24,55 +25,38 @@ title: Home
     {% if wonder.tier == 'signature' %}
       {% assign signature_image = site.data.expanded_signature_images[wonder.state_slug] %}
       {% unless signature_image %}{% assign signature_image = site.data.signature_images[wonder.state_slug] %}{% endunless %}
-      {% if signature_image %}
-        {% assign hero_image = signature_image.image_url %}
-        {% assign hero_credit = signature_image.image_credit %}
-        {% assign hero_source = signature_image.image_source_url %}
-      {% endif %}
+      {% if signature_image %}{% assign hero_image = signature_image.image_url %}{% assign hero_credit = signature_image.image_credit %}{% assign hero_source = signature_image.image_source_url %}{% endif %}
     {% endif %}
     {% if hero_image %}<span class="hero-candidate" data-image="{{ hero_image | escape }}" data-credit="{{ wonder.title | escape }} · {{ hero_credit | escape }}" data-source="{{ hero_source | escape }}"></span>{% endif %}
   {% endfor %}
 </div>
 
-<section class="page-shell home-section">
-  <div class="section-head">
-    <div>
-      <p class="eyebrow">Featured places</p>
-      <h2>Start somewhere remarkable.</h2>
-      <p class="lede">A rotating selection from across the country. Refresh the page and the mix changes.</p>
-    </div>
-    <a class="text-cta" href="{{ '/explore/' | relative_url }}">Explore all wonders →</a>
-  </div>
-  <div class="cards featured-grid" id="featuredGrid">
-    {% assign wonders = site.wonders | sort: "title" %}
-    {% for wonder in wonders %}
-      <div class="featured-item" hidden>{% include wonder_card.html wonder=wonder %}</div>
-    {% endfor %}
-  </div>
+<section class="wg-reasons" aria-label="How places qualify">
+  <a href="{{ '/tiers/' | relative_url }}#signature"><span class="wg-reason-icon signature">★</span><span><strong>Signature Wonder</strong><small>Truly exceptional places.</small></span></a>
+  <a href="{{ '/tiers/' | relative_url }}#travel"><span class="wg-reason-icon travel">◆</span><span><strong>Worth Traveling For</strong><small>Memorable places that deliver.</small></span></a>
+  <a href="{{ '/tiers/' | relative_url }}#detour"><span class="wg-reason-icon detour">○</span><span><strong>Worth the Detour</strong><small>Hidden gems with real character.</small></span></a>
 </section>
 
-<section class="home-discovery-band">
-  <div class="page-shell home-discovery-grid">
-    <article class="qualify-summary">
-      <p class="eyebrow">Not a ranking. A reason to go.</p>
-      <h2>Three ways a place earns its spot.</h2>
-      <div class="qualify-rows">
-        <div><span class="tier-icon signature">★</span><p><strong>Signature Wonder</strong><br>The one place that best makes the case for its state, district, or territory.</p></div>
-        <div><span class="tier-icon travel">◆</span><p><strong>Worth Traveling For</strong><br>Significant enough to anchor part of a trip.</p></div>
-        <div><span class="tier-icon detour">○</span><p><strong>Worth the Detour</strong><br>Worth changing your route for when nearby.</p></div>
-      </div>
-      <a class="text-cta" href="{{ '/tiers/' | relative_url }}">See how places qualify →</a>
-    </article>
+{% assign culture_pick = site.wonders | where: "title", "Savannah Historic Landmark District" | first %}
+<section class="page-shell wg-more-than-parks">
+  <div>
+    <p class="wg-kicker dark">More than parks</p>
+    <h2>A broader guide to the places that make America remarkable.</h2>
+    <p>National parks belong here, but so do islands, historic districts, wildlife refuges, coastlines, scenic roads, architecture, small surprises, and places worth changing your route for.</p>
+    <a class="wg-text-link" href="{{ '/about/' | relative_url }}">Learn more →</a>
+  </div>
+  {% if culture_pick and culture_pick.image_url %}<a class="wg-editorial-image" href="{{ culture_pick.url | relative_url }}" style="background-image:url('{{ culture_pick.image_url }}')" aria-label="View {{ culture_pick.title }}"></a>{% else %}<div class="wg-editorial-image fallback"></div>{% endif %}
+</section>
 
-    <article class="guide-summary">
-      <p class="eyebrow">A travel reference, not a bucket-list dump.</p>
-      <h2>Discover a reason to go.</h2>
-      <p>Search by area, reason to go, experience, place, or region—and let the guide grow naturally as new wonders are added.</p>
-      <div class="guide-summary-actions">
-        <a class="primary" href="{{ '/explore/' | relative_url }}">Open Explore</a>
-        <a class="secondary-button" href="{{ '/states/' | relative_url }}">States & Territories</a>
-      </div>
-    </article>
+<section class="wg-start-panel">
+  <div class="page-shell">
+    <p class="wg-kicker">Start exploring</p>
+    <div class="wg-start-grid">
+      <a href="{{ '/explore/' | relative_url }}"><span>△</span><strong>Explore</strong><small>All destinations</small></a>
+      <a href="{{ '/states/' | relative_url }}"><span>▱</span><strong>Browse</strong><small>States & Territories</small></a>
+      <a href="{{ '/tiers/' | relative_url }}"><span>◎</span><strong>See how</strong><small>Places qualify</small></a>
+    </div>
+    <p class="wg-start-note">Natural. Cultural. Surprising. All part of the story.</p>
   </div>
 </section>
 {% include nav_sheet.html %}

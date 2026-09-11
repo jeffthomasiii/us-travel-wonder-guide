@@ -1,10 +1,14 @@
-<header class="site-header">
-  <a class="brand" href="{{ '/' | relative_url }}"><span class="brand-mark">US</span><span class="brand-copy"><strong>Travel & Wonder Guide</strong><small>Across the United States</small></span></a>
+<header class="site-header wg-header">
+  <a class="brand wg-brand" href="{{ '/' | relative_url }}" aria-label="WanderGuy home">
+    <span class="wg-wordmark">WanderGuy</span>
+    <span class="wg-tagline">Real Places. Bigger Stories.</span>
+  </a>
   <button id="menuToggle" class="menu-toggle" type="button" aria-expanded="false" aria-controls="primaryNav" aria-label="Open menu"><span></span><span></span><span></span></button>
   <nav id="primaryNav" class="primary-nav" aria-label="Primary navigation">
     <a href="{{ '/explore/' | relative_url }}">Explore</a>
     <a href="{{ '/states/' | relative_url }}">States & Territories</a>
     <a href="{{ '/tiers/' | relative_url }}">How Places Qualify</a>
     <a href="{{ '/about/' | relative_url }}">About</a>
+    <a class="nav-search-link" href="{{ '/explore/#search' | relative_url }}" aria-label="Search WanderGuy">⌕</a>
   </nav>
 </header>

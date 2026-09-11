@@ -3,15 +3,13 @@ layout: default
 title: About
 permalink: /about/
 ---
-<section class="page-hero slim-hero">
-  <div class="page-shell">
-    <p class="eyebrow">About the guide</p>
-    <h1>America, state by state.</h1>
-    <p class="lede">The United States Travel & Wonder Guide starts with a simple premise: every U.S. state has somewhere capable of inspiring a trip, a detour, or a fresh look at the state itself.</p>
-  </div>
+{% assign about_image = site.data.signature_images['utah'] %}
+<section class="wg-story-hero" {% if about_image %}style="background-image:linear-gradient(180deg,rgba(13,25,32,.18),rgba(13,25,32,.66)),url('{{ about_image.image_url }}')"{% endif %}>
+  <div class="page-shell"><p class="wg-kicker">About WanderGuy</p><h1>Real places. Bigger stories.</h1></div>
 </section>
-<section class="page-shell tier-detail-grid">
-  <article class="tier-detail"><span class="tier-icon signature">★</span><div><h2>Start with a defining place.</h2><p>Each state begins with one Signature Wonder: the destination that best makes the case for that state. From there, the guide grows naturally with destinations Worth Traveling For and Worth the Detour.</p></div></article>
-  <article class="tier-detail"><span class="tier-icon travel">◆</span><div><h2>Useful before impressive.</h2><p>This is meant to become a practical travel reference—not a quota-driven list. States can have as many entries as they genuinely deserve, with useful context for photography, wildlife, RV travel, dogs, accessibility, routes, official resources, and more.</p></div></article>
-  <article class="tier-detail"><span class="tier-icon detour">○</span><div><h2>Built to grow.</h2><p>The proof of concept begins with 50 Signature Wonders. The structure is intentionally data-driven so richer filters, verified imagery, nearby discovery, map views, and additional destinations can be added without rebuilding the site.</p></div></article>
+<section class="page-shell wg-story-page">
+  <article class="wg-story-row"><span class="wg-reason-icon signature">★</span><div><h2>Start with somewhere worth seeing.</h2><p>WanderGuy is built around a simple belief: every part of the United States has places capable of changing how you see that area. The guide begins with a defining place, then keeps going wherever the travel value is real.</p></div></article>
+  <article class="wg-story-row"><span class="wg-reason-icon travel">◆</span><div><h2>More than the obvious landmarks.</h2><p>National parks matter, but the story is bigger than parks. State lands, islands, historic districts, architecture, wildlife refuges, scenic roads, cultural landscapes, coastlines, and lesser-known places all belong when they give someone a genuine reason to go.</p></div></article>
+  <article class="wg-story-row"><span class="wg-reason-icon detour">○</span><div><h2>Useful enough to travel with.</h2><p>The goal is not to collect names. It is to help people understand why a place matters and what they should know before going, including planning sources, access, pets, RV considerations, photography, wildlife, and changing conditions where they matter.</p></div></article>
+  <div class="wg-story-quote"><p>A more meaningful way</p><strong>to explore America.</strong></div>
 </section>

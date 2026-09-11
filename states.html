@@ -3,31 +3,31 @@ layout: default
 title: States & Territories
 permalink: /states/
 ---
-<section class="page-hero slim-hero">
-  <div class="page-shell">
-    <p class="eyebrow">Browse by area</p>
-    <h1>States, D.C. & U.S. territories.</h1>
-    <p class="lede">Explore all 50 states, Washington, D.C., and the five inhabited U.S. territories. Each area grows from a defining starting point into the places genuinely worth seeing there.</p>
+<section class="wg-directory-hero page-shell">
+  <p class="wg-kicker dark">Browse by area</p>
+  <h1>States & Territories</h1>
+  <p>Explore all 56 areas of the United States, from iconic to lesser-known, each with somewhere worth seeing.</p>
+  <div class="wg-area-tabs" role="group" aria-label="Filter areas">
+    <button class="active" type="button" data-area-filter="all">All</button>
+    <button type="button" data-area-filter="state">States</button>
+    <button type="button" data-area-filter="territory">Territories</button>
+    <button type="button" data-area-filter="district">D.C.</button>
   </div>
 </section>
 <section class="page-shell">
-  <div class="states-card-grid compact-state-grid" id="statesGrid">
+  <div class="states-card-grid wg-area-grid" id="statesGrid">
     {% assign states = site.states | sort: "title" %}
     {% for state in states %}
+      {% assign area_type = 'state' %}
+      {% if state.title == 'Washington, D.C.' %}{% assign area_type = 'district' %}{% endif %}
+      {% if state.title == 'Puerto Rico' or state.title == 'U.S. Virgin Islands' or state.title == 'Guam' or state.title == 'Northern Mariana Islands' or state.title == 'American Samoa' %}{% assign area_type = 'territory' %}{% endif %}
       {% assign default_flag = state.title | replace: ' ', '_' %}
       {% assign flag_name = state.flag_file | default: 'Flag_of_' | append: default_flag | append: '.svg' %}
       {% if state.flag_file %}{% assign flag_name = state.flag_file %}{% endif %}
-      <a class="state-card compact-state-card" href="{{ state.url | relative_url }}">
-        <span class="state-card-number">{{ forloop.index | prepend: '0' | slice: -2, 2 }}</span>
-        <span class="state-card-mark state-flag-wrap">
-          <span class="state-flag-fallback">{{ site.data.state_codes[state.title] }}</span>
-          <img class="state-flag" src="https://commons.wikimedia.org/wiki/Special:FilePath/{{ flag_name | uri_escape }}" alt="Flag of {{ state.title }}" loading="lazy" onerror="this.style.display='none'">
-        </span>
-        <div class="state-card-copy">
-          <h2>{{ state.title }}</h2>
-          <p>Explore locations in {{ state.title }}</p>
-        </div>
-        <span class="state-card-arrow">→</span>
+      <a class="state-card wg-area-card" data-area-type="{{ area_type }}" href="{{ state.url | relative_url }}">
+        <span class="state-flag-wrap"><span class="state-flag-fallback">{{ site.data.state_codes[state.title] }}</span><img class="state-flag" src="https://commons.wikimedia.org/wiki/Special:FilePath/{{ flag_name | uri_escape }}" alt="Flag of {{ state.title }}" loading="lazy" onerror="this.style.display='none'"></span>
+        <strong>{{ state.title }}</strong>
+        <small>{{ site.data.state_codes[state.title] }}</small>
       </a>
     {% endfor %}
   </div>

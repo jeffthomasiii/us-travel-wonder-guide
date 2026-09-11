@@ -1,19 +1,29 @@
 ---
 layout: default
 ---
-<div class="page-shell">
-  <p class="eyebrow">State guide</p>
-  <h1>{{ page.title }}</h1>
-  {% assign state_wonders = site.wonders | where: "state", page.title %}
-  <p class="lede">Explore the places currently included for {{ page.title }}. The guide grows by merit rather than quota, so states may eventually have very different numbers of destinations.</p>
-
-  <div class="cards">
-    {% assign signature_wonders = state_wonders | where: "tier", "signature" %}
+{% assign state_wonders = site.wonders | where: "state", page.title %}
+{% assign signature_wonders = state_wonders | where: "tier", "signature" %}
+{% assign signature = signature_wonders | first %}
+{% assign state_image = site.data.expanded_signature_images[page.slug] %}
+{% unless state_image %}{% assign state_image = site.data.signature_images[page.slug] %}{% endunless %}
+{% assign default_flag = page.title | replace: ' ', '_' %}
+{% assign flag_name = page.flag_file | default: 'Flag_of_' | append: default_flag | append: '.svg' %}
+{% if page.flag_file %}{% assign flag_name = page.flag_file %}{% endif %}
+<section class="wg-state-intro page-shell">
+  <a class="wg-back-link" href="{{ '/states/' | relative_url }}">← Back to States & Territories</a>
+  <div class="wg-state-title-row">
+    <div><p class="wg-kicker dark">Area guide</p><h1>{{ page.title }}</h1>{% if signature %}<p>{{ signature.summary }}</p>{% endif %}</div>
+    <div class="wg-state-flag-panel"><img src="https://commons.wikimedia.org/wiki/Special:FilePath/{{ flag_name | uri_escape }}" alt="Flag of {{ page.title }}"><strong>{{ site.data.state_codes[page.title] }}</strong><small>{{ state_wonders | size }} places in the guide</small></div>
+  </div>
+</section>
+{% if state_image %}<section class="wg-state-hero" style="background-image:linear-gradient(180deg,rgba(13,25,32,.03),rgba(13,25,32,.34)),url('{{ state_image.image_url }}')"><span>Photo: {{ state_image.image_credit }}</span></section>{% endif %}
+<section class="page-shell wg-state-content">
+  <nav class="wg-state-tabs" aria-label="State guide sections"><a class="active" href="#wonders">Wonders</a><span>Overview</span><span>Travel tips</span><span>Map</span></nav>
+  <div id="wonders" class="wg-state-wonder-list">
     {% assign travel_wonders = state_wonders | where: "tier", "travel" %}
     {% assign detour_wonders = state_wonders | where: "tier", "detour" %}
-
     {% for wonder in signature_wonders %}{% include wonder_card.html wonder=wonder %}{% endfor %}
     {% for wonder in travel_wonders %}{% include wonder_card.html wonder=wonder %}{% endfor %}
     {% for wonder in detour_wonders %}{% include wonder_card.html wonder=wonder %}{% endfor %}
   </div>
-</div>
+</section>
