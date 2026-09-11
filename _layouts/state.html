@@ -4,11 +4,16 @@ layout: default
 <div class="page-shell">
   <p class="eyebrow">State guide</p>
   <h1>{{ page.title }}</h1>
-  <p class="lede">The first proof-of-concept destination for {{ page.title }}. Future passes can add ◆ Worth Traveling For and ○ Worth the Detour entries without changing the page structure.</p>
-  <div class="cards">
   {% assign state_wonders = site.wonders | where: "state", page.title %}
-  {% for wonder in state_wonders %}
-    {% include wonder_card.html wonder=wonder %}
-  {% endfor %}
+  <p class="lede">Explore the places currently included for {{ page.title }}. The guide grows by merit rather than quota, so states may eventually have very different numbers of destinations.</p>
+
+  <div class="cards">
+    {% assign signature_wonders = state_wonders | where: "tier", "signature" %}
+    {% assign travel_wonders = state_wonders | where: "tier", "travel" %}
+    {% assign detour_wonders = state_wonders | where: "tier", "detour" %}
+
+    {% for wonder in signature_wonders %}{% include wonder_card.html wonder=wonder %}{% endfor %}
+    {% for wonder in travel_wonders %}{% include wonder_card.html wonder=wonder %}{% endfor %}
+    {% for wonder in detour_wonders %}{% include wonder_card.html wonder=wonder %}{% endfor %}
   </div>
 </div>
