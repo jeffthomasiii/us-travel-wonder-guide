@@ -1,0 +1,54 @@
+# Phase 2 refinements layered over travel_planning_phase2.yml.
+# Date windows are typical editorial guidance, not guarantees of weather, access, closures, foliage, or wildlife activity.
+
+big-sur-coast:
+  best_visit_windows:
+    - "April 1 – June 15"
+    - "September 15 – November 15"
+  pet_access: limited
+  pet_types: [dogs, cats]
+  pet_notes: "Pet rules vary by the specific Big Sur park, beach, trail, campground, or public-land stop. Build the itinerary around the pet rules for each planned stop rather than treating the whole coast as uniformly pet-friendly."
+  rv_road_notes: "Highway 1 is paved but famously narrow and winding, with cliff edges, limited shoulders, small pullouts, and recurring fire/slide/roadwork closures. Large rigs and trailers should confirm route status and turning/parking options before entering."
+
+myakka-river-state-park:
+  best_visit_windows:
+    - "November 1 – April 30"
+  pet_access: good
+  pet_types: [dogs, cats]
+  pet_notes: "Domestic pets are welcome on trails and in developed campgrounds when leashed or confined, but not in buildings, cabins, primitive campsites, or on the Canopy Walkway. Keep pets away from shallow water and wildlife."
+  rv_road_notes: "The main developed road and campgrounds are RV-friendly, with electrical hookups and some full-hookup sites. Natural-surface backroads and trails can flood or become rough after heavy rain."
+
+savannah-historic-landmark-district:
+  best_visit_windows:
+    - "March 1 – May 15"
+    - "October 1 – November 30"
+  pet_access: limited
+  pet_types: [dogs, cats]
+  pet_notes: "Outdoor squares and sidewalks are generally the easiest parts of the district to experience with a leashed pet. Historic interiors, museums, restaurants, tours, and private businesses may prohibit pets or set their own rules."
+  rv_road_notes: "Avoid treating the historic core as an RV-driving destination. Tight urban streets, mature trees, curb restrictions, garages, and pedestrian traffic make a smaller vehicle or transit from an outside base the better approach."
+
+mackinac-island:
+  best_visit_windows:
+    - "May 15 – October 15"
+  pet_access: good
+  pet_types: [dogs, cats]
+  pet_notes: "Passenger ferries can carry leashed pets, and many outdoor island routes work well with them. Individual hotels, restaurants, historic interiors, attractions, and carriage services can have separate restrictions."
+  rv_road_notes: "There is no on-island RV travel because private motor vehicles are not part of the normal visitor experience. Park the rig on the mainland near Mackinaw City or St. Ignace and cross by ferry."
+
+shaker-village-of-pleasant-hill:
+  best_visit_windows:
+    - "April 1 – June 15"
+    - "September 1 – November 15"
+  pet_access: limited
+  pet_types: [dogs, cats]
+  pet_notes: "Select inn rooms welcome pets for a fee, and leashed pets are permitted in designated outdoor areas. Dining facilities, exhibition buildings, and some trails do not allow pets."
+  rv_road_notes: "Pleasant Hill is a historic day-visit/lodging destination rather than an RV park. Larger combinations should confirm visitor parking and maneuvering space before arrival and consider using a smaller tow vehicle for the visit."
+
+bon-secour-national-wildlife-refuge:
+  best_visit_windows:
+    - "March 1 – May 15"
+    - "October 1 – November 30"
+  pet_access: none
+  pet_types: [dogs, cats]
+  pet_notes: "Pets are prohibited throughout the refuge; trained service dogs are the exception. Do not plan to leave a pet unattended in a parked vehicle or RV while hiking."
+  rv_road_notes: "Treat Bon Secour as a trailhead-based day stop, not an RV destination. Confirm parking and turning space for a large rig, especially during busier coastal periods, and use a smaller vehicle when practical."
