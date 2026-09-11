@@ -1,0 +1,40 @@
+# Planning metadata for the six Signature Wonders added with the U.S. geography expansion.
+
+national-mall-and-memorial-parks:
+  best_seasons: [spring, fall]
+  visit_length: "1–2 days"
+  planning_source_url: https://www.nps.gov/nama/planyourvisit/index.htm
+  conditions_url: https://www.nps.gov/nama/planyourvisit/conditions.htm
+  planning_last_reviewed: 2026-09-11
+
+el-yunque-national-forest:
+  best_seasons: [winter, spring]
+  visit_length: "full day to 2 days"
+  planning_source_url: https://www.fs.usda.gov/elyunque
+  planning_last_reviewed: 2026-09-11
+
+virgin-islands-national-park:
+  best_seasons: [winter, spring]
+  visit_length: "2–4 days"
+  planning_source_url: https://www.nps.gov/viis/planyourvisit/index.htm
+  conditions_url: https://www.nps.gov/viis/planyourvisit/conditions.htm
+  planning_last_reviewed: 2026-09-11
+
+ritidian-point:
+  best_seasons: [winter, spring]
+  visit_length: "half day to full day"
+  planning_source_url: https://www.fws.gov/refuge/guam
+  planning_last_reviewed: 2026-09-11
+
+the-grotto:
+  best_seasons: [winter, spring]
+  visit_length: "2–4 hours"
+  planning_source_url: https://www.mymarianas.com/
+  planning_last_reviewed: 2026-09-11
+
+national-park-of-american-samoa:
+  best_seasons: [winter, spring, summer]
+  visit_length: "2–5 days"
+  planning_source_url: https://www.nps.gov/npsa/planyourvisit/index.htm
+  conditions_url: https://www.nps.gov/npsa/planyourvisit/conditions.htm
+  planning_last_reviewed: 2026-09-11
