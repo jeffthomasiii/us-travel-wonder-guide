@@ -4,163 +4,103 @@ This file is the working roadmap for building the guide without letting content 
 
 ## Guiding principle
 
-The guide is a **travel discovery reference**, not a quota-driven 50-state list. Every state begins with one **★ Signature Wonder**, then grows only where destinations genuinely justify **◆ Worth Traveling For** and **○ Worth the Detour** status.
+The guide is a **U.S. travel discovery reference**, not a quota-driven state list and not a national-park directory. The primary geography now includes the **50 states, Washington, D.C., and the five inhabited U.S. territories**. Each area begins with one **★ Signature Wonder**, then grows only where destinations genuinely justify **◆ Worth Traveling For** and **○ Worth the Detour** status.
 
-## Phase 1A — Complete imagery for all 50 Signature Wonders
+See [`EDITORIAL_SCOPE.md`](EDITORIAL_SCOPE.md) for geographic and editorial boundaries.
 
-**Status: COMPLETE — 50 / 50 Signature Wonders (100%).**
+## Phase 1A — Original 50-state Signature imagery
 
-Goal: every existing ★ Signature Wonder has a strong, verified, properly credited main image.
+**Status: COMPLETE — 50 / 50 original state Signature Wonders.**
 
-### Completed workflow
+The canonical rights audit remains [`_data/signature_images.yml`](_data/signature_images.yml). The six district/territory Signature Wonders added later are a separate geography-expansion image pass and intentionally keep the neutral fallback until their images are individually rights-verified.
 
-For each Signature Wonder we:
-
-1. confirmed the destination remained a defensible first-pass ★ selection;
-2. selected a representative image rather than signage, logos, or generic visitor infrastructure;
-3. verified reuse rights for the individual image, not merely the website hosting it;
-4. recorded the image URL, specific source page, creator/agency credit, rights, and verification status;
-5. kept attribution visible in the card/detail experience and linked the credit back to the source record.
-
-The canonical Phase 1A audit file is [`_data/signature_images.yml`](_data/signature_images.yml). It contains one verified image record for every state and allows the 50-state image set to be reviewed in one place.
-
-### Phase 1A completion record
-
-- [x] 50 / 50 Signature Wonders have verified main images.
-- [x] 50 / 50 image records have source, credit, rights, and verification metadata.
-- [x] The image data is centralized in `_data/signature_images.yml` for ongoing rights audits.
-- [x] Signature cards and Wonder pages consume the manifest consistently.
-- [x] No unverified image was used merely to eliminate a placeholder.
-
-Phase 1A should be reopened only when replacing an image, changing a Signature Wonder, or correcting an attribution/license record.
-
-## Phase 1B — Pilot mixed-tier content
+## Phase 1B — Mixed-tier pilot
 
 **Status: COMPLETE — 6 pilot states / 12 added destinations.**
 
-Goal: prove that the site, filters, state pages, and editorial model work when all three tiers coexist.
+Pilot states: California, Utah, Maine, Michigan, Oklahoma, and Delaware.
 
-### Pilot states
+The pilot validated all three reasons to go, mixed-tier state pages, Explore filtering, and the basic content hierarchy.
 
-- **California** — large western state with many nationally significant destinations
-- **Utah** — dense concentration of scenic destinations and strong tier-boundary pressure
-- **Maine** — coast plus inland wilderness
-- **Michigan** — Great Lakes landscapes and a compact roadside natural feature
-- **Oklahoma** — useful test against common geographic stereotypes
-- **Delaware** — small state where the guide must remain useful without forcing quantity
+## Phase 1C — Travel-planning content model
 
-### Pilot destinations
+**Status: IN PROGRESS — implemented for all 18 Wonders in the six pilot states.**
 
-| State | ◆ Worth Traveling For | ○ Worth the Detour |
-| --- | --- | --- |
-| California | Redwood National and State Parks | Alabama Hills National Scenic Area |
-| Utah | Bryce Canyon National Park | Goblin Valley State Park |
-| Maine | Baxter State Park | Quoddy Head State Park |
-| Michigan | Sleeping Bear Dunes National Lakeshore | Kitch-iti-kipi |
-| Oklahoma | Beavers Bend State Park | Gloss Mountain State Park |
-| Delaware | Bombay Hook National Wildlife Refuge | Trap Pond State Park |
+The working schema is documented in [`CONTENT_MODEL.md`](CONTENT_MODEL.md). Current planning guidance includes typical calendar visit windows, visit length, RV access and road/rig considerations, pet access, accessibility, photography, wildlife, official conditions, reservations/permits where useful, planning source, and review date.
 
-This added **12 pilot destinations** and brought the guide to **62 total Wonders**: 50 ★, 6 ◆, and 6 ○.
+Design and branding work remains intentionally deferred except for functional usability changes.
 
-### Phase 1B completion record
+## Geography expansion — states, D.C. and inhabited territories
 
-- [x] State, tier, experience, and text filtering supported on Explore.
-- [x] Search visibility bug corrected so non-matching cards are actually removed from layout.
-- [x] Wonder cards render distinct ★ / ◆ / ○ labels and tier classes.
-- [x] Wonder detail pages display the correct tier.
-- [x] Pilot state pages display ★ first, ◆ second, ○ third.
-- [x] All 12 pilot entries include deliberate tier rationale, official source, navigation query, experience tags, and verified image metadata.
-- [x] Live six-state pilot visually reviewed and accepted as structurally sound.
+**Status: IMPLEMENTED — 56 primary browse areas / 68 Wonders total.**
 
-Design/branding polish remains intentionally deferred.
+The guide now includes:
 
-## Phase 1C — Validate the content model
+- 50 states
+- Washington, D.C.
+- Puerto Rico
+- U.S. Virgin Islands
+- Guam
+- Northern Mariana Islands
+- American Samoa
 
-**Status: IN PROGRESS — pilot planning model implemented for all 18 Wonders in the six pilot states.**
+First-pass Signature Wonders added:
 
-Goal: decide what practical travel-planning information materially improves the guide before national content expansion.
+| Area | ★ Signature Wonder |
+| --- | --- |
+| Washington, D.C. | National Mall and Memorial Parks |
+| Puerto Rico | El Yunque National Forest |
+| U.S. Virgin Islands | Virgin Islands National Park |
+| Guam | Ritidian Point |
+| Northern Mariana Islands | The Grotto |
+| American Samoa | National Park of American Samoa |
 
-The working schema is documented in [`CONTENT_MODEL.md`](CONTENT_MODEL.md).
+The U.S. Minor Outlying Islands are excluded from the ordinary browse model unless a later editorial case justifies a specific destination.
 
-### Phase 1C fields selected
+### Geography-expansion follow-up
 
-The pilot now tests:
+- [ ] complete asset-level image-rights research for the six new Signature Wonders;
+- [ ] review the six first-pass Signature selections with the same rigor as the original 50;
+- [ ] add Phase 1C planning metadata for the six new Signature Wonders when the model is finalized;
+- [ ] ensure future Phase 2 expansion covers non-NPS destinations deliberately rather than defaulting to federal park inventory.
 
-- broad best seasons;
-- practical visit length;
-- normalized RV access plus notes;
-- normalized dog access plus notes;
-- accessibility guidance;
-- photography guidance;
-- notable wildlife;
-- official current-conditions/alerts link;
-- optional reservation/permit link;
-- official planning source;
-- planning metadata review date.
+## Mobile functional baseline
 
-The pilot metadata is centralized in [`_data/travel_planning.yml`](_data/travel_planning.yml), keyed by Wonder slug. The Wonder detail layout renders this information only when it exists, so destinations outside the pilot continue to work unchanged.
+**Status: IMPLEMENTED.**
 
-### Fields intentionally deferred
+Mobile now uses persistent bottom navigation for **Home, Explore, Search, and Areas**, while the hamburger menu holds secondary/reference pages. This is the functional baseline for the current POC; a deeper installed-app/PWA navigation redesign can happen during the dedicated design phase.
 
-- nearby wonders — wait until the national inventory is denser;
-- multiple navigation targets — wait for map/navigation work;
-- exact fees — too volatile;
-- exact seasonal opening dates — too volatile;
-- live weather — future dynamic integration;
-- detailed campground inventories — outside the discovery-guide scope.
+## Phase 2 — Expand nationally
 
-### Phase 1C pilot coverage
+**Status: NOT STARTED.**
 
-All 18 Wonders in the six pilot states now have Phase 1C planning metadata:
-
-- California: Yosemite, Redwood, Alabama Hills
-- Utah: Zion, Bryce Canyon, Goblin Valley
-- Maine: Acadia, Baxter, Quoddy Head
-- Michigan: Pictured Rocks, Sleeping Bear Dunes, Kitch-iti-kipi
-- Oklahoma: Wichita Mountains, Beavers Bend, Gloss Mountain
-- Delaware: Cape Henlopen, Bombay Hook, Trap Pond
-
-### Remaining Phase 1C validation
-
-Before closing Phase 1C:
-
-- [ ] confirm the rendered planning sections are useful without feeling overloaded;
-- [ ] confirm RV and dog categories are understandable alongside their notes;
-- [ ] confirm official conditions/reservation links are prominent enough to discourage stale operational guidance;
-- [ ] determine whether any selected field should be removed before national rollout;
-- [ ] confirm the model is ready to become normal intake for Phase 2 destinations.
-
-## Phase 2 — Expand the guide nationally
-
-**Status: NOT STARTED**
-
-Grow ◆ and ○ destinations state by state, based on merit rather than quotas. The guide should be comfortable with uneven counts: California or Utah may legitimately contain many more qualifying entries than another state.
+Grow ◆ and ○ destinations across all 56 browse areas based on merit rather than quotas. Larger or more destination-dense areas may legitimately contain many more entries than others.
 
 Each new Wonder should enter with:
 
-- tier assignment;
+- deliberate reason-to-go assignment;
 - concise editorial rationale;
-- official source;
+- official or authoritative source;
 - useful navigation target;
-- verified imagery or fallback;
+- verified imagery or neutral fallback;
 - relevant experience tags;
-- Phase 1C travel-planning metadata when reliable official information is available.
+- Phase 1C planning metadata when reliable information is available.
 
 ## Dedicated branding / design / layout phase
 
-A focused design pass is intentionally deferred until the content model and national content structure are proven. That later phase can address typography, spacing, navigation styling, cards, color system, mobile refinement, and broader visual identity without interrupting content preparation.
+A focused redesign remains deferred until the content model and broader inventory are proven. That phase can address brand identity, About-page storytelling, typography, color system, cards, header, How Places Qualify page, deeper mobile/PWA behavior, and other visual refinements.
 
 ## Later phases
 
-Potential future development after the content system is stable:
+Potential later development:
 
 - map view;
 - Near Me discovery;
 - route-aware detours;
 - PWA/offline support;
-- visited / want-to-visit state stored locally;
+- visited / want-to-visit state;
 - increased use of first-party photography.
 
 ## Current task
 
-**Validate the Phase 1C planning-information experience on the six pilot states. If the model reads well in the live site, close Phase 1C and begin national ◆ / ○ expansion in Phase 2 before the dedicated branding/design/layout pass.**
+**Finish Phase 1C validation, complete the six-area geography-expansion image/planning follow-up, then begin Phase 2 content expansion across the full 56-area scope.**
