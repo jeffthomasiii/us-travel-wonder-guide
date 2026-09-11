@@ -1,0 +1,44 @@
+# Verified Signature Wonder imagery for Washington, D.C. and the five inhabited U.S. territories.
+# These records use the same rights-verification standard as the original 50-state Signature manifest.
+
+washington-dc:
+  image_credit: National Park Service staff · Public domain
+  image_rights: public-domain
+  image_source_url: https://commons.wikimedia.org/wiki/File:National_Mall,_Washington_D.C._(dc0e454f-b582-4642-95a2-1c8488ccae1b).jpg
+  image_url: https://commons.wikimedia.org/wiki/Special:Redirect/file/National%20Mall%2C%20Washington%20D.C.%20%28dc0e454f-b582-4642-95a2-1c8488ccae1b%29.jpg
+  image_verified: true
+
+puerto-rico:
+  image_credit: Roy Hewitt / USFWS · Public domain
+  image_rights: public-domain
+  image_source_url: https://commons.wikimedia.org/wiki/File:El_Yunque_National_Rain_Forest,_Puerto_Rico_(30112435560).jpg
+  image_url: https://commons.wikimedia.org/wiki/Special:Redirect/file/El%20Yunque%20National%20Rain%20Forest%2C%20Puerto%20Rico%20%2830112435560%29.jpg
+  image_verified: true
+
+us-virgin-islands:
+  image_credit: National Park Service Digital Image Archives · Public domain
+  image_rights: public-domain
+  image_source_url: https://commons.wikimedia.org/wiki/File:Virgin_Islands_National_Park_VIIS2320.jpg
+  image_url: https://commons.wikimedia.org/wiki/Special:Redirect/file/Virgin%20Islands%20National%20Park%20VIIS2320.jpg
+  image_verified: true
+
+guam:
+  image_credit: Pai-Shih Lee · CC BY 2.0
+  image_rights: cc-by-2.0
+  image_source_url: https://commons.wikimedia.org/wiki/File:Ritidian_Point_at_Guam_(29610014224).jpg
+  image_url: https://commons.wikimedia.org/wiki/Special:Redirect/file/Ritidian%20Point%20at%20Guam%20%2829610014224%29.jpg
+  image_verified: true
+
+northern-mariana-islands:
+  image_credit: Editor abcdef · CC0 1.0
+  image_rights: cc0-1.0
+  image_source_url: https://commons.wikimedia.org/wiki/File:Grotto_saipan.JPG
+  image_url: https://commons.wikimedia.org/wiki/Special:Redirect/file/Grotto%20saipan.JPG
+  image_verified: true
+
+american-samoa:
+  image_credit: National Park Service · Public domain
+  image_rights: public-domain
+  image_source_url: https://commons.wikimedia.org/wiki/File:National_Park_of_American_Samoa.jpg
+  image_url: https://commons.wikimedia.org/wiki/Special:Redirect/file/National%20Park%20of%20American%20Samoa.jpg
+  image_verified: true
