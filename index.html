@@ -2,15 +2,16 @@
 layout: default
 title: Home
 ---
-<section class="landing-hero">
+<section class="landing-hero landing-hero-photo" style="background-image:linear-gradient(90deg,rgba(20,35,28,.82),rgba(20,35,28,.48)),url('https://commons.wikimedia.org/wiki/Special:FilePath/Alabama_Hills_National_Scenic_Area_%2848114568221%29.jpg')">
   <div class="landing-hero-inner">
     <p class="eyebrow">50 states. No throwaway destinations.</p>
     <h1>There is wonder <em>everywhere</em> in America.</h1>
-    <p class="hero-lede">A travel guide built around one simple idea: every state has somewhere worth seeing. Some places define a state. Some justify the trip. Others make the detour unforgettable.</p>
+    <p class="hero-lede">A travel guide built around one simple idea: every state has somewhere worth seeing. National parks are part of that story, but so are state parks, wildlife refuges, forests, scenic roads, coastlines, cultural places, and lesser-known discoveries worth changing your route for.</p>
     <div class="hero-actions">
       <a class="primary" href="{{ '/explore/' | relative_url }}">Explore the guide</a>
-      <a class="secondary-button" href="{{ '/tiers/' | relative_url }}">How the tiers work</a>
+      <a class="secondary-button" href="{{ '/tiers/' | relative_url }}">How places qualify</a>
     </div>
+    <a class="hero-credit" href="https://commons.wikimedia.org/wiki/File:Alabama_Hills_National_Scenic_Area_%2848114568221%29.jpg" target="_blank" rel="noopener">Alabama Hills · Matthew Dillon · CC BY 2.0</a>
   </div>
 </section>
 
@@ -35,7 +36,7 @@ title: Home
   <div class="page-shell">
     <div class="section-head compact-head">
       <div><p class="eyebrow">Not a ranking. A reason to go.</p><h2>Three ways a place earns its spot.</h2></div>
-      <a class="text-cta" href="{{ '/tiers/' | relative_url }}">See the tier guide →</a>
+      <a class="text-cta" href="{{ '/tiers/' | relative_url }}">See how places qualify →</a>
     </div>
     <div class="tier-cards">
       <article><span class="tier-icon signature">★</span><h3>Signature Wonder</h3><p>The one place that best makes the case for the state.</p></article>
@@ -53,11 +54,9 @@ title: Home
   <div class="home-state-grid">
     {% assign states = site.states | sort: "title" %}
     {% for state in states limit:9 %}
-      {% assign state_wonders = site.wonders | where: "state", state.title %}
-      {% assign signature = state_wonders | first %}
       <a class="home-state-card" href="{{ state.url | relative_url }}">
         <span>{{ state.title }}</span>
-        {% if signature %}<small>{{ signature.title }}</small>{% endif %}
+        <small>Explore locations in {{ state.title }}</small>
       </a>
     {% endfor %}
   </div>
