@@ -1,0 +1,29 @@
+---
+layout: default
+title: Explore
+---
+<section class="home-hero">
+  <div>
+    <p class="eyebrow">50 states · 50 starting wonders</p>
+    <h1>There is somewhere worth seeing in every state.</h1>
+    <p>Start with one Signature Wonder in all 50 states. Then grow the guide naturally with places worth traveling for and places worth the detour.</p>
+    <a class="primary inline" href="#explore">Explore all 50</a>
+  </div>
+</section>
+<section class="tier-strip">
+  <div><strong>★ Signature Wonder</strong><span>The one place that makes the case for the state.</span></div>
+  <div><strong>◆ Worth Traveling For</strong><span>A destination worth building part of a trip around.</span></div>
+  <div><strong>○ Worth the Detour</strong><span>A place to make time for when you are already nearby.</span></div>
+</section>
+<section id="explore" class="page-shell">
+  <div class="section-head">
+    <div><p class="eyebrow">Explore America</p><h2>50 Signature Wonders</h2></div>
+    <div class="filters"><input id="search" type="search" placeholder="Search place, state, region…" aria-label="Search wonders"><select id="stateFilter" aria-label="Filter by state"><option value="">All states</option>{% assign states = site.wonders | map: 'state' | uniq | sort %}{% for state in states %}<option>{{ state }}</option>{% endfor %}</select></div>
+  </div>
+  <div class="cards" id="wonderGrid">
+  {% assign wonders = site.wonders | sort: "state" %}
+  {% for wonder in wonders %}{% include wonder_card.html wonder=wonder %}{% endfor %}
+  </div>
+  <p id="emptyState" class="empty" hidden>No wonders match that search yet.</p>
+</section>
+{% include nav_sheet.html %}

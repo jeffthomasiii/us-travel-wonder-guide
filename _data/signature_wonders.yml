@@ -1,0 +1,500 @@
+- state: Alabama
+  wonder: Little River Canyon National Preserve
+  region: Appalachian Highlands
+  official_url: https://www.nps.gov/liri/index.htm
+  navigation_query: Little River Canyon National Preserve, Alabama
+  experiences:
+  - canyon
+  - waterfalls
+  - scenic drive
+  - hiking
+- state: Alaska
+  wonder: Denali National Park & Preserve
+  region: Alaska Range
+  official_url: https://www.nps.gov/dena/index.htm
+  navigation_query: Denali National Park and Preserve, Alaska
+  experiences:
+  - mountains
+  - wildlife
+  - wilderness
+  - photography
+- state: Arizona
+  wonder: Grand Canyon National Park
+  region: Colorado Plateau
+  official_url: https://www.nps.gov/grca/index.htm
+  navigation_query: Grand Canyon National Park South Rim, Arizona
+  experiences:
+  - canyon
+  - geology
+  - scenic views
+  - photography
+- state: Arkansas
+  wonder: Buffalo National River
+  region: Ozarks
+  official_url: https://www.nps.gov/buff/index.htm
+  navigation_query: Buffalo National River, Arkansas
+  experiences:
+  - river
+  - bluffs
+  - paddling
+  - hiking
+- state: California
+  wonder: Yosemite National Park
+  region: Sierra Nevada
+  official_url: https://www.nps.gov/yose/index.htm
+  navigation_query: Yosemite Valley Visitor Center, Yosemite National Park, California
+  experiences:
+  - granite
+  - waterfalls
+  - wildlife
+  - photography
+- state: Colorado
+  wonder: Rocky Mountain National Park
+  region: Front Range
+  official_url: https://www.nps.gov/romo/index.htm
+  navigation_query: Rocky Mountain National Park, Colorado
+  experiences:
+  - mountains
+  - alpine lakes
+  - wildlife
+  - scenic drive
+- state: Connecticut
+  wonder: Kent Falls State Park
+  region: Litchfield Hills
+  official_url: https://ctparks.com/parks/kent-falls-state-park
+  navigation_query: Kent Falls State Park, Kent, Connecticut
+  experiences:
+  - waterfalls
+  - forest
+  - hiking
+  - fall color
+- state: Delaware
+  wonder: Cape Henlopen State Park
+  region: Atlantic Coast
+  official_url: https://destateparks.com/Beaches/CapeHenlopen
+  navigation_query: Cape Henlopen State Park, Lewes, Delaware
+  experiences:
+  - coast
+  - dunes
+  - wildlife
+  - cycling
+- state: Florida
+  wonder: Everglades National Park
+  region: South Florida
+  official_url: https://www.nps.gov/ever/index.htm
+  navigation_query: Everglades National Park, Florida
+  experiences:
+  - wetlands
+  - wildlife
+  - paddling
+  - photography
+- state: Georgia
+  wonder: Cumberland Island National Seashore
+  region: Georgia Coast
+  official_url: https://www.nps.gov/cuis/index.htm
+  navigation_query: Cumberland Island National Seashore, Georgia
+  experiences:
+  - coast
+  - wildlife
+  - maritime forest
+  - history
+- state: Hawaii
+  wonder: Nā Pali Coast State Wilderness Park
+  region: Kauaʻi
+  official_url: https://dlnr.hawaii.gov/dsp/parks/kauai/na-pali-coast-state-wilderness-park/
+  navigation_query: Na Pali Coast State Wilderness Park, Kauai, Hawaii
+  experiences:
+  - coast
+  - cliffs
+  - hiking
+  - photography
+- state: Idaho
+  wonder: Sawtooth National Recreation Area
+  region: Sawtooth Range
+  official_url: https://www.fs.usda.gov/recarea/sawtooth/recarea/?recid=5842
+  navigation_query: Sawtooth National Recreation Area, Idaho
+  experiences:
+  - mountains
+  - alpine lakes
+  - camping
+  - hiking
+- state: Illinois
+  wonder: Garden of the Gods Recreation Area
+  region: Shawnee National Forest
+  official_url: https://www.fs.usda.gov/recarea/shawnee/recarea/?recid=10685
+  navigation_query: Garden of the Gods Recreation Area, Illinois
+  experiences:
+  - rock formations
+  - forest
+  - hiking
+  - overlooks
+- state: Indiana
+  wonder: Indiana Dunes National Park
+  region: Lake Michigan
+  official_url: https://www.nps.gov/indu/index.htm
+  navigation_query: Indiana Dunes National Park, Indiana
+  experiences:
+  - dunes
+  - beach
+  - birding
+  - hiking
+- state: Iowa
+  wonder: Loess Hills State Forest
+  region: Loess Hills
+  official_url: https://www.iowadnr.gov/places-go/state-forests/loess-hills-state-forest
+  navigation_query: Loess Hills State Forest, Iowa
+  experiences:
+  - prairie
+  - ridges
+  - scenic drive
+  - hiking
+- state: Kansas
+  wonder: Monument Rocks National Natural Landmark
+  region: High Plains
+  official_url: https://www.travelks.com/listing/monument-rocks-national-natural-landmark/2797/
+  navigation_query: Monument Rocks, Kansas
+  experiences:
+  - rock formations
+  - geology
+  - photography
+  - prairie
+- state: Kentucky
+  wonder: Mammoth Cave National Park
+  region: South-Central Kentucky
+  official_url: https://www.nps.gov/maca/index.htm
+  navigation_query: Mammoth Cave National Park, Kentucky
+  experiences:
+  - caves
+  - geology
+  - hiking
+  - history
+- state: Louisiana
+  wonder: Atchafalaya National Heritage Area
+  region: Atchafalaya Basin
+  official_url: https://www.nps.gov/places/atchafalaya-national-heritage-area.htm
+  navigation_query: Atchafalaya Basin, Louisiana
+  experiences:
+  - wetlands
+  - cypress
+  - wildlife
+  - paddling
+- state: Maine
+  wonder: Acadia National Park
+  region: Mount Desert Island
+  official_url: https://www.nps.gov/acad/index.htm
+  navigation_query: Acadia National Park, Maine
+  experiences:
+  - coast
+  - mountains
+  - hiking
+  - scenic drive
+- state: Maryland
+  wonder: Assateague Island National Seashore
+  region: Atlantic Coast
+  official_url: https://www.nps.gov/asis/index.htm
+  navigation_query: Assateague Island National Seashore, Maryland
+  experiences:
+  - beach
+  - wildlife
+  - dunes
+  - camping
+- state: Massachusetts
+  wonder: Cape Cod National Seashore
+  region: Cape Cod
+  official_url: https://www.nps.gov/caco/index.htm
+  navigation_query: Cape Cod National Seashore, Massachusetts
+  experiences:
+  - coast
+  - dunes
+  - lighthouses
+  - cycling
+- state: Michigan
+  wonder: Pictured Rocks National Lakeshore
+  region: Lake Superior
+  official_url: https://www.nps.gov/piro/index.htm
+  navigation_query: Pictured Rocks National Lakeshore, Michigan
+  experiences:
+  - cliffs
+  - lake
+  - waterfalls
+  - paddling
+- state: Minnesota
+  wonder: Boundary Waters Canoe Area Wilderness
+  region: Superior National Forest
+  official_url: https://www.fs.usda.gov/recarea/superior/recarea/?recid=41679
+  navigation_query: Boundary Waters Canoe Area Wilderness, Minnesota
+  experiences:
+  - lakes
+  - wilderness
+  - paddling
+  - wildlife
+- state: Mississippi
+  wonder: Gulf Islands National Seashore
+  region: Gulf Coast
+  official_url: https://www.nps.gov/guis/index.htm
+  navigation_query: Gulf Islands National Seashore, Mississippi
+  experiences:
+  - beach
+  - islands
+  - wildlife
+  - boating
+- state: Missouri
+  wonder: Ozark National Scenic Riverways
+  region: Ozarks
+  official_url: https://www.nps.gov/ozar/index.htm
+  navigation_query: Ozark National Scenic Riverways, Missouri
+  experiences:
+  - river
+  - springs
+  - paddling
+  - forest
+- state: Montana
+  wonder: Glacier National Park
+  region: Northern Rockies
+  official_url: https://www.nps.gov/glac/index.htm
+  navigation_query: Glacier National Park, Montana
+  experiences:
+  - mountains
+  - lakes
+  - wildlife
+  - scenic drive
+- state: Nebraska
+  wonder: Scotts Bluff National Monument
+  region: North Platte Valley
+  official_url: https://www.nps.gov/scbl/index.htm
+  navigation_query: Scotts Bluff National Monument, Nebraska
+  experiences:
+  - bluffs
+  - history
+  - scenic views
+  - prairie
+- state: Nevada
+  wonder: Valley of Fire State Park
+  region: Mojave Desert
+  official_url: https://parks.nv.gov/parks/valley-of-fire
+  navigation_query: Valley of Fire State Park, Nevada
+  experiences:
+  - desert
+  - sandstone
+  - scenic drive
+  - photography
+- state: New Hampshire
+  wonder: Franconia Notch State Park
+  region: White Mountains
+  official_url: https://www.nhstateparks.org/find-parks-trails/franconia-notch-state-park
+  navigation_query: Franconia Notch State Park, New Hampshire
+  experiences:
+  - mountains
+  - waterfalls
+  - scenic drive
+  - fall color
+- state: New Jersey
+  wonder: Delaware Water Gap National Recreation Area
+  region: Kittatinny Ridge
+  official_url: https://www.nps.gov/dewa/index.htm
+  navigation_query: Delaware Water Gap National Recreation Area, New Jersey
+  experiences:
+  - river
+  - mountains
+  - waterfalls
+  - hiking
+- state: New Mexico
+  wonder: White Sands National Park
+  region: Tularosa Basin
+  official_url: https://www.nps.gov/whsa/index.htm
+  navigation_query: White Sands National Park, New Mexico
+  experiences:
+  - dunes
+  - desert
+  - photography
+  - sunset
+- state: New York
+  wonder: Adirondack Park
+  region: Adirondacks
+  official_url: https://apa.ny.gov/About_Park/
+  navigation_query: Adirondack Park, New York
+  experiences:
+  - mountains
+  - lakes
+  - forest
+  - scenic drive
+- state: North Carolina
+  wonder: Linville Gorge Wilderness
+  region: Blue Ridge Mountains
+  official_url: https://www.fs.usda.gov/recarea/nfsnc/recarea/?recid=48974
+  navigation_query: Linville Gorge Wilderness, North Carolina
+  experiences:
+  - gorge
+  - mountains
+  - hiking
+  - photography
+- state: North Dakota
+  wonder: Theodore Roosevelt National Park
+  region: Little Missouri Badlands
+  official_url: https://www.nps.gov/thro/index.htm
+  navigation_query: Theodore Roosevelt National Park, North Dakota
+  experiences:
+  - badlands
+  - wildlife
+  - scenic drive
+  - prairie
+- state: Ohio
+  wonder: Hocking Hills State Park
+  region: Hocking Hills
+  official_url: https://ohiodnr.gov/go-and-do/plan-a-visit/find-a-property/hocking-hills-state-park
+  navigation_query: Hocking Hills State Park, Ohio
+  experiences:
+  - gorges
+  - waterfalls
+  - forest
+  - hiking
+- state: Oklahoma
+  wonder: Wichita Mountains Wildlife Refuge
+  region: Wichita Mountains
+  official_url: https://www.fws.gov/refuge/wichita-mountains
+  navigation_query: Wichita Mountains Wildlife Refuge, Oklahoma
+  experiences:
+  - mountains
+  - wildlife
+  - lakes
+  - scenic drive
+- state: Oregon
+  wonder: Crater Lake National Park
+  region: Cascade Range
+  official_url: https://www.nps.gov/crla/index.htm
+  navigation_query: Crater Lake National Park, Oregon
+  experiences:
+  - lake
+  - volcano
+  - scenic drive
+  - photography
+- state: Pennsylvania
+  wonder: Ricketts Glen State Park
+  region: Endless Mountains
+  official_url: https://www.dcnr.pa.gov/StateParks/FindAPark/RickettsGlenStatePark/Pages/default.aspx
+  navigation_query: Ricketts Glen State Park, Pennsylvania
+  experiences:
+  - waterfalls
+  - forest
+  - hiking
+  - fall color
+- state: Rhode Island
+  wonder: Mohegan Bluffs
+  region: Block Island
+  official_url: https://www.blockislandinfo.com/what-to-do/beaches-parks/mohegan-bluffs
+  navigation_query: Mohegan Bluffs, Block Island, Rhode Island
+  experiences:
+  - coast
+  - bluffs
+  - beach
+  - photography
+- state: South Carolina
+  wonder: Congaree National Park
+  region: Congaree River Floodplain
+  official_url: https://www.nps.gov/cong/index.htm
+  navigation_query: Congaree National Park, South Carolina
+  experiences:
+  - old-growth forest
+  - wetlands
+  - paddling
+  - wildlife
+- state: South Dakota
+  wonder: Badlands National Park
+  region: White River Badlands
+  official_url: https://www.nps.gov/badl/index.htm
+  navigation_query: Badlands National Park, South Dakota
+  experiences:
+  - badlands
+  - geology
+  - wildlife
+  - scenic drive
+- state: Tennessee
+  wonder: Great Smoky Mountains National Park
+  region: Southern Appalachians
+  official_url: https://www.nps.gov/grsm/index.htm
+  navigation_query: Great Smoky Mountains National Park, Tennessee
+  experiences:
+  - mountains
+  - waterfalls
+  - wildlife
+  - scenic drive
+- state: Texas
+  wonder: Big Bend National Park
+  region: Chihuahuan Desert
+  official_url: https://www.nps.gov/bibe/index.htm
+  navigation_query: Big Bend National Park, Texas
+  experiences:
+  - desert
+  - mountains
+  - dark sky
+  - river
+- state: Utah
+  wonder: Zion National Park
+  region: Colorado Plateau
+  official_url: https://www.nps.gov/zion/index.htm
+  navigation_query: Zion National Park, Utah
+  experiences:
+  - canyons
+  - sandstone
+  - hiking
+  - photography
+- state: Vermont
+  wonder: Smugglers’ Notch State Park
+  region: Green Mountains
+  official_url: https://vtstateparks.com/smugglers.html
+  navigation_query: Smugglers Notch State Park, Vermont
+  experiences:
+  - mountains
+  - scenic drive
+  - forest
+  - fall color
+- state: Virginia
+  wonder: Shenandoah National Park
+  region: Blue Ridge Mountains
+  official_url: https://www.nps.gov/shen/index.htm
+  navigation_query: Shenandoah National Park, Virginia
+  experiences:
+  - mountains
+  - scenic drive
+  - waterfalls
+  - wildlife
+- state: Washington
+  wonder: Olympic National Park
+  region: Olympic Peninsula
+  official_url: https://www.nps.gov/olym/index.htm
+  navigation_query: Olympic National Park, Washington
+  experiences:
+  - mountains
+  - rainforest
+  - coast
+  - wildlife
+- state: West Virginia
+  wonder: New River Gorge National Park & Preserve
+  region: Appalachian Plateau
+  official_url: https://www.nps.gov/neri/index.htm
+  navigation_query: New River Gorge National Park and Preserve, West Virginia
+  experiences:
+  - gorge
+  - river
+  - hiking
+  - scenic views
+- state: Wisconsin
+  wonder: Apostle Islands National Lakeshore
+  region: Lake Superior
+  official_url: https://www.nps.gov/apis/index.htm
+  navigation_query: Apostle Islands National Lakeshore, Wisconsin
+  experiences:
+  - islands
+  - sea caves
+  - lake
+  - paddling
+- state: Wyoming
+  wonder: Yellowstone National Park
+  region: Greater Yellowstone
+  official_url: https://www.nps.gov/yell/index.htm
+  navigation_query: Yellowstone National Park, Wyoming
+  experiences:
+  - geothermal
+  - wildlife
+  - waterfalls
+  - mountains

@@ -1,0 +1,15 @@
+<article class="wonder-card" data-search="{{ include.wonder.title | downcase }} {{ include.wonder.state | downcase }} {{ include.wonder.region | downcase }} {{ include.wonder.experiences | join: ' ' | downcase }}" data-state="{{ include.wonder.state }}">
+  <a class="card-media {% unless include.wonder.image_url %}fallback{% endunless %}" href="{{ include.wonder.url | relative_url }}" {% if include.wonder.image_url %}style="background-image:url('{{ include.wonder.image_url }}')"{% endif %}>
+    <span class="tier-badge">★ Signature Wonder</span>
+    {% if include.wonder.image_credit %}<span class="mini-credit">{{ include.wonder.image_credit }}</span>{% endif %}
+  </a>
+  <div class="card-body">
+    <p class="state-name">{{ include.wonder.state }}</p>
+    <h2><a href="{{ include.wonder.url | relative_url }}">{{ include.wonder.title }}</a></h2>
+    <p>{{ include.wonder.summary }}</p>
+    <div class="card-actions">
+      <a href="{{ include.wonder.url | relative_url }}">Explore</a>
+      <button class="nav-open" data-query="{{ include.wonder.navigation_query | escape }}">Navigate</button>
+    </div>
+  </div>
+</article>

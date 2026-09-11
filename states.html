@@ -1,0 +1,6 @@
+---
+layout: default
+title: States
+permalink: /states/
+---
+<div class="page-shell"><p class="eyebrow">Browse</p><h1>States</h1><div class="state-list">{% assign states = site.states | sort: "title" %}{% for state in states %}<a href="{{ state.url | relative_url }}">{{ state.title }}</a>{% endfor %}</div></div>

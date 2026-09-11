@@ -1,0 +1,29 @@
+title: United States Travel & Wonder Guide
+description: Discover one signature wonder in every U.S. state, then go deeper with places worth traveling for and worth the detour.
+url: ""
+baseurl: ""
+markdown: kramdown
+permalink: pretty
+collections:
+  wonders:
+    output: true
+    permalink: /wonders/:name/
+  states:
+    output: true
+    permalink: /states/:name/
+defaults:
+  - scope:
+      path: ""
+      type: wonders
+    values:
+      layout: wonder
+  - scope:
+      path: ""
+      type: states
+    values:
+      layout: state
+exclude:
+  - README.md
+  - LICENSE
+  - Gemfile
+  - Gemfile.lock
