@@ -14,9 +14,13 @@ permalink: /states/
   <div class="states-card-grid compact-state-grid" id="statesGrid">
     {% assign states = site.states | sort: "title" %}
     {% for state in states %}
+      {% assign flag_name = state.title | replace: ' ', '_' %}
       <a class="state-card compact-state-card" href="{{ state.url | relative_url }}">
         <span class="state-card-number">{{ forloop.index | prepend: '0' | slice: -2, 2 }}</span>
-        <span class="state-card-mark">{{ site.data.state_codes[state.title] }}</span>
+        <span class="state-card-mark state-flag-wrap">
+          <span class="state-flag-fallback">{{ site.data.state_codes[state.title] }}</span>
+          <img class="state-flag" src="https://commons.wikimedia.org/wiki/Special:FilePath/Flag_of_{{ flag_name }}.svg" alt="Flag of {{ state.title }}" loading="lazy" onerror="this.style.display='none'">
+        </span>
         <div class="state-card-copy">
           <h2>{{ state.title }}</h2>
           <p>Explore locations in {{ state.title }}</p>
