@@ -13,45 +13,15 @@ permalink: /explore/
 
 <section class="page-shell explore-shell">
   <div class="filter-panel" aria-label="Wonder filters">
-    <label class="search-field">
-      <span>Search</span>
-      <input id="search" type="search" placeholder="Place, state, region, experience…" aria-label="Search wonders">
-    </label>
-    <label>
-      <span>State</span>
-      <select id="stateFilter" aria-label="Filter by state">
-        <option value="">All states</option>
-        {% assign states = site.wonders | map: 'state' | uniq | sort %}
-        {% for state in states %}<option>{{ state }}</option>{% endfor %}
-      </select>
-    </label>
-    <label>
-      <span>Tier</span>
-      <select id="tierFilter" aria-label="Filter by tier">
-        <option value="">All tiers</option>
-        <option value="signature">★ Signature Wonder</option>
-        <option value="travel">◆ Worth Traveling For</option>
-        <option value="detour">○ Worth the Detour</option>
-      </select>
-    </label>
-    <label>
-      <span>Experience</span>
-      <select id="experienceFilter" aria-label="Filter by experience">
-        <option value="">All experiences</option>
-        {% assign all_experiences = '' | split: '' %}
-        {% for wonder in site.wonders %}{% for exp in wonder.experiences %}{% assign all_experiences = all_experiences | push: exp %}{% endfor %}{% endfor %}
-        {% assign experiences = all_experiences | uniq | sort %}
-        {% for exp in experiences %}<option value="{{ exp | downcase }}">{{ exp }}</option>{% endfor %}
-      </select>
-    </label>
+    <label class="search-field"><span>Search</span><input id="search" type="search" placeholder="Place, state, region, experience…" aria-label="Search wonders"></label>
+    <label><span>State</span><select id="stateFilter" aria-label="Filter by state"><option value="">All states</option>{% assign states = site.wonders | map: 'state' | uniq | sort %}{% for state in states %}<option>{{ state }}</option>{% endfor %}</select></label>
+    <label><span>Tier</span><select id="tierFilter" aria-label="Filter by tier"><option value="">All tiers</option><option value="signature">★ Signature Wonder</option><option value="travel">◆ Worth Traveling For</option><option value="detour">○ Worth the Detour</option></select></label>
+    <label><span>Experience</span><select id="experienceFilter" aria-label="Filter by experience"><option value="">All experiences</option><option value="coast">Coast</option><option value="desert">Desert</option><option value="forest">Forest</option><option value="hiking">Hiking</option><option value="landscape">Landscape</option><option value="mountains">Mountains</option><option value="photography">Photography</option><option value="scenic drive">Scenic Drive</option><option value="waterfalls">Waterfalls</option><option value="wildlife">Wildlife</option></select></label>
     <button id="clearFilters" class="clear-filter" type="button">Clear filters</button>
   </div>
 
   <div class="results-meta"><strong id="resultCount">{{ site.wonders | size }}</strong> places shown</div>
-  <div class="cards" id="wonderGrid">
-    {% assign wonders = site.wonders | sort: "state" %}
-    {% for wonder in wonders %}{% include wonder_card.html wonder=wonder %}{% endfor %}
-  </div>
+  <div class="cards" id="wonderGrid">{% assign wonders = site.wonders | sort: "state" %}{% for wonder in wonders %}{% include wonder_card.html wonder=wonder %}{% endfor %}</div>
   <p id="emptyState" class="empty" hidden>No wonders match those filters yet.</p>
 </section>
 {% include nav_sheet.html %}
