@@ -53,6 +53,63 @@ Phase 1A is complete only when:
 - all cards and Wonder hero views have been visually spot-checked on desktop and mobile;
 - any questionable Signature Wonder selection discovered during this pass has been reviewed before the phase is closed.
 
+### Phase 1A tracker
+
+A checked item means the Wonder record has a verified image plus source, credit, rights, and verification metadata. Visual crop/hero QA remains part of the phase-completion check.
+
+- [x] Alabama — Little River Canyon National Preserve
+- [x] Alaska — Denali National Park & Preserve
+- [x] Arizona — Grand Canyon National Park
+- [x] Arkansas — Buffalo National River
+- [x] California — Yosemite National Park
+- [ ] Colorado — Rocky Mountain National Park
+- [ ] Connecticut — Kent Falls State Park
+- [ ] Delaware — Cape Henlopen State Park
+- [ ] Florida — Everglades National Park
+- [ ] Georgia — Cumberland Island National Seashore
+- [ ] Hawaii — Nā Pali Coast State Wilderness Park
+- [ ] Idaho — Sawtooth National Recreation Area
+- [ ] Illinois — Garden of the Gods Recreation Area
+- [ ] Indiana — Indiana Dunes National Park
+- [ ] Iowa — Loess Hills State Forest
+- [ ] Kansas — Monument Rocks National Natural Landmark
+- [ ] Kentucky — Mammoth Cave National Park
+- [ ] Louisiana — Atchafalaya National Heritage Area
+- [ ] Maine — Acadia National Park
+- [ ] Maryland — Assateague Island National Seashore
+- [ ] Massachusetts — Cape Cod National Seashore
+- [ ] Michigan — Pictured Rocks National Lakeshore
+- [ ] Minnesota — Boundary Waters Canoe Area Wilderness
+- [ ] Mississippi — Gulf Islands National Seashore
+- [ ] Missouri — Ozark National Scenic Riverways
+- [ ] Montana — Glacier National Park
+- [ ] Nebraska — Scotts Bluff National Monument
+- [ ] Nevada — Valley of Fire State Park
+- [ ] New Hampshire — Franconia Notch State Park
+- [ ] New Jersey — Delaware Water Gap National Recreation Area
+- [ ] New Mexico — White Sands National Park
+- [ ] New York — Adirondack Park
+- [ ] North Carolina — Linville Gorge Wilderness
+- [ ] North Dakota — Theodore Roosevelt National Park
+- [ ] Ohio — Hocking Hills State Park
+- [ ] Oklahoma — Wichita Mountains Wildlife Refuge
+- [ ] Oregon — Crater Lake National Park
+- [ ] Pennsylvania — Ricketts Glen State Park
+- [ ] Rhode Island — Mohegan Bluffs
+- [ ] South Carolina — Congaree National Park
+- [ ] South Dakota — Badlands National Park
+- [ ] Tennessee — Great Smoky Mountains National Park
+- [ ] Texas — Big Bend National Park
+- [ ] Utah — Zion National Park
+- [ ] Vermont — Smugglers’ Notch State Park
+- [ ] Virginia — Shenandoah National Park
+- [ ] Washington — Olympic National Park
+- [ ] West Virginia — New River Gorge National Park & Preserve
+- [ ] Wisconsin — Apostle Islands National Lakeshore
+- [ ] Wyoming — Yellowstone National Park
+
+**Current Phase 1A progress: 5 / 50 Signature Wonders (10%).**
+
 ## Phase 1B — Pilot mixed-tier content
 
 **Status: NOT STARTED**
