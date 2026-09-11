@@ -1,10 +1,21 @@
 {% assign tier = include.wonder.tier | default: 'signature' %}
 {% if tier == 'travel' %}{% assign tier_label = '◆ Worth Traveling For' %}{% elsif tier == 'detour' %}{% assign tier_label = '○ Worth the Detour' %}{% else %}{% assign tier_label = '★ Signature Wonder' %}{% endif %}
+{% assign image_url = include.wonder.image_url %}
+{% assign image_credit = include.wonder.image_credit %}
+{% assign image_source_url = include.wonder.image_source_url %}
+{% if tier == 'signature' %}
+  {% assign signature_image = site.data.signature_images[include.wonder.state_slug] %}
+  {% if signature_image %}
+    {% assign image_url = signature_image.image_url %}
+    {% assign image_credit = signature_image.image_credit %}
+    {% assign image_source_url = signature_image.image_source_url %}
+  {% endif %}
+{% endif %}
 <article class="wonder-card tier-{{ tier }}" data-search="{{ include.wonder.title | downcase }} {{ include.wonder.state | downcase }} {{ include.wonder.region | downcase }} {{ include.wonder.experiences | join: ' ' | downcase }}" data-state="{{ include.wonder.state }}" data-tier="{{ tier }}" data-experiences="{{ include.wonder.experiences | join: '|' | downcase }}">
-  <a class="card-media {% unless include.wonder.image_url %}fallback{% endunless %}" href="{{ include.wonder.url | relative_url }}" {% if include.wonder.image_url %}style="background-image:url('{{ include.wonder.image_url }}')"{% endif %}>
+  <a class="card-media {% unless image_url %}fallback{% endunless %}" href="{{ include.wonder.url | relative_url }}" {% if image_url %}style="background-image:url('{{ image_url }}')"{% endif %}>
     <span class="tier-badge">{{ tier_label }}</span>
     <span class="card-state-code">{{ include.wonder.state | slice: 0, 2 | upcase }}</span>
-    {% if include.wonder.image_credit %}<span class="mini-credit">{{ include.wonder.image_credit }}</span>{% endif %}
+    {% if image_credit %}<span class="mini-credit">{{ image_credit }}</span>{% endif %}
   </a>
   <div class="card-body">
     <p class="state-name">{{ include.wonder.state }}{% if include.wonder.region %}<span> · {{ include.wonder.region }}</span>{% endif %}</p>
