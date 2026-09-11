@@ -15,6 +15,7 @@ layout: default
   {% endif %}
 {% endif %}
 {% assign planning = site.data.travel_planning[page.slug] %}
+{% assign refinement = site.data.planning_refinements[page.slug] %}
 <article class="wonder-page">
   <div class="wonder-hero {% unless image_url %}fallback{% endunless %}" {% if image_url %}style="background-image:linear-gradient(180deg,rgba(0,0,0,.08),rgba(0,0,0,.62)),url('{{ image_url }}')"{% endif %}>
     <div class="wonder-hero-inner">
@@ -37,13 +38,19 @@ layout: default
       {% if planning %}
       <h2>Plan the visit</h2>
       <dl class="travel-facts">
-        {% if planning.best_seasons %}<div><dt>Best seasons</dt><dd>{{ planning.best_seasons | join: ', ' }}</dd></div>{% endif %}
+        {% if refinement and refinement.best_visit_windows %}
+          <div><dt>Typical best windows</dt><dd>{% for window in refinement.best_visit_windows %}{{ window }}{% unless forloop.last %}<br>{% endunless %}{% endfor %}</dd></div>
+        {% elsif planning.best_seasons %}
+          <div><dt>Best seasons</dt><dd>{{ planning.best_seasons | join: ', ' }}</dd></div>
+        {% endif %}
         {% if planning.visit_length %}<div><dt>Visit length</dt><dd>{{ planning.visit_length }}</dd></div>{% endif %}
         {% if planning.rv_access %}<div><dt>RV access</dt><dd>{{ planning.rv_access | capitalize }}</dd></div>{% endif %}
-        {% if planning.dog_access %}<div><dt>Dogs</dt><dd>{{ planning.dog_access | capitalize }}</dd></div>{% endif %}
+        {% if refinement and refinement.pet_access %}<div><dt>Pet access</dt><dd>{{ refinement.pet_access | capitalize }}</dd></div>{% elsif planning.dog_access %}<div><dt>Pet access</dt><dd>{{ planning.dog_access | capitalize }}</dd></div>{% endif %}
       </dl>
+      {% if refinement and refinement.best_visit_windows %}<p class="planning-note">Date windows are typical planning guidance, not guarantees of weather, road access, foliage, or closures. Check current conditions before travel.</p>{% endif %}
       {% if planning.rv_notes %}<h3>RV planning</h3><p>{{ planning.rv_notes }}</p>{% endif %}
-      {% if planning.dog_notes %}<h3>Traveling with dogs</h3><p>{{ planning.dog_notes }}</p>{% endif %}
+      {% if refinement and refinement.rv_road_notes %}<p><strong>Roads and rig considerations:</strong> {{ refinement.rv_road_notes }}</p>{% endif %}
+      {% if refinement and refinement.pet_notes %}<h3>Traveling with pets</h3><p>{{ refinement.pet_notes }}</p>{% if refinement.pet_types %}<p class="planning-note">Reviewed for: {{ refinement.pet_types | join: ', ' }}.</p>{% endif %}{% elsif planning.dog_notes %}<h3>Traveling with pets</h3><p>{{ planning.dog_notes }}</p>{% endif %}
       {% if planning.accessibility %}<h3>Accessibility</h3><p>{{ planning.accessibility }}</p>{% endif %}
       {% if planning.photography %}<h3>Photography</h3><p>{{ planning.photography }}</p>{% endif %}
       {% if planning.wildlife %}<h3>Wildlife</h3><div class="tag-row">{% for animal in planning.wildlife %}<span>{{ animal }}</span>{% endfor %}</div>{% endif %}
@@ -54,12 +61,18 @@ layout: default
     </section>
     <aside class="action-card">
       <h2>Go there</h2>
-      <button class="primary nav-open" data-query="{{ page.navigation_query | escape }}">Navigate</button>
-      <a class="secondary" href="{{ page.official_url }}" target="_blank" rel="noopener">Official site</a>
-      {% if planning and planning.conditions_url %}<a class="text-link" href="{{ planning.conditions_url }}" target="_blank" rel="noopener">Current conditions / alerts</a>{% endif %}
-      {% if planning and planning.reservation_url %}<a class="text-link" href="{{ planning.reservation_url }}" target="_blank" rel="noopener">Reservations / permits</a>{% endif %}
-      {% if planning and planning.planning_source_url %}<a class="text-link" href="{{ planning.planning_source_url }}" target="_blank" rel="noopener">Planning source</a>{% endif %}
-      {% if image_source_url %}<a class="text-link" href="{{ image_source_url }}" target="_blank" rel="noopener">Image source / rights</a>{% endif %}
+      <div class="action-primary-row">
+        <button class="primary nav-open" data-query="{{ page.navigation_query | escape }}">Navigate</button>
+        <a class="official-button" href="{{ page.official_url }}" target="_blank" rel="noopener">Official site</a>
+      </div>
+      {% if planning %}
+      <div class="action-secondary-links">
+        {% if planning.conditions_url %}<a href="{{ planning.conditions_url }}" target="_blank" rel="noopener">Current conditions / alerts</a>{% endif %}
+        {% if planning.reservation_url %}<a href="{{ planning.reservation_url }}" target="_blank" rel="noopener">Reservations / permits</a>{% endif %}
+        {% if planning.planning_source_url %}<a href="{{ planning.planning_source_url }}" target="_blank" rel="noopener">Planning source</a>{% endif %}
+      </div>
+      {% endif %}
+      {% if image_source_url %}<a class="image-rights-link" href="{{ image_source_url }}" target="_blank" rel="noopener">Image source / rights</a>{% endif %}
       <dl>
         <div><dt>State</dt><dd>{{ page.state }}</dd></div>
         <div><dt>Region</dt><dd>{{ page.region }}</dd></div>
