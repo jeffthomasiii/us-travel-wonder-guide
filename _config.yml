@@ -1,7 +1,7 @@
 title: United States Travel & Wonder Guide
 description: Discover one signature wonder in every U.S. state, then go deeper with places worth traveling for and worth the detour.
-url: ""
-baseurl: ""
+url: "https://jeffthomasiii.github.io"
+baseurl: "/us-travel-wonder-guide"
 markdown: kramdown
 permalink: pretty
 collections:
