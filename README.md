@@ -6,24 +6,26 @@ The guide starts with one **★ Signature Wonder** in all 50 states. It is inten
 
 ## Current build phase
 
-**Phase 1A — Complete verified imagery for all 50 Signature Wonders — IN PROGRESS.**
+**Phase 1A — Complete verified imagery for all 50 Signature Wonders — COMPLETE (50/50).**
 
-The detailed phased roadmap, completion criteria, image-source hierarchy, and rules for moving into mixed-tier content are maintained in [`PROJECT_PLAN.md`](PROJECT_PLAN.md). That file is the source of truth for sequencing the work so the guide does not expand faster than its visual and editorial quality can support.
+**Phase 1B — Pilot mixed-tier content in 5–6 varied states — NEXT.**
+
+The detailed phased roadmap, completion criteria, image-source hierarchy, and rules for moving into mixed-tier content are maintained in [`PROJECT_PLAN.md`](PROJECT_PLAN.md).
 
 ## What is included in this POC
 
 - 50 states and 50 first-pass Signature Wonders
+- Verified, credited main imagery for all 50 Signature Wonders
+- `_data/signature_images.yml` as the canonical 50-state image-rights manifest
 - Separate Home, Explore, States, Tiers, and About pages
 - Search plus state, tier, and experience filtering
 - Individual state pages
 - Individual Wonder pages
 - Official-site link for every Wonder
 - Mobile-friendly **Navigate** action with Google Maps, Apple Maps and Waze choices
-- Image-rights/credit metadata fields
-- Verified public-domain image workflow in active use during Phase 1A
 - Responsive desktop/mobile styling
 - Jekyll collections so content is separate from presentation
-- `_data/signature_wonders.yml` as a quick master inventory
+- `_data/signature_wonders.yml` as the quick master destination inventory
 
 ## Editorial tiers
 
@@ -33,45 +35,22 @@ The detailed phased roadmap, completion criteria, image-source hierarchy, and ru
 
 Only the Signature tier is populated nationally in this first repo pass. The other tiers will be introduced deliberately through the Phase 1B pilot described in `PROJECT_PLAN.md`.
 
-## Create the GitHub repository
+## GitHub Pages
 
-Recommended repository name:
+The current project-site configuration is set for:
 
-`us-travel-wonder-guide`
+`https://jeffthomasiii.github.io/us-travel-wonder-guide/`
 
-Recommended GitHub description:
-
-`A photo-forward, mobile-friendly guide to the natural and scenic wonders worth discovering across all 50 U.S. states.`
-
-Recommended visibility:
-
-`Public`
-
-Recommended initialization choices when creating the repo:
-
-- **Add README:** No — this starter already contains one.
-- **Add .gitignore:** No — included.
-- **Choose a license:** No — an MIT license file is included. Change it before publishing if you prefer a different license.
-
-## Enable GitHub Pages
-
-In the repository:
-
-1. Open **Settings → Pages**.
-2. Under **Build and deployment**, choose **Deploy from a branch**.
-3. Select branch **main** and folder **/(root)**.
-4. Save.
-5. GitHub will build the Jekyll site and provide the Pages URL.
-
-The current project-site configuration is set for `https://jeffthomasiii.github.io/us-travel-wonder-guide/`. The templates use `relative_url` so internal links remain portable if the hosting arrangement changes later.
+The templates use `relative_url` so internal links remain portable if the hosting arrangement changes later.
 
 ## Content architecture
 
 ```text
 _config.yml
-PROJECT_PLAN.md              # phased roadmap and image workflow
+PROJECT_PLAN.md                 # phased roadmap and workflow
 _data/
-  signature_wonders.yml      # easy-to-review 50-state inventory
+  signature_wonders.yml         # 50-state destination inventory
+  signature_images.yml          # canonical Phase 1A image/rights manifest
 _includes/
   header.html
   footer.html
@@ -83,10 +62,10 @@ _layouts/
   wonder.html
 _states/
   alabama.md
-  ...                        # 50 state records
+  ...                           # 50 state records
 _wonders/
   little-river-canyon-national-preserve.md
-  ...                        # Wonder records
+  ...                           # Wonder records
 assets/
   css/site.css
   js/site.js
@@ -97,35 +76,25 @@ tiers.html
 about.md
 ```
 
-## Wonder record model
+## Image policy
 
-Every Wonder is a Markdown file with YAML front matter. The current model supports the active image workflow and future travel-planning metadata:
+Do **not** treat an image found on an official website as automatically reusable. Verify the rights of each individual asset and store the source, photographer/agency, rights statement and verification status.
+
+The 50 Signature Wonder images completed in Phase 1A are maintained in `_data/signature_images.yml`. Each entry contains:
 
 ```yaml
----
-title: Yosemite National Park
-state: California
-state_slug: california
-tier: signature
-region: Sierra Nevada
-official_url: https://www.nps.gov/yose/index.htm
-navigation_query: Yosemite Valley Visitor Center, Yosemite National Park, California
-experiences:
-  - granite
-  - waterfalls
-  - wildlife
-  - photography
-summary: ...
-why: ...
 image_url: ...
-image_credit: NPS · Photographer Name · Public domain
+image_credit: ...
 image_source_url: ...
-image_rights: public-domain
+image_rights: ...
 image_verified: true
----
 ```
 
-Future fields can be added without redesigning the site, for example:
+The Signature card and Wonder-page templates consume that manifest directly. New ◆ and ○ destinations introduced in Phase 1B should follow the same verification standard before using an image; when rights are uncertain, use the neutral site fallback instead.
+
+## Future Wonder metadata
+
+The destination model can grow without redesigning the site. Candidate fields include:
 
 ```yaml
 best_seasons:
@@ -140,22 +109,16 @@ nearby_wonders:
 navigation_targets:
 ```
 
-## Image policy
-
-Do **not** treat an image found on an official website as automatically reusable. Verify the rights of each individual asset and store the source, photographer/agency, rights statement and verification status.
-
-During Phase 1A, a Wonder retains the site fallback artwork until a specific image passes the verification workflow in `PROJECT_PLAN.md`. This lets the content remain live without introducing questionable image licensing.
+Only fields that materially improve discovery or travel planning should be added.
 
 ## Development sequence
 
 The active sequence is maintained in [`PROJECT_PLAN.md`](PROJECT_PLAN.md):
 
-1. **Phase 1A:** complete verified imagery for all 50 ★ Signature Wonders.
-2. **Phase 1B:** add mixed ◆ / ○ content in a 5–6 state pilot.
+1. **Phase 1A:** verified imagery for all 50 ★ Signature Wonders — **complete**.
+2. **Phase 1B:** add mixed ◆ / ○ content in a 5–6 state pilot — **next**.
 3. **Phase 1C:** validate filters, state hierarchy, imagery, and the destination data model.
 4. **Phase 2:** expand Worth Traveling For and Worth the Detour content nationally based on merit, not quotas.
-
-Major visual redesign should not displace the current Phase 1A imagery pass unless a design issue directly affects image presentation or usability.
 
 ## Local preview (optional)
 
