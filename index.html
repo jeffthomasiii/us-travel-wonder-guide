@@ -33,7 +33,7 @@ title: Home
 
 <section class="wg-reasons" aria-label="How places qualify">
   <a href="{{ '/tiers/' | relative_url }}#signature"><span class="wg-reason-icon signature">★</span><span><strong>Signature Wonder</strong><small>Truly exceptional places.</small></span></a>
-  <a href="{{ '/tiers/' | relative_url }}#travel"><span class="wg-reason-icon travel">◆</span><span><strong>Worth Traveling For</strong><small>Memorable places that deliver.</small></span></a>
+  <a href="{{ '/tiers/' | relative_url }}#travel"><span class="wg-reason-icon travel">◆</span><span><strong>Worth Traveling For</strong><small>Memorable places worth the drive.</small></span></a>
   <a href="{{ '/tiers/' | relative_url }}#detour"><span class="wg-reason-icon detour">○</span><span><strong>Worth the Detour</strong><small>Hidden gems with real character.</small></span></a>
 </section>
 
@@ -43,7 +43,7 @@ title: Home
     <p class="wg-kicker dark">More than parks</p>
     <h2>A broader guide to the places that make America remarkable.</h2>
     <p>National parks belong here, but so do islands, historic districts, wildlife refuges, coastlines, scenic roads, architecture, small surprises, and places worth changing your route for.</p>
-    <a class="wg-text-link" href="{{ '/about/' | relative_url }}">Learn more →</a>
+    <a class="wg-pill-link" href="{{ '/about/' | relative_url }}">Learn more <span aria-hidden="true">→</span></a>
   </div>
   {% if culture_pick and culture_pick.image_url %}<a class="wg-editorial-image" href="{{ culture_pick.url | relative_url }}" style="background-image:url('{{ culture_pick.image_url }}')" aria-label="View {{ culture_pick.title }}"></a>{% else %}<div class="wg-editorial-image fallback"></div>{% endif %}
 </section>
