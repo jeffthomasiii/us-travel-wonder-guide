@@ -9,16 +9,37 @@ layout: default
 {% assign default_flag = page.title | replace: ' ', '_' %}
 {% assign flag_name = page.flag_file | default: 'Flag_of_' | append: default_flag | append: '.svg' %}
 {% if page.flag_file %}{% assign flag_name = page.flag_file %}{% endif %}
+{% assign area_type = 'State' %}
+{% if page.title == 'Washington, D.C.' %}{% assign area_type = 'Federal district' %}{% endif %}
+{% if page.title == 'Puerto Rico' or page.title == 'U.S. Virgin Islands' or page.title == 'Guam' or page.title == 'Northern Mariana Islands' or page.title == 'American Samoa' %}{% assign area_type = 'U.S. territory' %}{% endif %}
+
 <section class="wg-state-intro page-shell">
   <a class="wg-back-link" href="{{ '/states/' | relative_url }}">← Back to States & Territories</a>
-  <div class="wg-state-title-row">
-    <div><p class="wg-kicker dark">Area guide</p><h1>{{ page.title }}</h1>{% if signature %}<p>{{ signature.summary }}</p>{% endif %}</div>
-    <div class="wg-state-flag-panel"><img src="https://commons.wikimedia.org/wiki/Special:FilePath/{{ flag_name | uri_escape }}" alt="Flag of {{ page.title }}"><strong>{{ site.data.state_codes[page.title] }}</strong><small>{{ state_wonders | size }} places in the guide</small></div>
+  <div class="wg-state-heading">
+    <p class="wg-kicker dark">Area guide</p>
+    <h1>{{ page.title }}</h1>
+    {% if signature %}<p>{{ signature.summary }}</p>{% endif %}
+  </div>
+  <div class="wg-state-feature-grid">
+    {% if state_image %}
+      <div class="wg-state-hero" style="background-image:linear-gradient(180deg,rgba(13,25,32,.02),rgba(13,25,32,.26)),url('{{ state_image.image_url }}')"><span>Photo: {{ state_image.image_credit }}</span></div>
+    {% else %}
+      <div class="wg-state-hero wg-state-hero-fallback"></div>
+    {% endif %}
+    <aside class="wg-state-facts" aria-label="{{ page.title }} guide details">
+      <img src="https://commons.wikimedia.org/wiki/Special:FilePath/{{ flag_name | uri_escape }}" alt="Flag of {{ page.title }}">
+      <dl>
+        <div><dt>Area type</dt><dd>{{ area_type }}</dd></div>
+        <div><dt>Code</dt><dd>{{ site.data.state_codes[page.title] }}</dd></div>
+        <div><dt>Places in guide</dt><dd>{{ state_wonders | size }}</dd></div>
+        {% if signature %}<div><dt>Signature Wonder</dt><dd>{{ signature.title }}</dd></div>{% endif %}
+      </dl>
+    </aside>
   </div>
 </section>
-{% if state_image %}<section class="wg-state-hero" style="background-image:linear-gradient(180deg,rgba(13,25,32,.03),rgba(13,25,32,.34)),url('{{ state_image.image_url }}')"><span>Photo: {{ state_image.image_credit }}</span></section>{% endif %}
+
 <section class="page-shell wg-state-content">
-  <nav class="wg-state-tabs" aria-label="State guide sections"><a class="active" href="#wonders">Wonders</a><span>Overview</span><span>Travel tips</span><span>Map</span></nav>
+  <nav class="wg-state-tabs" aria-label="Area guide sections"><a class="active" href="#wonders">Wonders <span>({{ state_wonders | size }})</span></a><span>Overview</span><span>Travel tips</span><span>Map</span></nav>
   <div id="wonders" class="wg-state-wonder-list">
     {% assign travel_wonders = state_wonders | where: "tier", "travel" %}
     {% assign detour_wonders = state_wonders | where: "tier", "detour" %}
