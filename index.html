@@ -2,18 +2,41 @@
 layout: default
 title: Home
 ---
-<section class="landing-hero landing-hero-photo" style="background-image:linear-gradient(90deg,rgba(20,35,28,.82),rgba(20,35,28,.48)),url('https://commons.wikimedia.org/wiki/Special:FilePath/Alabama_Hills_National_Scenic_Area_%2848114568221%29.jpg')">
+<section id="homeHero" class="landing-hero landing-hero-photo" style="background-image:linear-gradient(90deg,rgba(20,35,28,.82),rgba(20,35,28,.48)),url('https://commons.wikimedia.org/wiki/Special:FilePath/Alabama_Hills_National_Scenic_Area_%2848114568221%29.jpg')">
   <div class="landing-hero-inner">
     <p class="eyebrow">50 states. No throwaway destinations.</p>
     <h1>There is wonder <em>everywhere</em> in America.</h1>
     <p class="hero-lede">A travel guide built around one simple idea: every state has somewhere worth seeing. National parks are part of that story, but so are state parks, wildlife refuges, forests, scenic roads, coastlines, cultural places, and lesser-known discoveries worth changing your route for.</p>
-    <div class="hero-actions">
+    <div class="hero-actions desktop-hero-actions">
       <a class="primary" href="{{ '/explore/' | relative_url }}">Explore the guide</a>
       <a class="secondary-button" href="{{ '/tiers/' | relative_url }}">How places qualify</a>
     </div>
-    <a class="hero-credit" href="https://commons.wikimedia.org/wiki/File:Alabama_Hills_National_Scenic_Area_%2848114568221%29.jpg" target="_blank" rel="noopener">Alabama Hills · Matthew Dillon · CC BY 2.0</a>
+    <div class="mobile-hero-actions" aria-label="Explore the guide">
+      <a href="{{ '/explore/' | relative_url }}">Explore</a>
+      <a href="{{ '/explore/#search' | relative_url }}">Search</a>
+      <a href="{{ '/explore/#filters' | relative_url }}">Filters</a>
+    </div>
+    <a id="heroCredit" class="hero-credit" href="https://commons.wikimedia.org/wiki/File:Alabama_Hills_National_Scenic_Area_%2848114568221%29.jpg" target="_blank" rel="noopener">Alabama Hills · Matthew Dillon · CC BY 2.0</a>
   </div>
 </section>
+
+<div id="heroCandidates" hidden>
+  {% assign hero_wonders = site.wonders | sort: "title" %}
+  {% for wonder in hero_wonders %}
+    {% assign hero_image = wonder.image_url %}
+    {% assign hero_credit = wonder.image_credit %}
+    {% assign hero_source = wonder.image_source_url %}
+    {% if wonder.tier == 'signature' %}
+      {% assign signature_image = site.data.signature_images[wonder.state_slug] %}
+      {% if signature_image %}
+        {% assign hero_image = signature_image.image_url %}
+        {% assign hero_credit = signature_image.image_credit %}
+        {% assign hero_source = signature_image.image_source_url %}
+      {% endif %}
+    {% endif %}
+    {% if hero_image %}<span class="hero-candidate" data-image="{{ hero_image | escape }}" data-credit="{{ wonder.title | escape }} · {{ hero_credit | escape }}" data-source="{{ hero_source | escape }}"></span>{% endif %}
+  {% endfor %}
+</div>
 
 <section class="page-shell home-section">
   <div class="section-head">
@@ -66,7 +89,7 @@ title: Home
   <div class="page-shell">
     <p class="eyebrow">A travel reference, not a bucket-list dump.</p>
     <h2>Discover a reason to go.</h2>
-    <p>Search by state, tier, experience, place, or region—and let the guide grow naturally as new wonders are added.</p>
+    <p>Search by state, reason to go, experience, place, or region—and let the guide grow naturally as new wonders are added.</p>
     <a class="primary" href="{{ '/explore/' | relative_url }}">Open Explore</a>
   </div>
 </section>
