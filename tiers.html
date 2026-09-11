@@ -11,5 +11,7 @@ permalink: /tiers/
   <article id="signature" class="wg-story-row"><span class="wg-reason-icon signature">★</span><div><h2>Signature Wonders</h2><p>The most exceptional places in each state, district, or territory. These are the destinations that define an area and give you a compelling reason to go.</p></div></article>
   <article id="travel" class="wg-story-row"><span class="wg-reason-icon travel">◆</span><div><h2>Worth Traveling For</h2><p>Places that may not be the single defining landmark, but are well worth including in your travels. Memorable experiences with real depth and character.</p></div></article>
   <article id="detour" class="wg-story-row"><span class="wg-reason-icon detour">○</span><div><h2>Worth the Detour</h2><p>Hidden gems, lesser-known places, or specialized interests that add richness to an area. They may not anchor an entire trip, but they are worth the extra effort if they fit your interests.</p></div></article>
-  <div class="wg-story-quote"><p>This isn’t a checklist.</p><strong>It’s a more meaningful way to explore America.</strong></div>
+  <div class="wg-story-quote wg-story-image" {% if qualify_image %}style="background-image:linear-gradient(90deg,rgba(13,25,32,.76),rgba(13,25,32,.34)),url('{{ qualify_image.image_url }}')"{% endif %}>
+    <div><p>This isn’t a checklist.</p><strong>It’s a more meaningful way to explore America.</strong><a class="wg-story-button" href="{{ '/about/' | relative_url }}">Read the full story <span aria-hidden="true">→</span></a></div>
+  </div>
 </section>
