@@ -63,7 +63,7 @@ The U.S. Minor Outlying Islands are excluded from the ordinary browse model unle
 
 - [x] complete asset-level image-rights research for the six new Signature Wonders;
 - [x] connect the six verified image records to cards, Wonder pages, and homepage hero rotation;
-- [ ] review the six first-pass Signature selections during Phase 2A comparative research;
+- [ ] complete comparative Signature review for all six district/territory areas during Phase 2A/2B;
 - [ ] add planning metadata for the six new Signature Wonders during normal Phase 2 intake/backfill;
 - [x] establish an explicit non-NPS diversity guardrail for Phase 2 research.
 
@@ -77,15 +77,15 @@ Mobile uses persistent bottom navigation for **Home, Explore, Search, and Areas*
 
 ## Phase 2A — Build the national candidate inventory
 
-**Status: IN PROGRESS — 56-area seed inventory created; Wave 1 comparative research complete for 8 areas.**
+**Status: IN PROGRESS — seed inventory complete; two comparative research waves complete covering 16 areas.**
 
 Goal: build the research pool before publishing large amounts of new content. Candidate counts are not quotas and candidate status does not imply inclusion.
 
-The seed backlog is [`_data/phase2_candidates.yml`](_data/phase2_candidates.yml). The research and review rules are now documented in [`PHASE2_RESEARCH_METHOD.md`](PHASE2_RESEARCH_METHOD.md). Wave reviews are kept separately from the seed backlog so source verification and editorial judgments remain auditable before candidates are promoted into production.
+The seed backlog is [`_data/phase2_candidates.yml`](_data/phase2_candidates.yml). The research and review rules are documented in [`PHASE2_RESEARCH_METHOD.md`](PHASE2_RESEARCH_METHOD.md). Wave reviews are kept separately from the seed backlog so source verification and editorial judgments remain auditable before candidates are promoted into production.
 
-### Wave 1 — completed research areas
+### Wave 1 — complete
 
-Wave 1 reviewed a deliberately varied set of areas:
+Areas reviewed:
 
 - Alabama
 - Alaska
@@ -96,39 +96,63 @@ Wave 1 reviewed a deliberately varied set of areas:
 - Puerto Rico
 - Guam
 
-The review file is [`_data/phase2_wave1_reviews.yml`](_data/phase2_wave1_reviews.yml).
+Review file: [`_data/phase2_wave1_reviews.yml`](_data/phase2_wave1_reviews.yml)
 
-Wave 1 contains **38 reviewed candidates**: **32 strong**, **4 uncertain**, **1 overlap**, and **1 deferred because of current access/closure conditions**. These are research statuses, not ◆ / ○ classifications.
+Wave 1 contains **38 reviewed candidates**: **32 strong**, **4 uncertain**, **1 overlap**, and **1 deferred** because of current access/closure conditions.
 
-The first comparative pass also flagged **Puerto Rico and Guam for a real Signature comparison during Phase 2B**. This does not mean El Yunque or Ritidian Point should be replaced; it means the broader candidate pool is strong enough that the original first-pass Signature choice should not be treated as automatic.
+### Wave 2 — complete
 
-### Phase 2A research requirements
+Areas reviewed:
 
-1. broaden each area's candidate pool beyond the seed pass;
-2. verify managing/official sources and basic travel viability;
-3. identify obvious omissions, especially important non-NPS destinations;
-4. compare candidates against the area's existing ★ Signature Wonder;
-5. flag candidates as strong, uncertain, overlap, defer, or not-fit;
-6. avoid assigning ◆ / ○ merely to create numerical balance.
+- Arkansas
+- Connecticut
+- Georgia
+- Illinois
+- Kentucky
+- Louisiana
+- Michigan
+- Pennsylvania
 
-All U.S. national parks are guaranteed eventual coverage, but their tier is not predetermined. [`NATIONAL_PARKS_COVERAGE.md`](NATIONAL_PARKS_COVERAGE.md) tracks that obligation separately so national parks do not dominate the general candidate workflow.
+Review file: [`_data/phase2_wave2_reviews.yml`](_data/phase2_wave2_reviews.yml)
+
+Wave 2 adds **37 reviewed candidates** and deliberately broadens the research beyond scenic federal lands into historic urban districts, architecture, industrial history, gardens, islands, state parks, wildlife areas, archaeology, and privately/nonprofit-stewarded destinations.
+
+Across Waves 1 and 2, **16 of 56 areas have completed a source-backed comparative candidate review**.
+
+### Signature comparison flags so far
+
+Comparative research has flagged these live Signature selections for Phase 2B review rather than automatic replacement:
+
+- Puerto Rico
+- Guam
+- Connecticut
+- Illinois
+- Louisiana
+- Pennsylvania
+
+A Signature flag means the candidate pool is strong enough to require a deliberate comparison. It does **not** mean the live Signature should change.
 
 ### Remaining Phase 2A work
 
 - [x] define research method and review statuses;
 - [x] complete Wave 1 source/editorial review for 8 areas;
-- [ ] continue research waves across the remaining 48 areas;
+- [x] complete Wave 2 source/editorial review for 8 additional areas;
+- [ ] continue research waves across the remaining 40 areas;
 - [ ] broaden thin candidate pools where comparative review exposes obvious omissions;
 - [ ] complete comparative review of all six district/territory Signature selections;
-- [ ] determine when enough areas are research-complete to begin Phase 2B in parallel rather than waiting for every area.
+- [ ] continue Phase 2B classification in parallel on mature research pools.
+
+All U.S. national parks are guaranteed eventual coverage, but their tier is not predetermined. [`NATIONAL_PARKS_COVERAGE.md`](NATIONAL_PARKS_COVERAGE.md) tracks that obligation separately so national parks do not dominate the general candidate workflow.
 
 ## Phase 2B — Editorial classification
 
-**Status: NOT STARTED AT SCALE.**
+**Status: PILOT IN PROGRESS — Waves 1 and 2 classified editorially; nothing published from this file yet.**
 
-After an area's candidate pool is sufficiently broad, classify destinations as ★, ◆, ○, or do-not-publish. Revisit a Signature selection when comparative research shows that another place makes a stronger case for that area.
+The working pilot classification is [`_data/phase2b_pilot_classification.yml`](_data/phase2b_pilot_classification.yml).
 
-Phase 2B may begin area-by-area once a research wave is mature; the project does not need to wait for every one of the 56 areas before testing classification on completed research pools.
+The pilot assigns proposed ◆ / ○ roles only after source-backed Phase 2A review. It also records `hold` and `do-not-publish` decisions where a candidate is too broad, operationally unresolved, or insufficiently sourced.
+
+The classification file does not modify the live site. Signature challenges remain comparison flags until a specific replacement decision is supported, and newly approved ◆ / ○ entries do not become public until Phase 2C production intake is complete.
 
 ## Phase 2C — Production content expansion
 
@@ -143,6 +167,8 @@ Publish approved destinations with:
 - verified imagery or neutral fallback;
 - relevant experience tags;
 - Phase 1C planning metadata when reliable information is available.
+
+The first Phase 2C production batch should come from the Phase 2B pilot rather than waiting for all 56 areas to complete research. A small production wave will test whether the expanded editorial model still reads well when many more destinations and non-natural/cultural places enter the live guide.
 
 ## Dedicated branding / design / layout phase
 
@@ -161,4 +187,4 @@ Potential later development:
 
 ## Current task
 
-**Continue Phase 2A with Wave 2 across additional areas, using the documented method. Once several more research pools are mature, begin Phase 2B classification in parallel on research-complete areas instead of waiting for all 56.**
+**Continue Phase 2A Wave 3 on additional areas while preparing a small Phase 2C production batch from already-classified candidates. Do not publish a large national dump; test the production workflow with a deliberate mixed set of natural, cultural, state/local, and federal destinations first.**
