@@ -3,4 +3,25 @@ layout: default
 title: States
 permalink: /states/
 ---
-<div class="page-shell"><p class="eyebrow">Browse</p><h1>States</h1><div class="state-list">{% assign states = site.states | sort: "title" %}{% for state in states %}<a href="{{ state.url | relative_url }}">{{ state.title }}</a>{% endfor %}</div></div>
+<section class="page-hero slim-hero">
+  <div class="page-shell">
+    <p class="eyebrow">Browse by state</p>
+    <h1>Fifty states. Fifty starting points.</h1>
+    <p class="lede">Each state begins with one Signature Wonder. Open a state to see what belongs there now and what can be added next.</p>
+  </div>
+</section>
+<section class="page-shell">
+  <div class="states-card-grid" id="statesGrid">
+    {% assign states = site.states | sort: "title" %}
+    {% for state in states %}
+      {% assign state_wonders = site.wonders | where: "state", state.title %}
+      {% assign signature = state_wonders | first %}
+      <a class="state-card{% if forloop.index > 9 %} state-card-extra{% endif %}" href="{{ state.url | relative_url }}" {% if forloop.index > 9 %}hidden{% endif %}>
+        <span class="state-card-number">{{ forloop.index | prepend: '0' | slice: -2, 2 }}</span>
+        <div><h2>{{ state.title }}</h2>{% if signature %}<p>{{ signature.title }}</p>{% endif %}</div>
+        <span class="state-card-arrow">→</span>
+      </a>
+    {% endfor %}
+  </div>
+  <div class="expand-wrap"><button id="expandStates" class="secondary-button" type="button" aria-expanded="false">Explore all 50 states</button></div>
+</section>
