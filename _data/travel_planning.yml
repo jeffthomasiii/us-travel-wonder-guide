@@ -1,0 +1,266 @@
+# Phase 1C travel-planning pilot data.
+# Stable discovery guidance lives here; rapidly changing details should be checked at the linked official source.
+
+yosemite-national-park:
+  best_seasons: [spring, fall]
+  visit_length: "2–4 days"
+  rv_access: limited
+  rv_notes: "Major park roads and campgrounds support RV travel, but campground availability, traffic, and some roads require advance planning."
+  dog_access: limited
+  dog_notes: "Pets are generally limited to developed areas, campgrounds, paved roads, and selected paved paths; most trails and wilderness areas do not allow pets."
+  accessibility: "Yosemite Valley includes accessible visitor facilities, parking, restrooms, shuttle options, and several major viewpoints; trail accessibility varies widely."
+  photography: "Granite walls, waterfalls, meadows, sequoias, and changing valley light make early morning and late-day light especially rewarding."
+  wildlife: [black bear, mule deer, coyote, birds]
+  conditions_url: https://www.nps.gov/yose/planyourvisit/conditions.htm
+  reservation_url: https://www.nps.gov/yose/planyourvisit/reservations.htm
+  planning_source_url: https://www.nps.gov/yose/planyourvisit/index.htm
+  planning_last_reviewed: 2026-09-11
+
+redwood-national-and-state-parks:
+  best_seasons: [spring, summer, fall]
+  visit_length: "2–3 days"
+  rv_access: limited
+  rv_notes: "The main highway corridor works well for RV travel, but several scenic park roads are narrow, rough, or not recommended for trailers and large vehicles."
+  dog_access: limited
+  dog_notes: "Pets are restricted from most trails but can use selected developed areas, roads, beaches, and designated pet-friendly routes."
+  accessibility: "Developed overlooks, visitor areas, and selected short trails offer accessible experiences, while many forest and coastal trails use natural surfaces."
+  photography: "Old-growth redwoods, fog, fern-filled forest, rugged coastline, and prairie wildlife are the strongest subjects."
+  wildlife: [Roosevelt elk, black-tailed deer, marine mammals, birds]
+  conditions_url: https://www.nps.gov/redw/planyourvisit/conditions.htm
+  planning_source_url: https://www.nps.gov/redw/planyourvisit/index.htm
+  planning_last_reviewed: 2026-09-11
+
+alabama-hills-national-scenic-area:
+  best_seasons: [fall, winter, spring]
+  visit_length: "half day to full day"
+  rv_access: good
+  rv_notes: "The area is popular with vehicle-based travelers and campers, but unpaved roads and site-specific conditions can limit larger rigs."
+  dog_access: good
+  dog_notes: "Dogs can share much of the outdoor experience when kept under control; visitors should verify any current site-specific restrictions."
+  accessibility: "Most of the experience is roadside and dispersed across natural desert terrain; accessibility depends heavily on the chosen pullout or viewpoint."
+  photography: "Rounded granite formations beneath the Sierra Nevada are especially strong at sunrise, sunset, and during changing weather."
+  wildlife: [desert birds, jackrabbits, coyotes]
+  conditions_url: https://www.blm.gov/visit/alabama-hills
+  planning_source_url: https://www.blm.gov/visit/alabama-hills
+  planning_last_reviewed: 2026-09-11
+
+zion-national-park:
+  best_seasons: [spring, fall]
+  visit_length: "2–3 days"
+  rv_access: limited
+  rv_notes: "RVs can visit and camp in the area, but shuttle operations, parking limits, tunnel rules, and crowded road corridors materially affect planning."
+  dog_access: limited
+  dog_notes: "Pets are not allowed on park shuttles and are prohibited on most trails; the Pa'rus Trail is the primary pet-friendly trail."
+  accessibility: "Visitor centers, shuttle buses, restrooms, picnic areas, Zion Lodge, and selected trails and campsites provide accessible options."
+  photography: "Sandstone walls, canyon light, river corridors, and high-desert color are strongest near sunrise, sunset, and in reflected canyon light."
+  wildlife: [mule deer, wild turkey, bighorn sheep, birds]
+  conditions_url: https://www.nps.gov/zion/planyourvisit/conditions.htm
+  reservation_url: https://www.nps.gov/zion/planyourvisit/permitsandreservations.htm
+  planning_source_url: https://www.nps.gov/zion/planyourvisit/index.htm
+  planning_last_reviewed: 2026-09-11
+
+bryce-canyon-national-park:
+  best_seasons: [late spring, summer, fall]
+  visit_length: "1–2 days"
+  rv_access: good
+  rv_notes: "RVs are a normal way to visit and camp, though parking, campground availability, and shuttle use should be planned in busy periods."
+  dog_access: limited
+  dog_notes: "Pets are restricted primarily to paved surfaces, campgrounds, roads, and a limited number of paved routes."
+  accessibility: "Several major overlooks and developed facilities are accessible, while most below-rim trails involve steep natural terrain."
+  photography: "Hoodoos and amphitheaters respond dramatically to sunrise, sunset, snow, and side-light."
+  wildlife: [mule deer, pronghorn, prairie dogs, birds]
+  conditions_url: https://www.nps.gov/brca/planyourvisit/conditions.htm
+  reservation_url: https://www.nps.gov/brca/planyourvisit/campgrounds.htm
+  planning_source_url: https://www.nps.gov/brca/planyourvisit/index.htm
+  planning_last_reviewed: 2026-09-11
+
+goblin-valley-state-park:
+  best_seasons: [spring, fall]
+  visit_length: "half day to full day"
+  rv_access: good
+  rv_notes: "The developed campground accommodates RVs and camping units, making the park practical for road-trip and RV itineraries."
+  dog_access: good
+  dog_notes: "Leashed pets are allowed in the park and campground; they may not be left unattended."
+  accessibility: "The main developed area is relatively easy to reach by vehicle, but the goblin formations themselves are spread across uneven desert terrain."
+  photography: "Sculpted hoodoos, shadows, dark skies, and warm desert light make both golden hour and night photography strong options."
+  wildlife: [desert birds, lizards, rabbits]
+  conditions_url: https://stateparks.utah.gov/parks/goblin-valley/
+  reservation_url: https://stateparks.utah.gov/parks/goblin-valley/camping-at-goblin-valley/
+  planning_source_url: https://stateparks.utah.gov/parks/goblin-valley/
+  planning_last_reviewed: 2026-09-11
+
+acadia-national-park:
+  best_seasons: [late spring, summer, fall]
+  visit_length: "2–3 days"
+  rv_access: limited
+  rv_notes: "RVs are permitted and campgrounds support RV travel, but low bridges, limited turnaround areas, and road restrictions matter on some routes."
+  dog_access: good
+  dog_notes: "Acadia is unusually pet-friendly for a national park, but pets remain restricted from certain trails, beaches, buildings, and other sensitive areas."
+  accessibility: "Accessible roads, carriage-road experiences, overlooks, visitor facilities, and selected trails provide a broad range of options."
+  photography: "Rocky coast, granite mountains, carriage roads, ponds, and fall color offer strong sunrise and coastal-light opportunities."
+  wildlife: [white-tailed deer, peregrine falcon, seals, seabirds]
+  conditions_url: https://www.nps.gov/acad/planyourvisit/conditions.htm
+  reservation_url: https://www.nps.gov/acad/planyourvisit/vehicle_reservations.htm
+  planning_source_url: https://www.nps.gov/acad/planyourvisit/index.htm
+  planning_last_reviewed: 2026-09-11
+
+baxter-state-park:
+  best_seasons: [summer, early fall]
+  visit_length: "2–3 days"
+  rv_access: poor
+  rv_notes: "Large vehicles and RVs are not suitable for the park's narrow gravel Tote Road and are explicitly discouraged or restricted."
+  dog_access: none
+  dog_notes: "Pets are not allowed anywhere in Baxter State Park."
+  accessibility: "A number of roadside picnic areas, campgrounds, parking areas, outhouses, and cabins provide accessible facilities, while much of the park remains rugged wilderness."
+  photography: "Katahdin, ponds, forests, moose habitat, and autumn color are the defining subjects."
+  wildlife: [moose, black bear, white-tailed deer, loons]
+  conditions_url: https://baxterstatepark.org/
+  reservation_url: https://reservation.baxterstatepark.org/reserve/camping
+  planning_source_url: https://baxterstatepark.org/
+  planning_last_reviewed: 2026-09-11
+
+quoddy-head-state-park:
+  best_seasons: [late spring, summer, fall]
+  visit_length: "2–4 hours"
+  rv_access: limited
+  rv_notes: "This is primarily a day-use coastal stop rather than an RV destination; larger vehicles should plan around parking and local-road constraints."
+  dog_access: good
+  dog_notes: "Leashed pets can generally share the day-use experience, subject to current Maine State Parks rules."
+  accessibility: "The lighthouse and developed day-use area are easier to access than the park's natural coastal trails, which include uneven surfaces and roots."
+  photography: "The lighthouse, bold Atlantic coastline, fog, wildflowers, and first-light conditions are the signature subjects."
+  wildlife: [seabirds, seals, whales offshore]
+  conditions_url: https://www.maine.gov/dacf/parks/trail_activities/quoddy_head.shtml
+  planning_source_url: https://www.maine.gov/dacf/parks/trail_activities/quoddy_head.shtml
+  planning_last_reviewed: 2026-09-11
+
+pictured-rocks-national-lakeshore:
+  best_seasons: [late spring, summer, early fall]
+  visit_length: "2–3 days"
+  rv_access: limited
+  rv_notes: "Drive-in campgrounds can accommodate some RVs, but there are no hookups or dump stations and site lengths vary."
+  dog_access: limited
+  dog_notes: "Pets are allowed only in designated areas and selected campgrounds, beaches, paved trails, and overlooks."
+  accessibility: "Miners Castle has a short paved wheelchair-accessible route to overlooks, and the park offers additional accessible facilities including a reservable beach wheelchair."
+  photography: "Sandstone cliffs, Lake Superior color, sea caves, waterfalls, beaches, and fall foliage are strongest in side-light and changing weather."
+  wildlife: [black bear, white-tailed deer, bald eagle, waterfowl]
+  conditions_url: https://www.nps.gov/piro/planyourvisit/conditions.htm
+  reservation_url: https://www.nps.gov/piro/planyourvisit/camping.htm
+  planning_source_url: https://www.nps.gov/piro/planyourvisit/index.htm
+  planning_last_reviewed: 2026-09-11
+
+sleeping-bear-dunes-national-lakeshore:
+  best_seasons: [late spring, summer, fall]
+  visit_length: "1–2 days"
+  rv_access: good
+  rv_notes: "The park works well for road trips and RV camping, but visitors should verify campground site lengths and seasonal services."
+  dog_access: limited
+  dog_notes: "Pets are allowed in selected campgrounds, trails, and beaches but are restricted from other sensitive areas."
+  accessibility: "Developed overlooks, visitor areas, and selected trails provide accessible experiences; dune terrain itself is steep and soft."
+  photography: "Towering dunes, Lake Michigan, inland lakes, forests, and sunset light are the strongest subjects."
+  wildlife: [white-tailed deer, fox, bald eagle, migratory birds]
+  conditions_url: https://www.nps.gov/slbe/planyourvisit/conditions.htm
+  reservation_url: https://www.nps.gov/slbe/planyourvisit/camping.htm
+  planning_source_url: https://www.nps.gov/slbe/planyourvisit/index.htm
+  planning_last_reviewed: 2026-09-11
+
+kitch-iti-kipi:
+  best_seasons: [spring, summer, fall]
+  visit_length: "1–2 hours"
+  rv_access: good
+  rv_notes: "The spring is reached through a developed state-park day-use area with vehicle parking; larger rigs should still verify current parking conditions."
+  dog_access: good
+  dog_notes: "Leashed pets are generally compatible with the developed state-park setting; verify current Michigan State Parks rules before arrival."
+  accessibility: "The spring is reached through a developed boardwalk and observation-raft area, making it substantially easier to access than a backcountry destination."
+  photography: "Clear turquoise water, submerged tree trunks, fish, reflections, and the moving observation raft define the visual experience."
+  wildlife: [trout, waterfowl]
+  conditions_url: https://www.michigan.gov/recsearch/parks/palms-book
+  planning_source_url: https://www.michigan.gov/recsearch/parks/palms-book
+  planning_last_reviewed: 2026-09-11
+
+wichita-mountains-wildlife-refuge:
+  best_seasons: [spring, fall, winter]
+  visit_length: "full day"
+  rv_access: good
+  rv_notes: "Doris Campground includes standard and electric sites, and the refuge's paved road network supports RV-based visits."
+  dog_access: good
+  dog_notes: "Pets are permitted when kept under direct control on a leash shorter than 10 feet and may not be left unattended."
+  accessibility: "The refuge includes fully accessible paved trails and developed visitor facilities in addition to rugged mountain routes."
+  photography: "Bison, longhorn, elk, granite mountains, prairie, lakes, and broad sunset skies make wildlife and landscape photography equally strong."
+  wildlife: [bison, elk, longhorn cattle, white-tailed deer, prairie dogs]
+  conditions_url: https://www.fws.gov/refuge/wichita-mountains
+  reservation_url: https://www.recreation.gov/camping/campgrounds/233671
+  planning_source_url: https://www.fws.gov/refuge/wichita-mountains/visit-us
+  planning_last_reviewed: 2026-09-11
+
+beavers-bend-state-park:
+  best_seasons: [spring, summer, fall]
+  visit_length: "1–2 days"
+  rv_access: good
+  rv_notes: "The park is a major camping destination with RV sites and is well suited to a road-trip or multi-night base."
+  dog_access: good
+  dog_notes: "Leashed pets can generally share campgrounds and many outdoor areas; verify current Oklahoma State Parks rules for specific facilities and trails."
+  accessibility: "Developed campgrounds, roads, picnic areas, and visitor facilities provide easier access than many of the park's natural-surface trails."
+  photography: "Mountain Fork River, Broken Bow Lake, forest, mist, fall color, and shoreline light are the strongest subjects."
+  wildlife: [white-tailed deer, wild turkey, birds]
+  conditions_url: https://www.travelok.com/state-parks/beavers-bend-state-park
+  reservation_url: https://www.travelok.com/state-parks/beavers-bend-state-park
+  planning_source_url: https://www.travelok.com/state-parks/beavers-bend-state-park
+  planning_last_reviewed: 2026-09-11
+
+gloss-mountain-state-park:
+  best_seasons: [spring, fall, winter]
+  visit_length: "1–3 hours"
+  rv_access: limited
+  rv_notes: "This is best treated as a roadside day-use stop; larger rigs should verify parking and local access rather than assuming campground-style facilities."
+  dog_access: good
+  dog_notes: "Leashed dogs can generally accompany visitors in the outdoor day-use setting, subject to current park rules."
+  accessibility: "The defining mesa-top experience requires a steep stair climb, so the signature viewpoint is not broadly accessible even though roadside views are available."
+  photography: "Red mesas, gypsum-capped bluffs, prairie, and wide western Oklahoma skies work especially well in low-angle light."
+  wildlife: [raptors, prairie wildlife]
+  conditions_url: https://www.travelok.com/state-parks/gloss-mountain-state-park
+  planning_source_url: https://www.travelok.com/state-parks/gloss-mountain-state-park
+  planning_last_reviewed: 2026-09-11
+
+cape-henlopen-state-park:
+  best_seasons: [late spring, summer, fall]
+  visit_length: "full day to 2 days"
+  rv_access: good
+  rv_notes: "The park includes a developed campground and is practical for RV-based coastal trips, though summer demand can be high."
+  dog_access: limited
+  dog_notes: "Pets are welcome in many park areas but beach and seasonal restrictions can apply; verify current Delaware State Parks rules before arrival."
+  accessibility: "Developed beaches, trails, visitor areas, and park facilities include accessible options, with conditions varying by specific beach and trail."
+  photography: "Dunes, Atlantic shoreline, lighthouse views, maritime vegetation, and sunrise light define the strongest scenes."
+  wildlife: [shorebirds, dolphins offshore, hawks, deer]
+  conditions_url: https://destateparks.com/Beaches/CapeHenlopen
+  reservation_url: https://destateparks.com/Camping
+  planning_source_url: https://destateparks.com/Beaches/CapeHenlopen
+  planning_last_reviewed: 2026-09-11
+
+bombay-hook-national-wildlife-refuge:
+  best_seasons: [spring, fall]
+  visit_length: "2–4 hours"
+  rv_access: good
+  rv_notes: "The refuge is primarily experienced from an auto-tour route and observation stops, making it practical for vehicle-based travelers; large-rig maneuvering should still be verified."
+  dog_access: limited
+  dog_notes: "Wildlife protection is the priority; visitors traveling with pets should verify current refuge pet restrictions before arrival."
+  accessibility: "The auto-tour format and developed observation areas provide relatively easy access to major refuge habitats compared with trail-dependent destinations."
+  photography: "Migratory birds, waterfowl, marshes, impoundments, and sunrise or sunset light make this a wildlife-photography destination first."
+  wildlife: [snow geese, ducks, shorebirds, bald eagle]
+  conditions_url: https://www.fws.gov/refuge/bombay-hook
+  planning_source_url: https://www.fws.gov/refuge/bombay-hook/visit-us
+  planning_last_reviewed: 2026-09-11
+
+trap-pond-state-park:
+  best_seasons: [spring, summer, fall]
+  visit_length: "half day to full day"
+  rv_access: good
+  rv_notes: "The park includes a developed campground and works well as an RV-friendly base for southern Delaware."
+  dog_access: good
+  dog_notes: "Leashed pets can generally share the campground and outdoor park experience, subject to current Delaware State Parks rules."
+  accessibility: "Developed roads, campground areas, boardwalk-style experiences, and visitor facilities provide accessible options around the pond."
+  photography: "Bald cypress, reflections, paddling scenes, mist, fall color, and wetland wildlife are the strongest subjects."
+  wildlife: [herons, egrets, turtles, waterfowl]
+  conditions_url: https://destateparks.com/TrapPond
+  reservation_url: https://destateparks.com/Camping
+  planning_source_url: https://destateparks.com/TrapPond
+  planning_last_reviewed: 2026-09-11
