@@ -15,9 +15,11 @@ layout: default
     {% assign image_source_url = signature_image.image_source_url %}
   {% endif %}
 {% endif %}
-{% assign planning = site.data.travel_planning_phase2[page.slug] %}
+{% assign planning = site.data.travel_planning_phase2_expansion[page.slug] %}
+{% unless planning %}{% assign planning = site.data.travel_planning_phase2[page.slug] %}{% endunless %}
 {% unless planning %}{% assign planning = site.data.travel_planning[page.slug] %}{% endunless %}
-{% assign refinement = site.data.planning_refinements_phase2[page.slug] %}
+{% assign refinement = site.data.planning_refinements_phase2_expansion[page.slug] %}
+{% unless refinement %}{% assign refinement = site.data.planning_refinements_phase2[page.slug] %}{% endunless %}
 {% unless refinement %}{% assign refinement = site.data.planning_refinements[page.slug] %}{% endunless %}
 <article class="wonder-page">
   <div class="wonder-hero {% unless image_url %}fallback{% endunless %}" {% if image_url %}style="background-image:linear-gradient(180deg,rgba(0,0,0,.08),rgba(0,0,0,.62)),url('{{ image_url }}')"{% endif %}>
