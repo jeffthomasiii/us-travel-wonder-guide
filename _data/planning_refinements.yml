@@ -1,0 +1,155 @@
+# Phase 1C planning refinements layered over travel_planning.yml.
+# Date windows are typical editorial planning windows, not guarantees of weather, access, foliage, or closures.
+# Travelers should always verify current conditions with the linked official source.
+
+yosemite-national-park:
+  best_visit_windows:
+    - "April 15 – June 15"
+    - "September 15 – October 31"
+  pet_access: limited
+  pet_types: [dogs, cats]
+  pet_notes: "Pets are generally limited to developed areas, campgrounds, paved roads, and selected paved paths; most trails and wilderness areas do not allow pets."
+  rv_road_notes: "Main valley and park roads are paved, but mountain roads can be winding and steep. Seasonal closures, tunnel/road restrictions, parking, and campground size limits can materially affect larger rigs."
+
+redwood-national-and-state-parks:
+  best_visit_windows:
+    - "May 15 – October 15"
+  pet_access: limited
+  pet_types: [dogs, cats]
+  pet_notes: "Pets are restricted from most trails but can use selected developed areas, roads, beaches, and designated pet-friendly routes."
+  rv_road_notes: "US 101 is the practical RV spine. Several scenic roads are narrow, rough, unpaved, or not recommended for trailers and large vehicles."
+
+alabama-hills-national-scenic-area:
+  best_visit_windows:
+    - "October 1 – April 30"
+  pet_access: good
+  pet_types: [dogs, cats]
+  pet_notes: "Pets can share much of the outdoor experience when kept under control. Heat, rough ground, wildlife, and dispersed-use conditions matter more here than developed-facility rules."
+  rv_road_notes: "Primary access is straightforward, but many side roads are unpaved, narrow, sandy, or rutted. Larger rigs should stay on suitable routes and scout dispersed access before committing."
+
+zion-national-park:
+  best_visit_windows:
+    - "March 15 – May 15"
+    - "September 15 – November 10"
+  pet_access: limited
+  pet_types: [dogs, cats]
+  pet_notes: "Pets are not allowed on park shuttles and are prohibited on most trails; the Pa'rus Trail is the primary pet-friendly trail."
+  rv_road_notes: "Roads are paved but canyon corridors are busy and constrained. Tunnel dimensions, shuttle operations, parking limits, and steep/winding approaches should be reviewed before taking a large rig through the park."
+
+bryce-canyon-national-park:
+  best_visit_windows:
+    - "May 15 – October 15"
+  pet_access: limited
+  pet_types: [dogs, cats]
+  pet_notes: "Pets are generally limited to paved surfaces, campgrounds, roads, and a small number of paved routes."
+  rv_road_notes: "Main park roads are paved and manageable for RVs, but parking and campground dimensions matter. Winter weather can rapidly change road conditions at this elevation."
+
+goblin-valley-state-park:
+  best_visit_windows:
+    - "March 15 – May 15"
+    - "September 15 – November 1"
+  pet_access: good
+  pet_types: [dogs, cats]
+  pet_notes: "Leashed pets are allowed in the park and campground but should not be left unattended; desert heat and exposed terrain are major considerations."
+  rv_road_notes: "The developed approach and campground are RV-friendly. Nearby backroads and side trips can become rough or unpaved and should not be assumed suitable for trailers."
+
+acadia-national-park:
+  best_visit_windows:
+    - "June 1 – October 20"
+  pet_access: good
+  pet_types: [dogs, cats]
+  pet_notes: "Acadia is unusually pet-friendly for a national park, but pets remain restricted from certain trails, beaches, buildings, and other sensitive areas."
+  rv_road_notes: "Many primary roads are paved, but low clearances, one-way sections, narrow carriage-road crossings, tight parking, and vehicle restrictions make route planning important for RVs."
+
+baxter-state-park:
+  best_visit_windows:
+    - "June 15 – October 15"
+  pet_access: none
+  pet_types: [dogs, cats]
+  pet_notes: "Pets are not allowed anywhere in Baxter State Park."
+  rv_road_notes: "The Tote Road is narrow, winding, gravel, and intentionally primitive. Large RVs and trailers are poor fits and may be restricted; this destination should be planned around a smaller vehicle."
+
+quoddy-head-state-park:
+  best_visit_windows:
+    - "May 15 – October 15"
+  pet_access: good
+  pet_types: [dogs, cats]
+  pet_notes: "Leashed pets can generally share the day-use experience subject to current Maine State Parks rules."
+  rv_road_notes: "This is a day-use coastal stop reached by local roads rather than an RV destination. Larger rigs should expect tighter roads and limited maneuvering compared with highway-oriented parks."
+
+pictured-rocks-national-lakeshore:
+  best_visit_windows:
+    - "June 1 – October 15"
+  pet_access: limited
+  pet_types: [dogs, cats]
+  pet_notes: "Pets are allowed only in designated areas and selected campgrounds, beaches, paved trails, and overlooks."
+  rv_road_notes: "Main access roads are generally workable, but some park roads and campground loops are narrow and site lengths vary. There are no hookups in park campgrounds."
+
+sleeping-bear-dunes-national-lakeshore:
+  best_visit_windows:
+    - "May 15 – October 20"
+  pet_access: limited
+  pet_types: [dogs, cats]
+  pet_notes: "Pets are allowed in selected campgrounds, trails, and beaches but are restricted from sensitive areas and some seasonal zones."
+  rv_road_notes: "The park is broadly road-trip friendly, but steep grades, scenic-drive restrictions, campground site lengths, and busy summer parking should be checked for larger rigs."
+
+kitch-iti-kipi:
+  best_visit_windows:
+    - "May 1 – October 31"
+  pet_access: good
+  pet_types: [dogs, cats]
+  pet_notes: "Leashed pets are generally compatible with the developed state-park setting, subject to current Michigan State Parks rules."
+  rv_road_notes: "Access is paved through a developed day-use area. The main RV concern is parking and maneuvering capacity during busy periods rather than road surface or grade."
+
+wichita-mountains-wildlife-refuge:
+  best_visit_windows:
+    - "March 1 – May 15"
+    - "October 1 – December 15"
+  pet_access: good
+  pet_types: [dogs, cats]
+  pet_notes: "Pets are permitted when kept under direct control; wildlife encounters and heat make restraint and supervision especially important."
+  rv_road_notes: "The main refuge road network is paved and RV-capable. Some side roads, pullouts, and mountain approaches are narrower and more winding than campground access routes."
+
+beavers-bend-state-park:
+  best_visit_windows:
+    - "March 15 – May 31"
+    - "October 15 – November 20"
+  pet_access: good
+  pet_types: [dogs, cats]
+  pet_notes: "Leashed pets can generally share campgrounds and many outdoor areas; verify current facility-specific rules before arrival."
+  rv_road_notes: "The park is RV-oriented, but wooded campground loops and local mountain roads can be narrow and winding. Site dimensions and turning room matter for longer combinations."
+
+gloss-mountain-state-park:
+  best_visit_windows:
+    - "March 1 – May 15"
+    - "September 15 – November 30"
+  pet_access: good
+  pet_types: [dogs, cats]
+  pet_notes: "Leashed pets can generally accompany visitors in the outdoor day-use setting, subject to current park rules."
+  rv_road_notes: "Treat this as a roadside day-use stop rather than an RV facility. Access is straightforward, but parking and turning space should be confirmed for larger rigs."
+
+cape-henlopen-state-park:
+  best_visit_windows:
+    - "May 15 – October 15"
+  pet_access: limited
+  pet_types: [dogs, cats]
+  pet_notes: "Pets are welcome in many areas, but seasonal beach restrictions and location-specific rules can apply."
+  rv_road_notes: "The developed campground and paved park roads work well for RVs. Summer traffic, campground site dimensions, and coastal parking demand are the main constraints."
+
+bombay-hook-national-wildlife-refuge:
+  best_visit_windows:
+    - "April 1 – May 31"
+    - "September 1 – November 30"
+  pet_access: limited
+  pet_types: [dogs, cats]
+  pet_notes: "Because this is a wildlife refuge, pet access should be treated conservatively and current refuge rules should be checked before bringing any pet onto trails or wildlife-viewing areas."
+  rv_road_notes: "The wildlife drive is the core experience. Road surface, width, pullouts, and current refuge rules should be checked before taking a large RV or trailer around the loop."
+
+trap-pond-state-park:
+  best_visit_windows:
+    - "March 15 – May 31"
+    - "September 15 – November 15"
+  pet_access: good
+  pet_types: [dogs, cats]
+  pet_notes: "Leashed pets can generally share campground and outdoor areas subject to current Delaware State Parks rules."
+  rv_road_notes: "The developed campground is RV-friendly. Local roads are generally manageable, with campground-loop geometry and site dimensions more important than grades or rough surfaces."
