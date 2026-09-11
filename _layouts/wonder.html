@@ -1,14 +1,25 @@
 ---
 layout: default
 ---
+{% assign image_url = page.image_url %}
+{% assign image_credit = page.image_credit %}
+{% assign image_source_url = page.image_source_url %}
+{% if page.tier == 'signature' %}
+  {% assign signature_image = site.data.signature_images[page.state_slug] %}
+  {% if signature_image %}
+    {% assign image_url = signature_image.image_url %}
+    {% assign image_credit = signature_image.image_credit %}
+    {% assign image_source_url = signature_image.image_source_url %}
+  {% endif %}
+{% endif %}
 <article class="wonder-page">
-  <div class="wonder-hero {% unless page.image_url %}fallback{% endunless %}" {% if page.image_url %}style="background-image:linear-gradient(180deg,rgba(0,0,0,.08),rgba(0,0,0,.62)),url('{{ page.image_url }}')"{% endif %}>
+  <div class="wonder-hero {% unless image_url %}fallback{% endunless %}" {% if image_url %}style="background-image:linear-gradient(180deg,rgba(0,0,0,.08),rgba(0,0,0,.62)),url('{{ image_url }}')"{% endif %}>
     <div class="wonder-hero-inner">
       <a class="eyebrow" href="{{ '/states/' | append: page.state_slug | append: '/' | relative_url }}">{{ page.state }}</a>
       <div class="tier-badge">★ Signature Wonder</div>
       <h1>{{ page.title }}</h1>
       <p>{{ page.summary }}</p>
-      {% if page.image_credit %}<a class="photo-credit" href="{{ page.image_source_url }}" target="_blank" rel="noopener">Photo: {{ page.image_credit }}</a>{% endif %}
+      {% if image_credit %}<a class="photo-credit" href="{{ image_source_url }}" target="_blank" rel="noopener">Photo: {{ image_credit }}</a>{% endif %}
     </div>
   </div>
 
@@ -26,7 +37,7 @@ layout: default
       <h2>Go there</h2>
       <button class="primary nav-open" data-query="{{ page.navigation_query | escape }}">Navigate</button>
       <a class="secondary" href="{{ page.official_url }}" target="_blank" rel="noopener">Official site</a>
-      {% if page.image_source_url %}<a class="text-link" href="{{ page.image_source_url }}" target="_blank" rel="noopener">Image source / rights</a>{% endif %}
+      {% if image_source_url %}<a class="text-link" href="{{ image_source_url }}" target="_blank" rel="noopener">Image source / rights</a>{% endif %}
       <dl>
         <div><dt>State</dt><dd>{{ page.state }}</dd></div>
         <div><dt>Region</dt><dd>{{ page.region }}</dd></div>
