@@ -1,10 +1,12 @@
 ---
 layout: default
 ---
+{% assign tier = page.tier | default: 'signature' %}
+{% if tier == 'travel' %}{% assign tier_label = '◆ Worth Traveling For' %}{% elsif tier == 'detour' %}{% assign tier_label = '○ Worth the Detour' %}{% else %}{% assign tier_label = '★ Signature Wonder' %}{% endif %}
 {% assign image_url = page.image_url %}
 {% assign image_credit = page.image_credit %}
 {% assign image_source_url = page.image_source_url %}
-{% if page.tier == 'signature' %}
+{% if tier == 'signature' %}
   {% assign signature_image = site.data.signature_images[page.state_slug] %}
   {% if signature_image %}
     {% assign image_url = signature_image.image_url %}
@@ -16,7 +18,7 @@ layout: default
   <div class="wonder-hero {% unless image_url %}fallback{% endunless %}" {% if image_url %}style="background-image:linear-gradient(180deg,rgba(0,0,0,.08),rgba(0,0,0,.62)),url('{{ image_url }}')"{% endif %}>
     <div class="wonder-hero-inner">
       <a class="eyebrow" href="{{ '/states/' | append: page.state_slug | append: '/' | relative_url }}">{{ page.state }}</a>
-      <div class="tier-badge">★ Signature Wonder</div>
+      <div class="tier-badge">{{ tier_label }}</div>
       <h1>{{ page.title }}</h1>
       <p>{{ page.summary }}</p>
       {% if image_credit %}<a class="photo-credit" href="{{ image_source_url }}" target="_blank" rel="noopener">Photo: {{ image_credit }}</a>{% endif %}
@@ -41,7 +43,7 @@ layout: default
       <dl>
         <div><dt>State</dt><dd>{{ page.state }}</dd></div>
         <div><dt>Region</dt><dd>{{ page.region }}</dd></div>
-        <div><dt>Tier</dt><dd>★ Signature Wonder</dd></div>
+        <div><dt>Tier</dt><dd>{{ tier_label }}</dd></div>
       </dl>
     </aside>
   </div>
