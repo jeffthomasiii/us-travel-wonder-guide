@@ -1,0 +1,396 @@
+# Phase 2A candidate inventory — seed pass.
+# This file is research backlog only. Inclusion and tier are intentionally unassigned until editorial/source review.
+# Candidate counts are not quotas; areas should grow unevenly based on actual travel value.
+
+alabama:
+  - name: Cheaha State Park
+    type: state-park
+    status: research
+  - name: Bon Secour National Wildlife Refuge
+    type: wildlife-refuge
+    status: research
+alaska:
+  - name: Kenai Fjords National Park
+    type: national-park
+    status: research
+  - name: Mendenhall Glacier Recreation Area
+    type: national-forest
+    status: research
+arizona:
+  - name: Sedona Red Rock Country
+    type: scenic-landscape
+    status: research
+  - name: Antelope Canyon
+    type: tribal-land
+    status: research
+arkansas:
+  - name: Hot Springs National Park
+    type: national-park
+    status: research
+  - name: Crater of Diamonds State Park
+    type: state-park
+    status: research
+california:
+  - name: Big Sur Coast
+    type: scenic-coast
+    status: research
+  - name: Santa Catalina Island
+    type: island
+    status: research
+colorado:
+  - name: Garden of the Gods
+    type: city-park
+    status: research
+  - name: San Juan Skyway
+    type: scenic-road
+    status: research
+connecticut:
+  - name: Gillette Castle State Park
+    type: historic-state-park
+    status: research
+  - name: Mystic Seaport Museum
+    type: cultural-historic
+    status: research
+delaware:
+  - name: Brandywine Creek State Park
+    type: state-park
+    status: research
+  - name: First State National Historical Park
+    type: historic
+    status: research
+florida:
+  - name: Dry Tortugas National Park
+    type: national-park
+    status: research
+  - name: John Pennekamp Coral Reef State Park
+    type: state-park
+    status: research
+georgia:
+  - name: Okefenokee National Wildlife Refuge
+    type: wildlife-refuge
+    status: research
+  - name: Providence Canyon State Park
+    type: state-park
+    status: research
+hawaii:
+  - name: Haleakala National Park
+    type: national-park
+    status: research
+  - name: Waimea Canyon State Park
+    type: state-park
+    status: research
+idaho:
+  - name: Shoshone Falls
+    type: waterfall
+    status: research
+  - name: Craters of the Moon National Monument and Preserve
+    type: national-monument
+    status: research
+illinois:
+  - name: Starved Rock State Park
+    type: state-park
+    status: research
+  - name: Cahokia Mounds State Historic Site
+    type: cultural-historic
+    status: research
+indiana:
+  - name: Brown County State Park
+    type: state-park
+    status: research
+  - name: Turkey Run State Park
+    type: state-park
+    status: research
+iowa:
+  - name: Effigy Mounds National Monument
+    type: cultural-historic
+    status: research
+  - name: Maquoketa Caves State Park
+    type: state-park
+    status: research
+kansas:
+  - name: Tallgrass Prairie National Preserve
+    type: national-preserve
+    status: research
+  - name: Flint Hills Scenic Byway
+    type: scenic-road
+    status: research
+kentucky:
+  - name: Red River Gorge Geological Area
+    type: national-forest
+    status: research
+  - name: Cumberland Falls State Resort Park
+    type: state-park
+    status: research
+louisiana:
+  - name: Barataria Preserve
+    type: national-historical-park
+    status: research
+  - name: Jungle Gardens at Avery Island
+    type: garden-cultural-landscape
+    status: research
+maine:
+  - name: Rangeley Lakes National Scenic Byway
+    type: scenic-road
+    status: research
+  - name: Moosehead Lake
+    type: lake-region
+    status: research
+maryland:
+  - name: Great Falls of the Potomac
+    type: river-landscape
+    status: research
+  - name: Blackwater National Wildlife Refuge
+    type: wildlife-refuge
+    status: research
+massachusetts:
+  - name: Mount Greylock State Reservation
+    type: state-reservation
+    status: research
+  - name: Cape Ann
+    type: scenic-coast-cultural
+    status: research
+michigan:
+  - name: Mackinac Island
+    type: island-cultural-landscape
+    status: research
+  - name: Porcupine Mountains Wilderness State Park
+    type: state-park
+    status: research
+minnesota:
+  - name: North Shore Scenic Drive
+    type: scenic-road
+    status: research
+  - name: Voyageurs National Park
+    type: national-park
+    status: research
+mississippi:
+  - name: Natchez Trace Parkway
+    type: scenic-road-historic
+    status: research
+  - name: Clark Creek Natural Area
+    type: natural-area
+    status: research
+missouri:
+  - name: Ha Ha Tonka State Park
+    type: state-park
+    status: research
+  - name: Elephant Rocks State Park
+    type: state-park
+    status: research
+montana:
+  - name: Beartooth Highway
+    type: scenic-road
+    status: research
+  - name: Bighorn Canyon National Recreation Area
+    type: national-recreation-area
+    status: research
+nebraska:
+  - name: Nebraska Sandhills
+    type: regional-landscape
+    status: research
+  - name: Toadstool Geologic Park
+    type: national-grassland
+    status: research
+nevada:
+  - name: Red Rock Canyon National Conservation Area
+    type: blm-conservation-area
+    status: research
+  - name: Great Basin National Park
+    type: national-park
+    status: research
+new-hampshire:
+  - name: Kancamagus Highway
+    type: scenic-road
+    status: research
+  - name: Mount Washington
+    type: mountain
+    status: research
+new-jersey:
+  - name: New Jersey Pine Barrens
+    type: regional-landscape
+    status: research
+  - name: Cape May
+    type: coastal-cultural-wildlife
+    status: research
+new-mexico:
+  - name: Bisti/De-Na-Zin Wilderness
+    type: wilderness
+    status: research
+  - name: Carlsbad Caverns National Park
+    type: national-park
+    status: research
+new-york:
+  - name: Niagara Falls State Park
+    type: waterfall-state-park
+    status: research
+  - name: Watkins Glen State Park
+    type: state-park
+    status: research
+north-carolina:
+  - name: Blue Ridge Parkway
+    type: scenic-road
+    status: research
+  - name: Cape Hatteras National Seashore
+    type: national-seashore
+    status: research
+north-dakota:
+  - name: International Peace Garden
+    type: garden-cultural-landscape
+    status: research
+  - name: Lake Sakakawea State Park
+    type: state-park
+    status: research
+ohio:
+  - name: Cuyahoga Valley National Park
+    type: national-park
+    status: research
+  - name: Serpent Mound
+    type: cultural-historic
+    status: research
+oklahoma:
+  - name: Talimena National Scenic Byway
+    type: scenic-road
+    status: research
+  - name: Chickasaw National Recreation Area
+    type: national-recreation-area
+    status: research
+oregon:
+  - name: Columbia River Gorge National Scenic Area
+    type: national-scenic-area
+    status: research
+  - name: Cape Perpetua Scenic Area
+    type: national-forest-coast
+    status: research
+pennsylvania:
+  - name: Ohiopyle State Park
+    type: state-park
+    status: research
+  - name: Fallingwater
+    type: architecture-cultural
+    status: research
+rhode-island:
+  - name: Newport Cliff Walk
+    type: coastal-cultural
+    status: research
+  - name: Block Island
+    type: island
+    status: research
+south-carolina:
+  - name: Hunting Island State Park
+    type: state-park
+    status: research
+  - name: Charleston Historic District
+    type: cultural-historic
+    status: research
+south-dakota:
+  - name: Custer State Park
+    type: state-park
+    status: research
+  - name: Spearfish Canyon Scenic Byway
+    type: scenic-road
+    status: research
+tennessee:
+  - name: Fall Creek Falls State Park
+    type: state-park
+    status: research
+  - name: Big South Fork National River and Recreation Area
+    type: national-recreation-area
+    status: research
+texas:
+  - name: Palo Duro Canyon State Park
+    type: state-park
+    status: research
+  - name: Hamilton Pool Preserve
+    type: county-preserve
+    status: research
+utah:
+  - name: Arches National Park
+    type: national-park
+    status: research
+  - name: Bonneville Salt Flats
+    type: blm-landscape
+    status: research
+vermont:
+  - name: Quechee Gorge
+    type: gorge-state-park
+    status: research
+  - name: Lake Willoughby
+    type: lake
+    status: research
+virginia:
+  - name: Natural Bridge State Park
+    type: state-park
+    status: research
+  - name: Blue Ridge Parkway
+    type: scenic-road
+    status: research
+washington:
+  - name: Mount Rainier National Park
+    type: national-park
+    status: research
+  - name: Palouse Falls State Park
+    type: state-park
+    status: research
+west-virginia:
+  - name: Seneca Rocks
+    type: national-forest
+    status: research
+  - name: Blackwater Falls State Park
+    type: state-park
+    status: research
+wisconsin:
+  - name: Door County
+    type: coastal-regional
+    status: research
+  - name: Devil's Lake State Park
+    type: state-park
+    status: research
+wyoming:
+  - name: Grand Teton National Park
+    type: national-park
+    status: research
+  - name: Devils Tower National Monument
+    type: national-monument
+    status: research
+washington-dc:
+  - name: Rock Creek Park
+    type: urban-national-park
+    status: research
+  - name: Library of Congress Thomas Jefferson Building
+    type: architecture-cultural
+    status: research
+puerto-rico:
+  - name: Mosquito Bay Bioluminescent Bay, Vieques
+    type: bioluminescent-bay
+    status: research
+  - name: Old San Juan
+    type: cultural-historic
+    status: research
+us-virgin-islands:
+  - name: Buck Island Reef National Monument
+    type: national-monument
+    status: research
+  - name: Christiansted National Historic Site
+    type: cultural-historic
+    status: research
+guam:
+  - name: Two Lovers Point
+    type: scenic-cultural
+    status: research
+  - name: War in the Pacific National Historical Park
+    type: cultural-historic
+    status: research
+northern-mariana-islands:
+  - name: Managaha Island
+    type: island
+    status: research
+  - name: Banzai Cliff and Last Command Post
+    type: scenic-cultural-historic
+    status: research
+american-samoa:
+  - name: Ofu Beach
+    type: beach-marine
+    status: research
+  - name: Aunu'u Island
+    type: island-cultural-landscape
+    status: research
