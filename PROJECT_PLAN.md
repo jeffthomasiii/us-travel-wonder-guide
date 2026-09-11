@@ -34,7 +34,7 @@ Design and branding work remains intentionally deferred except for functional us
 
 ## Geography expansion — states, D.C. and inhabited territories
 
-**Status: IMPLEMENTED — 56 primary browse areas / 68 Wonders total.**
+**Status: IMPLEMENTED — 56 primary browse areas.**
 
 The guide includes:
 
@@ -77,7 +77,7 @@ Mobile uses persistent bottom navigation for **Home, Explore, Search, and Areas*
 
 ## Phase 2A — Build the national candidate inventory
 
-**Status: IN PROGRESS — seed inventory complete; two comparative research waves complete covering 16 areas.**
+**Status: IN PROGRESS — seed inventory complete; three comparative research waves complete covering 20 areas.**
 
 Goal: build the research pool before publishing large amounts of new content. Candidate counts are not quotas and candidate status does not imply inclusion.
 
@@ -117,7 +117,20 @@ Review file: [`_data/phase2_wave2_reviews.yml`](_data/phase2_wave2_reviews.yml)
 
 Wave 2 adds **37 reviewed candidates** and deliberately broadens the research beyond scenic federal lands into historic urban districts, architecture, industrial history, gardens, islands, state parks, wildlife areas, archaeology, and privately/nonprofit-stewarded destinations.
 
-Across Waves 1 and 2, **16 of 56 areas have completed a source-backed comparative candidate review**.
+### Wave 3 — complete
+
+Areas reviewed:
+
+- Minnesota
+- Missouri
+- South Dakota
+- Texas
+
+Review file: [`_data/phase2_wave3_reviews.yml`](_data/phase2_wave3_reviews.yml)
+
+Wave 3 adds source-backed comparisons across scenic roads, state parks, Indigenous cultural landscapes, monumental architecture, caves, wildlife, national seashores, and major regional landscapes. It also explicitly flags Needles Highway as likely better represented inside a broader Custer State Park entry rather than as a separate Wonder.
+
+Across Waves 1–3, **20 of 56 areas have completed a source-backed comparative candidate review**.
 
 ### Signature comparison flags so far
 
@@ -137,7 +150,8 @@ A Signature flag means the candidate pool is strong enough to require a delibera
 - [x] define research method and review statuses;
 - [x] complete Wave 1 source/editorial review for 8 areas;
 - [x] complete Wave 2 source/editorial review for 8 additional areas;
-- [ ] continue research waves across the remaining 40 areas;
+- [x] complete Wave 3 source/editorial review for 4 additional areas;
+- [ ] continue research waves across the remaining 36 areas;
 - [ ] broaden thin candidate pools where comparative review exposes obvious omissions;
 - [ ] complete comparative review of all six district/territory Signature selections;
 - [ ] continue Phase 2B classification in parallel on mature research pools.
@@ -146,29 +160,62 @@ All U.S. national parks are guaranteed eventual coverage, but their tier is not 
 
 ## Phase 2B — Editorial classification
 
-**Status: PILOT IN PROGRESS — Waves 1 and 2 classified editorially; nothing published from this file yet.**
+**Status: PILOT IN PROGRESS — Waves 1 and 2 classified editorially; Phase 2C production has begun from approved pilot entries.**
 
 The working pilot classification is [`_data/phase2b_pilot_classification.yml`](_data/phase2b_pilot_classification.yml).
 
 The pilot assigns proposed ◆ / ○ roles only after source-backed Phase 2A review. It also records `hold` and `do-not-publish` decisions where a candidate is too broad, operationally unresolved, or insufficiently sourced.
 
-The classification file does not modify the live site. Signature challenges remain comparison flags until a specific replacement decision is supported, and newly approved ◆ / ○ entries do not become public until Phase 2C production intake is complete.
+Signature challenges remain comparison flags until a specific replacement decision is supported. Approved ◆ / ○ entries can move into Phase 2C in measured batches once full production intake is complete.
 
 ## Phase 2C — Production content expansion
 
-**Status: NOT STARTED.**
+**Status: IN PROGRESS — Batch 1 published / 6 new Wonders.**
 
-Publish approved destinations with:
+The first production batch is documented in [`PHASE2C_BATCH1.md`](PHASE2C_BATCH1.md).
 
-- deliberate reason-to-go assignment;
-- concise editorial rationale;
+Batch 1 publishes:
+
+| Area | Destination | Reason to go |
+| --- | --- | --- |
+| California | Big Sur Coast | ◆ Worth Traveling For |
+| Florida | Myakka River State Park | ○ Worth the Detour |
+| Georgia | Savannah Historic Landmark District | ◆ Worth Traveling For |
+| Michigan | Mackinac Island | ◆ Worth Traveling For |
+| Kentucky | Shaker Village of Pleasant Hill | ○ Worth the Detour |
+| Alabama | Bon Secour National Wildlife Refuge | ○ Worth the Detour |
+
+The public guide now contains **74 Wonders total — 56 ★, 9 ◆, and 9 ○**.
+
+Batch 1 intentionally mixes a scenic coastal region, state park, historic urban district, island cultural landscape, nonprofit/private historic landscape, and federal wildlife refuge. This tests the guide's broader identity instead of simply adding more parks.
+
+Every Batch 1 Wonder includes:
+
+- approved editorial classification;
+- public summary and rationale;
 - official or authoritative source;
-- useful navigation target;
-- verified imagery or neutral fallback;
-- relevant experience tags;
-- Phase 1C planning metadata when reliable information is available.
+- navigation target;
+- verified reusable imagery and attribution;
+- experience tags;
+- Phase 1C-style planning metadata;
+- calendar-style visit windows;
+- RV road/rig guidance;
+- pet guidance;
+- accessibility, photography, and wildlife context where meaningful.
 
-The first Phase 2C production batch should come from the Phase 2B pilot rather than waiting for all 56 areas to complete research. A small production wave will test whether the expanded editorial model still reads well when many more destinations and non-natural/cultural places enter the live guide.
+Phase 2 planning data is stored in [`_data/travel_planning_phase2.yml`](_data/travel_planning_phase2.yml) and [`_data/planning_refinements_phase2.yml`](_data/planning_refinements_phase2.yml). The Wonder layout checks these files first and falls back to the original Phase 1C planning data for earlier destinations.
+
+### Batch 1 validation before Batch 2
+
+- [ ] confirm all six new cards appear in Explore and on their area pages;
+- [ ] confirm search, Area, Reason to Go, and Experience filtering include the new records correctly;
+- [ ] confirm mixed natural/cultural entries feel coherent together;
+- [ ] confirm image crops and credits render correctly;
+- [ ] confirm Phase 2 planning sections load correctly;
+- [ ] confirm Big Sur current-conditions messaging is prominent enough given fire/road volatility;
+- [ ] confirm RV and pet guidance reads as planning help rather than guaranteed access.
+
+Do not turn Phase 2C into a large national dump. Continue with measured production batches while Phase 2A and Phase 2B advance in parallel.
 
 ## Dedicated branding / design / layout phase
 
@@ -187,4 +234,4 @@ Potential later development:
 
 ## Current task
 
-**Continue Phase 2A Wave 3 on additional areas while preparing a small Phase 2C production batch from already-classified candidates. Do not publish a large national dump; test the production workflow with a deliberate mixed set of natural, cultural, state/local, and federal destinations first.**
+**Validate Phase 2C Batch 1 on the deployed site while continuing Phase 2A research on the remaining areas. If the batch reads cleanly, classify Wave 3 and prepare Batch 2 without changing any flagged Signature Wonder until its comparison is complete.**
