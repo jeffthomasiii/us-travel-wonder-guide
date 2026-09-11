@@ -1,0 +1,292 @@
+# Phase 2B pilot classification for research-complete Wave 1 and Wave 2 areas.
+# This file is editorial classification only. Nothing here is public until Phase 2C production intake is complete.
+# Signature challenges are intentionally held for broader comparison; the live Signature is not changed by this file.
+
+alabama:
+  signature_action: retain
+  classifications:
+    - name: Cheaha State Park
+      proposed_tier: travel
+      decision: approve
+    - name: Gulf State Park
+      proposed_tier: travel
+      decision: approve
+    - name: Bon Secour National Wildlife Refuge
+      proposed_tier: detour
+      decision: approve
+    - name: Cathedral Caverns State Park
+      proposed_tier: detour
+      decision: approve
+    - name: Mobile-Tensaw River Delta
+      decision: hold
+      note: "Needs a precise visitor anchor or destination boundary."
+
+alaska:
+  signature_action: retain
+  classifications:
+    - name: Kenai Fjords National Park
+      proposed_tier: travel
+      decision: approve
+    - name: Wrangell-St. Elias National Park & Preserve
+      proposed_tier: travel
+      decision: approve
+    - name: Chugach State Park
+      proposed_tier: travel
+      decision: approve
+    - name: Alaska Maritime National Wildlife Refuge
+      decision: hold
+      note: "Geographically dispersed; specific visitor destinations should be evaluated instead of publishing one broad refuge entry."
+
+arizona:
+  signature_action: retain
+  classifications:
+    - name: Sedona Red Rock Country
+      proposed_tier: travel
+      decision: approve
+    - name: Antelope Canyon
+      proposed_tier: travel
+      decision: approve
+    - name: Saguaro National Park
+      proposed_tier: travel
+      decision: approve
+    - name: Chiricahua National Monument
+      proposed_tier: travel
+      decision: approve
+    - name: Organ Pipe Cactus National Monument
+      proposed_tier: travel
+      decision: approve
+
+california:
+  signature_action: retain
+  classifications:
+    - name: Big Sur Coast
+      proposed_tier: travel
+      decision: approve
+    - name: Santa Catalina Island
+      proposed_tier: travel
+      decision: approve
+    - name: Point Reyes National Seashore
+      proposed_tier: travel
+      decision: approve
+    - name: Anza-Borrego Desert State Park
+      proposed_tier: travel
+      decision: approve
+    - name: Channel Islands National Park
+      proposed_tier: travel
+      decision: approve
+
+colorado:
+  signature_action: retain
+  classifications:
+    - name: Garden of the Gods
+      proposed_tier: travel
+      decision: approve
+    - name: San Juan Skyway
+      proposed_tier: travel
+      decision: approve
+    - name: Great Sand Dunes National Park & Preserve
+      proposed_tier: travel
+      decision: approve
+    - name: Black Canyon of the Gunnison National Park
+      proposed_tier: travel
+      decision: approve
+    - name: Maroon Bells-Snowmass Wilderness
+      proposed_tier: travel
+      decision: approve
+
+florida:
+  signature_action: retain
+  classifications:
+    - name: Dry Tortugas National Park
+      proposed_tier: travel
+      decision: approve
+    - name: John Pennekamp Coral Reef State Park
+      proposed_tier: travel
+      decision: approve
+    - name: Myakka River State Park
+      proposed_tier: detour
+      decision: approve
+    - name: Paynes Prairie Preserve State Park
+      proposed_tier: detour
+      decision: approve
+    - name: Florida Keys National Marine Sanctuary
+      decision: do-not-publish
+      note: "Too broad and overlapping as a single Wonder; use as contextual geography for more specific Keys/marine destinations."
+
+puerto-rico:
+  signature_action: compare-later
+  signature_candidates: [El Yunque National Forest, Old San Juan, Mosquito Bay Bioluminescent Bay]
+  classifications:
+    - name: Mosquito Bay Bioluminescent Bay, Vieques
+      proposed_tier: travel
+      decision: approve
+    - name: Old San Juan
+      proposed_tier: travel
+      decision: approve
+    - name: Cabo Rojo National Wildlife Refuge and Salt Flats
+      proposed_tier: travel
+      decision: approve
+    - name: Flamenco Beach, Culebra
+      proposed_tier: travel
+      decision: approve
+    - name: Rio Camuy Cave Park
+      decision: hold
+      note: "Keep out of production while the visitor destination remains closed until further notice."
+
+guam:
+  signature_action: compare-later
+  signature_candidates: [Ritidian Point, War in the Pacific National Historical Park, Two Lovers Point]
+  classifications:
+    - name: War in the Pacific National Historical Park
+      proposed_tier: travel
+      decision: approve
+    - name: Two Lovers Point
+      proposed_tier: detour
+      decision: approve
+    - name: Pagat Cave and Coastal Trail
+      decision: hold
+      note: "Needs more authoritative access, trail, and visitor-planning research."
+    - name: Cetti Bay Overlook
+      decision: hold
+      note: "Likely detour-scale but needs a stronger specific planning source."
+
+arkansas:
+  signature_action: retain
+  classifications:
+    - name: Hot Springs National Park
+      proposed_tier: travel
+      decision: approve
+    - name: Petit Jean State Park
+      proposed_tier: travel
+      decision: approve
+    - name: Mount Magazine State Park
+      proposed_tier: travel
+      decision: approve
+    - name: Crater of Diamonds State Park
+      proposed_tier: detour
+      decision: approve
+
+connecticut:
+  signature_action: compare-later
+  signature_candidates: [Kent Falls State Park, Gillette Castle State Park, Mystic Seaport Museum, Hammonasset Beach State Park]
+  classifications:
+    - name: Mystic Seaport Museum
+      proposed_tier: travel
+      decision: approve
+    - name: Gillette Castle State Park
+      proposed_tier: detour
+      decision: approve
+    - name: Sleeping Giant State Park
+      proposed_tier: detour
+      decision: approve
+    - name: Hammonasset Beach State Park
+      proposed_tier: detour
+      decision: approve
+
+georgia:
+  signature_action: retain
+  classifications:
+    - name: Okefenokee National Wildlife Refuge
+      proposed_tier: travel
+      decision: approve
+    - name: Savannah Historic Landmark District
+      proposed_tier: travel
+      decision: approve
+    - name: Jekyll Island
+      proposed_tier: travel
+      decision: approve
+    - name: Tallulah Gorge State Park
+      proposed_tier: travel
+      decision: approve
+    - name: Providence Canyon State Park
+      proposed_tier: detour
+      decision: approve
+
+illinois:
+  signature_action: compare-later
+  signature_candidates: [Garden of the Gods Recreation Area, Starved Rock State Park, Cahokia Mounds State Historic Site]
+  classifications:
+    - name: Starved Rock State Park
+      proposed_tier: travel
+      decision: approve
+    - name: Cahokia Mounds State Historic Site
+      proposed_tier: travel
+      decision: approve
+    - name: Pullman National Historical Park
+      proposed_tier: detour
+      decision: approve
+    - name: Mississippi Palisades State Park
+      proposed_tier: detour
+      decision: approve
+
+kentucky:
+  signature_action: retain
+  classifications:
+    - name: Red River Gorge Geological Area
+      proposed_tier: travel
+      decision: approve
+    - name: Cumberland Falls State Resort Park
+      proposed_tier: travel
+      decision: approve
+    - name: Natural Bridge State Resort Park
+      proposed_tier: detour
+      decision: approve
+    - name: Shaker Village of Pleasant Hill
+      proposed_tier: detour
+      decision: approve
+
+louisiana:
+  signature_action: compare-later
+  signature_candidates: [Atchafalaya National Heritage Area, French Quarter, Barataria Preserve]
+  classifications:
+    - name: French Quarter, New Orleans
+      proposed_tier: travel
+      decision: approve
+    - name: Barataria Preserve
+      proposed_tier: travel
+      decision: approve
+    - name: Jungle Gardens at Avery Island
+      proposed_tier: detour
+      decision: approve
+    - name: Tunica Hills Wildlife Management Area
+      proposed_tier: detour
+      decision: approve
+
+michigan:
+  signature_action: retain
+  classifications:
+    - name: Mackinac Island
+      proposed_tier: travel
+      decision: approve
+    - name: Porcupine Mountains Wilderness State Park
+      proposed_tier: travel
+      decision: approve
+    - name: Isle Royale National Park
+      proposed_tier: travel
+      decision: approve
+    - name: Tahquamenon Falls State Park
+      proposed_tier: travel
+      decision: approve
+    - name: The Henry Ford and Greenfield Village
+      proposed_tier: travel
+      decision: approve
+
+pennsylvania:
+  signature_action: compare-later
+  signature_candidates: [Ricketts Glen State Park, Fallingwater, Gettysburg National Military Park, Pine Creek Gorge]
+  classifications:
+    - name: Fallingwater
+      proposed_tier: travel
+      decision: approve
+    - name: Gettysburg National Military Park
+      proposed_tier: travel
+      decision: approve
+    - name: Ohiopyle State Park
+      proposed_tier: travel
+      decision: approve
+    - name: Pine Creek Gorge
+      proposed_tier: travel
+      decision: approve
+    - name: Longwood Gardens
+      proposed_tier: travel
+      decision: approve
