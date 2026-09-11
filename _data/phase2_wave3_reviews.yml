@@ -1,0 +1,101 @@
+# Phase 2A research wave 3.
+# Review statuses describe research confidence and editorial fit, not final public tier assignments.
+# Wave 3 broadens Minnesota, Missouri, South Dakota, and Texas with state, federal, cultural, scenic-road, and natural-landscape candidates.
+
+minnesota:
+  - name: North Shore Scenic Drive
+    type: scenic-road
+    status: strong
+    source_url: https://www.recreation.gov/gateways/13780
+    note: "A 150-mile Lake Superior corridor linking multiple state parks, waterfalls, forest, shoreline communities and major overlooks; strong enough to function as a trip-shaping destination rather than merely transportation."
+  - name: Voyageurs National Park
+    type: national-park
+    status: strong
+    source_url: https://www.nps.gov/voya/index.htm
+    note: "A water-oriented northern landscape with interconnected lakes, shoreline, boating and winter access that provides a substantially different Minnesota experience from the existing Boundary Waters Signature."
+  - name: Itasca State Park
+    type: state-park
+    status: strong
+    source_url: https://www.dnr.state.mn.us/state_parks/virtual_tour/itasca/dialup.html
+    note: "Minnesota's oldest state park combines old-growth pine landscape with the Mississippi River headwaters, creating both natural and nationally recognizable cultural-geographic significance."
+  - name: Split Rock Lighthouse State Park
+    type: state-park-historic
+    status: strong
+    source_url: https://www.dnr.state.mn.us/state_parks/split_rock_lighthouse/things_to_do.html
+    note: "The Lake Superior cliff-and-lighthouse setting is independently compelling, though final classification should account for its relationship to the broader North Shore Scenic Drive."
+  - name: Pipestone National Monument
+    type: cultural-landscape
+    status: strong
+    source_url: https://www.nps.gov/pipe/
+    note: "An active sacred quarry landscape used by Indigenous peoples for thousands of years; adds cultural and spiritual depth that is unlike Minnesota's lake-and-forest candidates."
+
+missouri:
+  - name: Ha Ha Tonka State Park
+    type: state-park
+    status: strong
+    source_url: https://mostateparks.com/park/ha-ha-tonka-state-park
+    note: "Karst geology, a major spring, natural bridge, bluffs and castle ruins create an unusually varied state-park destination."
+  - name: Elephant Rocks State Park
+    type: state-park
+    status: strong
+    source_url: https://mdc.mo.gov/discover-nature/places/natural-areas/elephant-rocks
+    note: "Massive pink granite boulders and accessible interpretation make this a highly distinctive geological stop with strong detour potential."
+  - name: Johnson's Shut-Ins State Park
+    type: state-park
+    status: strong
+    source_url: https://mostateparks.com/park/johnsons-shut-ins-state-park
+    note: "Ancient volcanic rock constricts the Black River into chutes, pools and cascades, producing one of Missouri's most distinctive natural recreation landscapes."
+  - name: Gateway Arch National Park
+    type: architecture-cultural
+    status: strong
+    source_url: https://www.nps.gov/jeff/index.htm
+    note: "The Saarinen-designed Arch, museum, riverfront landscape and Old Courthouse form a nationally significant architecture-and-history destination that broadens the guide well beyond natural scenery."
+
+south-dakota:
+  - name: Custer State Park
+    type: state-park
+    status: strong
+    source_url: https://gfp.sd.gov/parks/detail/custer-state-park/
+    note: "A 71,000-acre Black Hills destination combining granite peaks, lakes, wildlife, scenic roads and a major bison herd; one of the strongest non-NPS candidates in the state."
+  - name: Mount Rushmore National Memorial
+    type: cultural-landmark
+    status: strong
+    source_url: https://www.nps.gov/moru/index.htm
+    note: "A globally recognizable monumental landscape with substantial historical and cultural context; belongs in the guide even though its significance differs fundamentally from the state's natural wonders."
+  - name: Wind Cave National Park
+    type: national-park
+    status: strong
+    source_url: https://www.nps.gov/wica/index.htm
+    note: "Combines one of the world's longest and most complex cave systems with intact mixed-grass prairie and major wildlife viewing above ground."
+  - name: Needles Highway
+    type: scenic-road
+    status: overlap
+    source_url: https://22gfp.sd.gov/csp-scenic-drives/
+    note: "Extraordinary scenic-road experience, but it is physically and experientially part of Custer State Park; likely better represented as a defining experience within the Custer entry than as a separate Wonder."
+
+texas:
+  - name: Palo Duro Canyon State Park
+    type: state-park
+    status: strong
+    source_url: https://tpwd.texas.gov/state-parks/palo-duro-canyon
+    note: "The country's second-largest canyon is a major Texas landscape with hiking, driving, camping and a strong sense of scale distinct from Big Bend."
+  - name: Enchanted Rock State Natural Area
+    type: state-natural-area
+    status: strong
+    source_url: https://tpwd.texas.gov/state-parks/enchanted-rock
+    note: "The massive pink granite dome, summit views, climbing and dark-sky value make it one of the clearest Hill Country wonder candidates."
+  - name: Guadalupe Mountains National Park
+    type: national-park
+    status: strong
+    source_url: https://www.nps.gov/gumo/index.htm
+    note: "Texas's highest peaks, exposed fossil reef, desert-to-mountain ecology and remote hiking make this a major travel destination on its own merits."
+  - name: Padre Island National Seashore
+    type: national-seashore
+    status: strong
+    source_url: https://www.nps.gov/pais/index.htm
+    note: "Sixty-six miles of protected barrier-island coastline and coastal prairie provide a wild Gulf experience that is fundamentally different from the state's canyon and desert landscapes."
+  - name: Hamilton Pool Preserve
+    type: county-preserve
+    status: uncertain
+    source_url: https://traviscountyhistory.org/online-exhibits/parkshistory/hamilton-pool-preserve/
+    note: "The collapsed grotto and waterfall are visually distinctive and widely known, but restricted reservations, variable swimming access and the need for a current operational source warrant another pass before classification."
