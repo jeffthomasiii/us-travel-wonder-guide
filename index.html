@@ -1,29 +1,74 @@
 ---
 layout: default
-title: Explore
+title: Home
 ---
-<section class="home-hero">
-  <div>
-    <p class="eyebrow">50 states · 50 starting wonders</p>
-    <h1>There is somewhere worth seeing in every state.</h1>
-    <p>Start with one Signature Wonder in all 50 states. Then grow the guide naturally with places worth traveling for and places worth the detour.</p>
-    <a class="primary inline" href="#explore">Explore all 50</a>
+<section class="landing-hero">
+  <div class="landing-hero-inner">
+    <p class="eyebrow">50 states. No throwaway destinations.</p>
+    <h1>There is wonder <em>everywhere</em> in America.</h1>
+    <p class="hero-lede">A travel guide built around one simple idea: every state has somewhere worth seeing. Some places define a state. Some justify the trip. Others make the detour unforgettable.</p>
+    <div class="hero-actions">
+      <a class="primary" href="{{ '/explore/' | relative_url }}">Explore the guide</a>
+      <a class="secondary-button" href="{{ '/tiers/' | relative_url }}">How the tiers work</a>
+    </div>
   </div>
 </section>
-<section class="tier-strip">
-  <div><strong>★ Signature Wonder</strong><span>The one place that makes the case for the state.</span></div>
-  <div><strong>◆ Worth Traveling For</strong><span>A destination worth building part of a trip around.</span></div>
-  <div><strong>○ Worth the Detour</strong><span>A place to make time for when you are already nearby.</span></div>
-</section>
-<section id="explore" class="page-shell">
+
+<section class="page-shell home-section">
   <div class="section-head">
-    <div><p class="eyebrow">Explore America</p><h2>50 Signature Wonders</h2></div>
-    <div class="filters"><input id="search" type="search" placeholder="Search place, state, region…" aria-label="Search wonders"><select id="stateFilter" aria-label="Filter by state"><option value="">All states</option>{% assign states = site.wonders | map: 'state' | uniq | sort %}{% for state in states %}<option>{{ state }}</option>{% endfor %}</select></div>
+    <div>
+      <p class="eyebrow">Featured places</p>
+      <h2>Start somewhere remarkable.</h2>
+      <p class="lede">A rotating selection from across the country. Refresh the page and the mix changes.</p>
+    </div>
+    <a class="text-cta" href="{{ '/explore/' | relative_url }}">Explore all wonders →</a>
   </div>
-  <div class="cards" id="wonderGrid">
-  {% assign wonders = site.wonders | sort: "state" %}
-  {% for wonder in wonders %}{% include wonder_card.html wonder=wonder %}{% endfor %}
+  <div class="cards featured-grid" id="featuredGrid">
+    {% assign wonders = site.wonders | sort: "title" %}
+    {% for wonder in wonders %}
+      <div class="featured-item" hidden>{% include wonder_card.html wonder=wonder %}</div>
+    {% endfor %}
   </div>
-  <p id="emptyState" class="empty" hidden>No wonders match that search yet.</p>
+</section>
+
+<section class="tiers-preview">
+  <div class="page-shell">
+    <div class="section-head compact-head">
+      <div><p class="eyebrow">Not a ranking. A reason to go.</p><h2>Three ways a place earns its spot.</h2></div>
+      <a class="text-cta" href="{{ '/tiers/' | relative_url }}">See the tier guide →</a>
+    </div>
+    <div class="tier-cards">
+      <article><span class="tier-icon signature">★</span><h3>Signature Wonder</h3><p>The one place that best makes the case for the state.</p></article>
+      <article><span class="tier-icon travel">◆</span><h3>Worth Traveling For</h3><p>A destination significant enough to anchor part of a trip of its own.</p></article>
+      <article><span class="tier-icon detour">○</span><h3>Worth the Detour</h3><p>A place worth making time for when you are already nearby.</p></article>
+    </div>
+  </div>
+</section>
+
+<section class="page-shell home-section">
+  <div class="section-head">
+    <div><p class="eyebrow">Browse by state</p><h2>Every state has a starting point.</h2></div>
+    <a class="text-cta" href="{{ '/states/' | relative_url }}">Browse all 50 states →</a>
+  </div>
+  <div class="home-state-grid">
+    {% assign states = site.states | sort: "title" %}
+    {% for state in states limit:9 %}
+      {% assign state_wonders = site.wonders | where: "state", state.title %}
+      {% assign signature = state_wonders | first %}
+      <a class="home-state-card" href="{{ state.url | relative_url }}">
+        <span>{{ state.title }}</span>
+        {% if signature %}<small>{{ signature.title }}</small>{% endif %}
+      </a>
+    {% endfor %}
+  </div>
+</section>
+
+<section class="home-cta">
+  <div class="page-shell">
+    <p class="eyebrow">A travel reference, not a bucket-list dump.</p>
+    <h2>Discover a reason to go.</h2>
+    <p>Search by state, tier, experience, place, or region—and let the guide grow naturally as new wonders are added.</p>
+    <a class="primary" href="{{ '/explore/' | relative_url }}">Open Explore</a>
+  </div>
 </section>
 {% include nav_sheet.html %}
