@@ -24,26 +24,6 @@ For each Signature Wonder we:
 
 The canonical Phase 1A audit file is [`_data/signature_images.yml`](_data/signature_images.yml). It contains one verified image record for every state and allows the 50-state image set to be reviewed in one place.
 
-### Approved image-source hierarchy
-
-1. **First-party/original photography** — future preferred source where available.
-2. **Verified public-domain government imagery** — NPS, USFWS, USFS, BLM, NOAA, state agencies, etc.; verify the specific asset because not every image on a government site is necessarily public domain.
-3. **Wikimedia Commons** — only when the specific file page provides a reusable license and required attribution can be recorded.
-4. **Licensed public image providers** — e.g. Unsplash, when the applicable license and attribution/link requirements are clear.
-5. **Manual fallback** — retain the site's neutral placeholder rather than use an image with uncertain rights.
-
-### Required image metadata
-
-```yaml
-image_url: ...
-image_credit: ...
-image_source_url: ...
-image_rights: ...
-image_verified: true
-```
-
-`image_credit` must remain concise and human-readable. `image_source_url` should point to the specific asset/file record whenever possible, not merely an agency or site homepage.
-
 ### Phase 1A completion record
 
 - [x] 50 / 50 Signature Wonders have verified main images.
@@ -56,13 +36,11 @@ Phase 1A should be reopened only when replacing an image, changing a Signature W
 
 ## Phase 1B — Pilot mixed-tier content
 
-**Status: IN PROGRESS — pilot content populated; rendered-site validation pending.**
+**Status: COMPLETE — 6 pilot states / 12 added destinations.**
 
 Goal: prove that the site, filters, state pages, and editorial model work when all three tiers coexist.
 
 ### Pilot states
-
-The six pilot states were selected deliberately to test different geographies, travel patterns, destination densities, and source agencies:
 
 - **California** — large western state with many nationally significant destinations
 - **Utah** — dense concentration of scenic destinations and strong tier-boundary pressure
@@ -71,9 +49,7 @@ The six pilot states were selected deliberately to test different geographies, t
 - **Oklahoma** — useful test against common geographic stereotypes
 - **Delaware** — small state where the guide must remain useful without forcing quantity
 
-### Pilot destinations added
-
-Each pilot state now contains its existing ★ Signature Wonder plus one ◆ Worth Traveling For and one ○ Worth the Detour destination:
+### Pilot destinations
 
 | State | ◆ Worth Traveling For | ○ Worth the Detour |
 | --- | --- | --- |
@@ -84,60 +60,75 @@ Each pilot state now contains its existing ★ Signature Wonder plus one ◆ Wor
 | Oklahoma | Beavers Bend State Park | Gloss Mountain State Park |
 | Delaware | Bombay Hook National Wildlife Refuge | Trap Pond State Park |
 
-This adds **12 pilot destinations** and brings the guide to **62 total Wonders**: 50 ★, 6 ◆, and 6 ○.
+This added **12 pilot destinations** and brought the guide to **62 total Wonders**: 50 ★, 6 ◆, and 6 ○.
 
-### Phase 1B intake rules
+### Phase 1B completion record
 
-Every new pilot destination entered with:
+- [x] State, tier, experience, and text filtering supported on Explore.
+- [x] Search visibility bug corrected so non-matching cards are actually removed from layout.
+- [x] Wonder cards render distinct ★ / ◆ / ○ labels and tier classes.
+- [x] Wonder detail pages display the correct tier.
+- [x] Pilot state pages display ★ first, ◆ second, ○ third.
+- [x] All 12 pilot entries include deliberate tier rationale, official source, navigation query, experience tags, and verified image metadata.
+- [x] Live six-state pilot visually reviewed and accepted as structurally sound.
 
-- a deliberate tier assignment;
-- concise editorial rationale;
-- official or managing-agency source;
-- useful navigation query;
-- experience tags;
-- verified image rights and attribution metadata.
-
-No destination was added simply to balance a state numerically.
-
-### Phase 1B implementation checks completed
-
-- [x] Explore already supports state, tier, experience, and text filtering.
-- [x] Wonder cards already render distinct ★ / ◆ / ○ labels and tier classes.
-- [x] Wonder detail pages were updated to display the correct tier instead of assuming ★.
-- [x] State pages were updated to support mixed tiers and present ★ first, ◆ second, ○ third.
-- [x] All 12 pilot entries include verified imagery or rights metadata.
-- [x] Search data includes place, state, region, and experience terms for the new entries.
-
-### Remaining Phase 1B validation
-
-Before closing Phase 1B, visually review the deployed site for:
-
-- mixed-tier card hierarchy on each pilot state page;
-- tier-filter behavior on Explore;
-- search behavior with the new place, region, and experience terms;
-- image crops and credit presentation;
-- whether the editorial distinction between ◆ and ○ feels understandable when seen in real content.
-
-Design/branding polish is intentionally deferred. Only issues that obscure content hierarchy or functionality should block Phase 1B completion.
+Design/branding polish remains intentionally deferred.
 
 ## Phase 1C — Validate the content model
 
-**Status: NOT STARTED**
+**Status: IN PROGRESS — pilot planning model implemented for all 18 Wonders in the six pilot states.**
 
-After the Phase 1B pilot is visually validated, decide whether the Wonder record needs additional fields such as:
+Goal: decide what practical travel-planning information materially improves the guide before national content expansion.
 
-- best season;
-- photography notes;
-- wildlife potential;
-- RV suitability;
-- dog considerations;
-- accessibility;
-- reservations/permits;
-- current conditions;
-- navigation targets;
-- nearby wonders.
+The working schema is documented in [`CONTENT_MODEL.md`](CONTENT_MODEL.md).
 
-Only add fields that materially improve trip discovery or planning.
+### Phase 1C fields selected
+
+The pilot now tests:
+
+- broad best seasons;
+- practical visit length;
+- normalized RV access plus notes;
+- normalized dog access plus notes;
+- accessibility guidance;
+- photography guidance;
+- notable wildlife;
+- official current-conditions/alerts link;
+- optional reservation/permit link;
+- official planning source;
+- planning metadata review date.
+
+The pilot metadata is centralized in [`_data/travel_planning.yml`](_data/travel_planning.yml), keyed by Wonder slug. The Wonder detail layout renders this information only when it exists, so destinations outside the pilot continue to work unchanged.
+
+### Fields intentionally deferred
+
+- nearby wonders — wait until the national inventory is denser;
+- multiple navigation targets — wait for map/navigation work;
+- exact fees — too volatile;
+- exact seasonal opening dates — too volatile;
+- live weather — future dynamic integration;
+- detailed campground inventories — outside the discovery-guide scope.
+
+### Phase 1C pilot coverage
+
+All 18 Wonders in the six pilot states now have Phase 1C planning metadata:
+
+- California: Yosemite, Redwood, Alabama Hills
+- Utah: Zion, Bryce Canyon, Goblin Valley
+- Maine: Acadia, Baxter, Quoddy Head
+- Michigan: Pictured Rocks, Sleeping Bear Dunes, Kitch-iti-kipi
+- Oklahoma: Wichita Mountains, Beavers Bend, Gloss Mountain
+- Delaware: Cape Henlopen, Bombay Hook, Trap Pond
+
+### Remaining Phase 1C validation
+
+Before closing Phase 1C:
+
+- [ ] confirm the rendered planning sections are useful without feeling overloaded;
+- [ ] confirm RV and dog categories are understandable alongside their notes;
+- [ ] confirm official conditions/reservation links are prominent enough to discourage stale operational guidance;
+- [ ] determine whether any selected field should be removed before national rollout;
+- [ ] confirm the model is ready to become normal intake for Phase 2 destinations.
 
 ## Phase 2 — Expand the guide nationally
 
@@ -152,11 +143,12 @@ Each new Wonder should enter with:
 - official source;
 - useful navigation target;
 - verified imagery or fallback;
-- relevant experience tags.
+- relevant experience tags;
+- Phase 1C travel-planning metadata when reliable official information is available.
 
 ## Dedicated branding / design / layout phase
 
-A focused design pass is intentionally deferred until the content model and mixed-tier behavior are proven. That later phase can address typography, spacing, navigation styling, cards, color system, mobile refinement, and broader visual identity without interrupting content preparation.
+A focused design pass is intentionally deferred until the content model and national content structure are proven. That later phase can address typography, spacing, navigation styling, cards, color system, mobile refinement, and broader visual identity without interrupting content preparation.
 
 ## Later phases
 
@@ -165,11 +157,10 @@ Potential future development after the content system is stable:
 - map view;
 - Near Me discovery;
 - route-aware detours;
-- richer trip-planning metadata;
 - PWA/offline support;
 - visited / want-to-visit state stored locally;
 - increased use of first-party photography.
 
 ## Current task
 
-**Visually validate the six-state Phase 1B mixed-tier pilot. Do not begin broad national ◆ / ○ expansion until that pilot confirms the tier model and content structure are working.**
+**Validate the Phase 1C planning-information experience on the six pilot states. If the model reads well in the live site, close Phase 1C and begin national ◆ / ○ expansion in Phase 2 before the dedicated branding/design/layout pass.**
