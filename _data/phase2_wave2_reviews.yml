@@ -1,0 +1,226 @@
+# Phase 2A Wave 2 research review.
+# Preliminary review status only; no ◆ / ○ classification is assigned here.
+# Authoritative sources were checked during the 2026-09-11 research pass.
+
+arkansas:
+  signature: Buffalo National River
+  signature_challenge: false
+  review_note: "Buffalo National River remains a strong Signature. Arkansas needs a broader mix of geology, highlands, thermal-history, and unusual participatory destinations."
+  candidates:
+    - name: Hot Springs National Park
+      type: national-park-cultural-natural
+      review_status: strong
+      official_source: https://www.nps.gov/hosp/index.htm
+      reason: "Historic bathhouse architecture, thermal springs, trails, and an urban-national-park setting make it unlike the Buffalo River experience."
+    - name: Crater of Diamonds State Park
+      type: state-park-geology
+      review_status: strong
+      official_source: https://www.arkansasstateparks.com/parks/crater-diamonds-state-park
+      reason: "A highly unusual participatory geology destination where visitors can search for diamonds has clear detour/trip value."
+    - name: Petit Jean State Park
+      type: state-park
+      review_status: strong
+      official_source: https://www.arkansasstateparks.com/parks/petit-jean-state-park
+      reason: "Waterfalls, overlooks, sandstone terrain, CCC history, and broad recreation make it one of Arkansas's strongest state-park candidates."
+    - name: Mount Magazine State Park
+      type: state-park-mountain
+      review_status: strong
+      official_source: https://www.arkansasstateparks.com/parks/mount-magazine-state-park
+      reason: "Arkansas's highest point, broad Ozark/Ouachita views, cliffs, wildlife, and lodge access give it a distinct mountain role."
+
+connecticut:
+  signature: Kent Falls State Park
+  signature_challenge: true
+  review_note: "Kent Falls is attractive and compact, but Connecticut's broader pool includes stronger all-day cultural, coastal, and landscape candidates, so the Signature deserves comparison rather than automatic retention."
+  candidates:
+    - name: Gillette Castle State Park
+      type: historic-state-park
+      review_status: strong
+      official_source: https://ctparks.com/parks/gillette-castle-state-park
+      reason: "An eccentric hilltop castle, Connecticut River views, trails, and architecture create a highly distinctive experience."
+    - name: Mystic Seaport Museum
+      type: cultural-historic
+      review_status: strong
+      official_source: https://mysticseaport.org/
+      reason: "A major living maritime landscape and museum campus can anchor a coastal Connecticut visit beyond purely natural sites."
+    - name: Sleeping Giant State Park
+      type: state-park
+      review_status: strong
+      official_source: https://ctparks.com/parks/sleeping-giant-state-park
+      reason: "Prominent ridgeline hiking and a well-developed trail system provide a larger landscape experience than the current Signature."
+    - name: Hammonasset Beach State Park
+      type: state-park-coast
+      review_status: strong
+      official_source: https://ctparks.com/parks/hammonasset-beach-state-park
+      reason: "Long Island Sound beach, camping, nature programming, birding, and coastal access give Connecticut a strong shoreline candidate."
+
+georgia:
+  signature: Cumberland Island National Seashore
+  signature_challenge: false
+  review_note: "Cumberland remains a compelling Signature, but Georgia's pool is deep enough to represent swamps, canyons, gorges, barrier islands, and major historic urban landscapes."
+  candidates:
+    - name: Okefenokee National Wildlife Refuge
+      type: wildlife-refuge-wetland
+      review_status: strong
+      official_source: https://www.fws.gov/refuge/okefenokee
+      reason: "One of the country's major wetland wildernesses, with paddling, wildlife, dark water, cypress, and fire-shaped ecology."
+    - name: Providence Canyon State Park
+      type: state-park-geology
+      review_status: strong
+      official_source: https://gastateparks.org/ProvidenceCanyon
+      reason: "Colorful erosion gullies create one of Georgia's most visually distinctive inland landscapes."
+    - name: Tallulah Gorge State Park
+      type: state-park-gorge
+      review_status: strong
+      official_source: https://gastateparks.org/TallulahGorge
+      reason: "Deep gorge scenery, suspension bridge, waterfalls, overlooks, and strenuous trail options give it substantial trip value."
+    - name: Jekyll Island
+      type: island-cultural-natural
+      review_status: strong
+      official_source: https://www.jekyllisland.com/
+      reason: "State-managed island conservation, beaches, maritime forest, historic district, and recreation create a full destination experience."
+    - name: Savannah Historic Landmark District
+      type: cultural-historic-urban
+      review_status: strong
+      official_source: https://visitsavannah.com/historic-landmark-district
+      reason: "Squares, architecture, streetscapes, riverfront, museums, and walkability make Savannah a clear cultural wonder candidate."
+
+illinois:
+  signature: Garden of the Gods Recreation Area
+  signature_challenge: true
+  review_note: "Garden of the Gods is a strong natural choice, but Illinois also has nationally significant archaeology, major river landscapes, and Chicago cultural/industrial places that warrant Signature comparison."
+  candidates:
+    - name: Starved Rock State Park
+      type: state-park
+      review_status: strong
+      official_source: https://dnr.illinois.gov/parks/park.starvedrock.html
+      reason: "Canyons, waterfalls, Illinois River overlooks, trails, and broad public recognition make it a major in-state travel anchor."
+    - name: Cahokia Mounds State Historic Site
+      type: cultural-archaeological
+      review_status: strong
+      official_source: https://cahokiamounds.org/
+      reason: "Monumental Indigenous earthworks and deep pre-Columbian history give Illinois a nationally significant cultural landscape candidate."
+    - name: Mississippi Palisades State Park
+      type: state-park-river-bluffs
+      review_status: strong
+      official_source: https://dnr.illinois.gov/parks/park.mississippipalisades.html
+      reason: "Mississippi River bluffs, overlooks, forest, and hiking provide a distinct western Illinois landscape."
+    - name: Pullman National Historical Park
+      type: cultural-industrial-urban
+      review_status: strong
+      official_source: https://www.nps.gov/pull/index.htm
+      reason: "Planned industrial community, architecture, labor history, civil-rights history, and urban design broaden the guide beyond scenic nature."
+
+kentucky:
+  signature: Mammoth Cave National Park
+  signature_challenge: false
+  review_note: "Mammoth Cave remains a strong Signature. Kentucky's secondary pool should highlight sandstone arches, waterfalls, Appalachian scenery, and cultural landscapes rather than duplicating cave experiences."
+  candidates:
+    - name: Red River Gorge Geological Area
+      type: national-forest-geology
+      review_status: strong
+      official_source: https://www.fs.usda.gov/r08/danielboone/recreation/red-river-gorge-geological-area
+      reason: "Natural arches, cliffs, climbing, hiking, and rugged forest make it one of Kentucky's strongest outdoor trip anchors."
+    - name: Cumberland Falls State Resort Park
+      type: state-park-waterfall
+      review_status: strong
+      official_source: https://parks.ky.gov/explore/cumberland-falls-state-resort-park-7786
+      reason: "Large waterfall scenery plus the rare moonbow phenomenon gives the destination unusual nighttime and landscape appeal."
+    - name: Natural Bridge State Resort Park
+      type: state-park-arch
+      review_status: strong
+      official_source: https://parks.ky.gov/explore/natural-bridge-state-resort-park-7796
+      reason: "A large sandstone arch with trails and skylift access is a compact but substantial eastern Kentucky destination."
+    - name: Shaker Village of Pleasant Hill
+      type: cultural-historic-landscape
+      review_status: strong
+      official_source: https://shakervillageky.org/
+      reason: "Large preserved Shaker landscape, historic architecture, farm, trails, and interpretation provide a major non-natural candidate."
+
+louisiana:
+  signature: Atchafalaya National Heritage Area
+  signature_challenge: true
+  review_note: "Atchafalaya captures Louisiana's wetland identity well, but as a broad heritage area it should be compared against more precise visitor destinations and New Orleans cultural landscapes."
+  candidates:
+    - name: Barataria Preserve
+      type: wetland-national-historical-park
+      review_status: strong
+      official_source: https://www.nps.gov/jela/barataria-preserve.htm
+      reason: "Boardwalk-accessible bayou, swamp, marsh, wildlife, and interpretation provide a precise visitor anchor for south Louisiana wetlands."
+    - name: Jungle Gardens at Avery Island
+      type: garden-cultural-landscape
+      review_status: strong
+      official_source: https://www.junglegardens.org/
+      reason: "Semi-tropical gardens, bird habitat, bayou scenery, and the broader Avery Island cultural setting create a distinctive stop."
+    - name: French Quarter, New Orleans
+      type: cultural-historic-urban
+      review_status: strong
+      official_source: https://www.neworleans.com/plan/neighborhoods/french-quarter/
+      reason: "Architecture, music, food, streetscape, history, and public life make it one of the country's most distinctive urban cultural landscapes."
+    - name: Tunica Hills Wildlife Management Area
+      type: wildlife-management-area
+      review_status: strong
+      official_source: https://www.wlf.louisiana.gov/page/tunica-hills
+      reason: "Rugged loess hills, ravines, and unusual flora create a surprising upland Louisiana experience distinct from wetlands."
+
+michigan:
+  signature: Pictured Rocks National Lakeshore
+  signature_challenge: false
+  review_note: "Pictured Rocks remains highly defensible, while Michigan's broader pool should represent islands, old-growth wilderness, major waterfalls, remote national parks, and industrial/cultural history."
+  candidates:
+    - name: Mackinac Island
+      type: island-cultural-landscape
+      review_status: strong
+      official_source: https://www.mackinacparks.com/
+      reason: "Car-free island travel, historic fortifications, architecture, shoreline, trails, and horse-based transportation create a destination-scale experience."
+    - name: Porcupine Mountains Wilderness State Park
+      type: state-park-wilderness
+      review_status: strong
+      official_source: https://www.michigan.gov/recsearch/parks/porkies
+      reason: "Large old-growth forest, Lake Superior shoreline, waterfalls, ridges, and Lake of the Clouds create a major wilderness candidate."
+    - name: Tahquamenon Falls State Park
+      type: state-park-waterfall
+      review_status: strong
+      official_source: https://www.michigan.gov/recsearch/parks/tahquamenon-falls
+      reason: "Large amber-colored waterfalls, forest, trails, and Upper Peninsula setting create strong independent trip value."
+    - name: Isle Royale National Park
+      type: national-park-island-wilderness
+      review_status: strong
+      official_source: https://www.nps.gov/isro/index.htm
+      reason: "Remote Lake Superior island wilderness, ferry/seaplane access, backpacking, and wildlife create a major trip anchor despite higher planning friction."
+    - name: The Henry Ford and Greenfield Village
+      type: cultural-industrial-historic
+      review_status: strong
+      official_source: https://www.thehenryford.org/
+      reason: "American innovation, transportation, industry, architecture, and a large historic village provide a major urban-cultural counterweight to Michigan's natural destinations."
+
+pennsylvania:
+  signature: Ricketts Glen State Park
+  signature_challenge: true
+  review_note: "Ricketts Glen is visually strong, but Pennsylvania's candidate pool includes world-significant architecture, Civil War history, major gardens, river recreation, and the Pine Creek Gorge; Signature comparison is warranted."
+  candidates:
+    - name: Ohiopyle State Park
+      type: state-park-river
+      review_status: strong
+      official_source: https://www.pa.gov/agencies/dcnr/recreation/where-to-go/state-parks/find-a-park/ohiopyle-state-park.html
+      reason: "Youghiogheny River gorge, waterfalls, whitewater, trails, and access to the Laurel Highlands create a major recreation anchor."
+    - name: Fallingwater
+      type: architecture-cultural-landscape
+      review_status: strong
+      official_source: https://fallingwater.org/
+      reason: "Frank Lloyd Wright's house integrated over a waterfall is a globally recognized architecture-and-landscape experience."
+    - name: Pine Creek Gorge
+      type: regional-gorge
+      review_status: strong
+      official_source: https://www.pa.gov/agencies/dcnr/recreation/where-to-go/scenic-features/geologic-features
+      reason: "A long forested gorge with major overlooks, state parks, rail-trail access, and fall color gives northern Pennsylvania a strong landscape candidate."
+    - name: Gettysburg National Military Park
+      type: cultural-historic-landscape
+      review_status: strong
+      official_source: https://www.nps.gov/gett/index.htm
+      reason: "Nationally consequential battlefield landscape, monuments, museums, and interpretation make it an obvious cultural-history candidate."
+    - name: Longwood Gardens
+      type: garden-cultural-landscape
+      review_status: strong
+      official_source: https://longwoodgardens.org/
+      reason: "Large-scale horticulture, conservatories, fountains, seasonal displays, and designed landscapes create a destination-scale garden experience."
