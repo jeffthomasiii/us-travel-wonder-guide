@@ -77,28 +77,58 @@ Mobile uses persistent bottom navigation for **Home, Explore, Search, and Areas*
 
 ## Phase 2A — Build the national candidate inventory
 
-**Status: IN PROGRESS — 56-area seed inventory created.**
+**Status: IN PROGRESS — 56-area seed inventory created; Wave 1 comparative research complete for 8 areas.**
 
 Goal: build the research pool before publishing large amounts of new content. Candidate counts are not quotas and candidate status does not imply inclusion.
 
-The working backlog is [`_data/phase2_candidates.yml`](_data/phase2_candidates.yml). The initial seed pass gives every one of the 56 browse areas non-Signature candidates and deliberately mixes national parks with state/local lands, scenic roads, wildlife areas, cultural places, architecture, islands, regional landscapes, and other destination types.
+The seed backlog is [`_data/phase2_candidates.yml`](_data/phase2_candidates.yml). The research and review rules are now documented in [`PHASE2_RESEARCH_METHOD.md`](PHASE2_RESEARCH_METHOD.md). Wave reviews are kept separately from the seed backlog so source verification and editorial judgments remain auditable before candidates are promoted into production.
 
-Phase 2A research should:
+### Wave 1 — completed research areas
+
+Wave 1 reviewed a deliberately varied set of areas:
+
+- Alabama
+- Alaska
+- Arizona
+- California
+- Colorado
+- Florida
+- Puerto Rico
+- Guam
+
+The review file is [`_data/phase2_wave1_reviews.yml`](_data/phase2_wave1_reviews.yml).
+
+Wave 1 contains **38 reviewed candidates**: **32 strong**, **4 uncertain**, **1 overlap**, and **1 deferred because of current access/closure conditions**. These are research statuses, not ◆ / ○ classifications.
+
+The first comparative pass also flagged **Puerto Rico and Guam for a real Signature comparison during Phase 2B**. This does not mean El Yunque or Ritidian Point should be replaced; it means the broader candidate pool is strong enough that the original first-pass Signature choice should not be treated as automatic.
+
+### Phase 2A research requirements
 
 1. broaden each area's candidate pool beyond the seed pass;
 2. verify managing/official sources and basic travel viability;
 3. identify obvious omissions, especially important non-NPS destinations;
 4. compare candidates against the area's existing ★ Signature Wonder;
-5. flag candidates as strong, uncertain, duplicate/overlapping, or not a fit;
+5. flag candidates as strong, uncertain, overlap, defer, or not-fit;
 6. avoid assigning ◆ / ○ merely to create numerical balance.
 
 All U.S. national parks are guaranteed eventual coverage, but their tier is not predetermined. [`NATIONAL_PARKS_COVERAGE.md`](NATIONAL_PARKS_COVERAGE.md) tracks that obligation separately so national parks do not dominate the general candidate workflow.
 
+### Remaining Phase 2A work
+
+- [x] define research method and review statuses;
+- [x] complete Wave 1 source/editorial review for 8 areas;
+- [ ] continue research waves across the remaining 48 areas;
+- [ ] broaden thin candidate pools where comparative review exposes obvious omissions;
+- [ ] complete comparative review of all six district/territory Signature selections;
+- [ ] determine when enough areas are research-complete to begin Phase 2B in parallel rather than waiting for every area.
+
 ## Phase 2B — Editorial classification
 
-**Status: NOT STARTED.**
+**Status: NOT STARTED AT SCALE.**
 
-After candidate pools are sufficiently broad, classify destinations as ★, ◆, ○, or do-not-publish. Revisit a Signature selection when comparative research shows that another place makes a stronger case for that area.
+After an area's candidate pool is sufficiently broad, classify destinations as ★, ◆, ○, or do-not-publish. Revisit a Signature selection when comparative research shows that another place makes a stronger case for that area.
+
+Phase 2B may begin area-by-area once a research wave is mature; the project does not need to wait for every one of the 56 areas before testing classification on completed research pools.
 
 ## Phase 2C — Production content expansion
 
@@ -131,4 +161,4 @@ Potential later development:
 
 ## Current task
 
-**Continue Phase 2A candidate research across all 56 areas, broadening the seed inventory before assigning new ◆ / ○ tiers at scale.**
+**Continue Phase 2A with Wave 2 across additional areas, using the documented method. Once several more research pools are mature, begin Phase 2B classification in parallel on research-complete areas instead of waiting for all 56.**
