@@ -11,11 +11,6 @@ title: Home
       <a class="primary" href="{{ '/explore/' | relative_url }}">Explore the guide</a>
       <a class="secondary-button" href="{{ '/tiers/' | relative_url }}">How places qualify</a>
     </div>
-    <div class="mobile-hero-actions" aria-label="Explore the guide">
-      <a href="{{ '/explore/' | relative_url }}">Explore</a>
-      <a href="{{ '/explore/#search' | relative_url }}">Search</a>
-      <a href="{{ '/explore/#filters' | relative_url }}">Filters</a>
-    </div>
     <a id="heroCredit" class="hero-credit" href="https://commons.wikimedia.org/wiki/File:Alabama_Hills_National_Scenic_Area_%2848114568221%29.jpg" target="_blank" rel="noopener">Alabama Hills · Matthew Dillon · CC BY 2.0</a>
   </div>
 </section>
@@ -55,42 +50,28 @@ title: Home
   </div>
 </section>
 
-<section class="tiers-preview">
-  <div class="page-shell">
-    <div class="section-head compact-head">
-      <div><p class="eyebrow">Not a ranking. A reason to go.</p><h2>Three ways a place earns its spot.</h2></div>
+<section class="home-discovery-band">
+  <div class="page-shell home-discovery-grid">
+    <article class="qualify-summary">
+      <p class="eyebrow">Not a ranking. A reason to go.</p>
+      <h2>Three ways a place earns its spot.</h2>
+      <div class="qualify-rows">
+        <div><span class="tier-icon signature">★</span><p><strong>Signature Wonder</strong><br>The one place that best makes the case for the state.</p></div>
+        <div><span class="tier-icon travel">◆</span><p><strong>Worth Traveling For</strong><br>Significant enough to anchor part of a trip.</p></div>
+        <div><span class="tier-icon detour">○</span><p><strong>Worth the Detour</strong><br>Worth changing your route for when nearby.</p></div>
+      </div>
       <a class="text-cta" href="{{ '/tiers/' | relative_url }}">See how places qualify →</a>
-    </div>
-    <div class="tier-cards">
-      <article><span class="tier-icon signature">★</span><h3>Signature Wonder</h3><p>The one place that best makes the case for the state.</p></article>
-      <article><span class="tier-icon travel">◆</span><h3>Worth Traveling For</h3><p>A destination significant enough to anchor part of a trip of its own.</p></article>
-      <article><span class="tier-icon detour">○</span><h3>Worth the Detour</h3><p>A place worth making time for when you are already nearby.</p></article>
-    </div>
-  </div>
-</section>
+    </article>
 
-<section class="page-shell home-section">
-  <div class="section-head">
-    <div><p class="eyebrow">Browse by state</p><h2>Every state has a starting point.</h2></div>
-    <a class="text-cta" href="{{ '/states/' | relative_url }}">Browse all 50 states →</a>
-  </div>
-  <div class="home-state-grid">
-    {% assign states = site.states | sort: "title" %}
-    {% for state in states limit:9 %}
-      <a class="home-state-card" href="{{ state.url | relative_url }}">
-        <span>{{ state.title }}</span>
-        <small>Explore locations in {{ state.title }}</small>
-      </a>
-    {% endfor %}
-  </div>
-</section>
-
-<section class="home-cta">
-  <div class="page-shell">
-    <p class="eyebrow">A travel reference, not a bucket-list dump.</p>
-    <h2>Discover a reason to go.</h2>
-    <p>Search by state, reason to go, experience, place, or region—and let the guide grow naturally as new wonders are added.</p>
-    <a class="primary" href="{{ '/explore/' | relative_url }}">Open Explore</a>
+    <article class="guide-summary">
+      <p class="eyebrow">A travel reference, not a bucket-list dump.</p>
+      <h2>Discover a reason to go.</h2>
+      <p>Search by state, reason to go, experience, place, or region—and let the guide grow naturally as new wonders are added.</p>
+      <div class="guide-summary-actions">
+        <a class="primary" href="{{ '/explore/' | relative_url }}">Open Explore</a>
+        <a class="secondary-button" href="{{ '/states/' | relative_url }}">Browse States</a>
+      </div>
+    </article>
   </div>
 </section>
 {% include nav_sheet.html %}
