@@ -88,6 +88,7 @@ const filters=document.querySelector('#filters');
 function setMobileFilters(open){
   if(!mobileFiltersToggle||!filters) return;
   mobileFiltersToggle.setAttribute('aria-expanded',String(open));
+  mobileFiltersToggle.textContent=open?'Fewer filters':'More filters';
   filters.classList.toggle('filters-open',open);
 }
 mobileFiltersToggle?.addEventListener('click',()=>{
